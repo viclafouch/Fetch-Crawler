@@ -1,0 +1,18 @@
+{
+  "extends": ["standard", "prettier"],
+  "rules": {
+    "prettier/prettier": [
+      "error",
+      {
+        "tabWidth": 2,
+        "printWidth": 130,
+        "semi": false,
+        "singleQuote": true
+      }
+    ],
+    "import/no-unresolved": 0,
+    "no-console": 0,
+    "import/no-named-as-default": 0
+  },
+  "plugins": ["prettier"]
+}

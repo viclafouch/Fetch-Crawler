@@ -1,0 +1,39 @@
+{
+  "name": "fetch-crawler",
+  "version": "1.0.0",
+  "description": "A Node.JS Web crawler using the API Fetch",
+  "main": "index.js",
+  "directories": {
+    "example": "examples",
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/viclafouch/fetch-crawling.git"
+  },
+  "author": "Victor de la Fouchardiere",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/viclafouch/fetch-crawling/issues"
+  },
+  "homepage": "https://github.com/viclafouch/fetch-crawling#readme",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.3",
+    "cli-progress": "^2.1.1",
+    "node-fetch": "^2.5.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-config-prettier": "^4.2.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.17.2",
+    "eslint-plugin-node": "^8.0.1",
+    "eslint-plugin-prettier": "^3.0.1",
+    "eslint-plugin-promise": "^4.1.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "prettier": "^1.17.0"
+  }
+}
