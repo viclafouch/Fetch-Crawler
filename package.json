@@ -16,14 +16,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/viclafouch/fetch-crawling.git"
+    "url": "git+https://github.com/viclafouch/fetch-crawler.git"
   },
   "author": "Victor de la Fouchardiere",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/viclafouch/fetch-crawling/issues"
+    "url": "https://github.com/viclafouch/fetch-crawler/issues"
   },
-  "homepage": "https://github.com/viclafouch/fetch-crawling#readme",
+  "homepage": "https://github.com/viclafouch/fetch-crawler#readme",
   "dependencies": {
     "cheerio": "^1.0.0-rc.3",
     "cli-progress": "^3.0.0",
