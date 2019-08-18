@@ -1,4 +1,4 @@
-import { retryRequest, isUrl } from '../utils'
+import { retryRequest, isUrl } from './utils'
 import fetch from 'node-fetch'
 import cheerio from 'cheerio'
 import _cliProgress from 'cli-progress'

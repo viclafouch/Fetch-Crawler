@@ -1,14 +1,18 @@
 {
-  "name": "fetch-crawler",
-  "version": "1.0.0",
+  "name": "@viclafouch/fetch-crawler",
+  "version": "1.0.1",
   "description": "A Node.JS Web crawler using the API Fetch",
-  "main": "index.js",
-  "directories": {
-    "example": "examples",
-    "test": "tests"
-  },
+  "main": "./build/index.js",
+  "keywords": [
+    "fetch",
+    "scrapping",
+    "node",
+    "crawler"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "cm build",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
   },
   "repository": {
     "type": "git",
@@ -22,18 +26,22 @@
   "homepage": "https://github.com/viclafouch/fetch-crawling#readme",
   "dependencies": {
     "cheerio": "^1.0.0-rc.3",
-    "cli-progress": "^2.1.1",
-    "node-fetch": "^2.5.0"
+    "cli-progress": "^3.0.0",
+    "node-fetch": "^2.6.0"
   },
   "devDependencies": {
-    "eslint": "^5.16.0",
-    "eslint-config-prettier": "^4.2.0",
-    "eslint-config-standard": "^12.0.0",
-    "eslint-plugin-import": "^2.17.2",
-    "eslint-plugin-node": "^8.0.1",
-    "eslint-plugin-prettier": "^3.0.1",
-    "eslint-plugin-promise": "^4.1.1",
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "centimaitre": "^1.0.3",
+    "eslint": "^6.1.0",
+    "eslint-config-prettier": "^6.0.0",
+    "eslint-config-standard": "^13.0.1",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-node": "^9.1.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "^4.0.0",
-    "prettier": "^1.17.0"
+    "fs-jetpack": "^2.2.2",
+    "prettier": "^1.18.2"
   }
 }
