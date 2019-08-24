@@ -211,10 +211,11 @@ class Crawler {
     try {
       const {
         result,
-        linksCollected
+        linksCollected,
+        url
       } = await this.scrapePage(link);
       await this.scrapeSucceed({
-        urlScraped: link,
+        urlScraped: url,
         result
       });
       await this.addToQueue(linksCollected, depth + 1);
