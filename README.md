@@ -8,7 +8,7 @@ Distributed crawler powered by Fetch Crawler
 
 Fetch Crawler is designed to provide a basic, flexible and robust API for crawling websites. 
 
-Powered by Headless Chrome, the crawler provides [simple APIs](#api-reference) to crawl these dynamic websites with the following features:
+The crawler provides [simple APIs](#api-reference) to crawl these static websites with the following features:
 
 * Distributed crawling
 * Configure parallel, retry, max requests, ...
@@ -30,16 +30,25 @@ Powered by Headless Chrome, the crawler provides [simple APIs](#api-reference) t
 ### Usage
 
 ```js
-import FetchCrawler from '@viclafouch/fetch-crawler'
+// I use Cheerio to get the content of the page
+// See https://cheerio.js.org
+const collectContent = $ =>
+  $('body')
+    .find('h1')
+    .text()
+    .trim()
 
-const collectContent = $ => $('body').find('h1').text().trim()
+// After getting content of the page, do what you want :)
+// Accept async function
+const doSomethingWith = (content, url) => console.log(`Here the title '${content}' from ${url}`)
 
-const doSomethingWith = (content, url) => console.log(`Here the title ${content} get from ${url}`)
-
+// Here I start my crawler
+// You can await for it if you want
 FetchCrawler.launch({
   url: 'https://github.com',
-  evaluatePage: $ => collectContentCards($),
-  onSuccess: ({ result, url }) => doSomethingWith(result, url)
+  evaluatePage: $ => collectContent($),
+  onSuccess: ({ result, url }) => doSomethingWith(result, url),
+  maxRequest: 20
 })
 ```
 
