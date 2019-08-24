@@ -212,9 +212,10 @@ class Crawler {
       const {
         result,
         linksCollected,
-        url
+        url,
+        isError
       } = await this.scrapePage(link);
-      await this.scrapeSucceed({
+      if (!isError) await this.scrapeSucceed({
         urlScraped: url,
         result
       });
@@ -300,7 +301,8 @@ class Crawler {
       return {
         linksCollected: [],
         result: null,
-        url
+        url,
+        isError: true
       };
     }
   }

@@ -192,8 +192,8 @@ class Crawler {
    */
   async pull(link, depth) {
     try {
-      const { result, linksCollected, url } = await this.scrapePage(link)
-      await this.scrapeSucceed({ urlScraped: url, result })
+      const { result, linksCollected, url, isError } = await this.scrapePage(link)
+      if (!isError) await this.scrapeSucceed({ urlScraped: url, result })
       await this.addToQueue(linksCollected, depth + 1)
     } catch (error) {
       console.error(error)
@@ -254,7 +254,8 @@ class Crawler {
       return {
         linksCollected: [],
         result: null,
-        url
+        url,
+        isError: true
       }
     }
   }
