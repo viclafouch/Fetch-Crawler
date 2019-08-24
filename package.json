@@ -11,6 +11,7 @@
   ],
   "scripts": {
     "build": "cm build",
+    "build:examples": "cm build-examples",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix"
   },
@@ -26,8 +27,8 @@
   "homepage": "https://github.com/viclafouch/fetch-crawler#readme",
   "dependencies": {
     "cheerio": "^1.0.0-rc.3",
-    "cli-progress": "^3.0.0",
-    "node-fetch": "^2.6.0"
+    "node-fetch": "^2.6.0",
+    "@viclafouch/fetch-crawler": "^1.0.1"
   },
   "devDependencies": {
     "@babel/core": "^7.5.5",

@@ -1,15 +1,12 @@
 import { retryRequest, isUrl } from './utils'
 import fetch from 'node-fetch'
 import cheerio from 'cheerio'
-import _cliProgress from 'cli-progress'
 
 class Crawler {
   constructor(options = {}) {
     this._options = Object.assign(
       {},
       {
-        titleProgress: 'Crawl in progress',
-        showProgress: true,
         maxRequest: -1,
         skipStrictDuplicates: true,
         sameOrigin: true,
@@ -26,7 +23,6 @@ class Crawler {
       onSuccess: this._options.onSuccess || null,
       evaluatePage: this._options.evaluatePage || null
     }
-    this.progressCli = null
   }
 
   /**
@@ -50,22 +46,8 @@ class Crawler {
     const { linksCollected } = await this.scrapePage(sanitizedUrl)
     if (linksCollected.length === 0) return
     this.linksCrawled.set(sanitizedUrl)
-    if (this._options.showProgress) {
-      console.log('') // just pass a line
-      this.progressCli = new _cliProgress.Bar(
-        {
-          format: `${this._options.titleProgress} [{bar}] {percentage}% | {value}/{total} | Parallel: ${this._options.parallel} | MaxRequest: ${this._options.maxRequest} | MaxDepth ${this._options.maxDepth}`,
-          barsize: 25
-        },
-        _cliProgress.Presets.shades_classic
-      )
-    }
     await this.addToQueue(linksCollected, 1)
-    if (this.linksToCrawl.size > 0) {
-      this._options.showProgress && this.progressCli.start(this.linksToCrawl.size, 0)
-      await this.crawl()
-      this._options.showProgress && this.progressCli.stop()
-    }
+    if (this.linksToCrawl.size > 0) await this.crawl()
   }
 
   /**
@@ -186,10 +168,6 @@ class Crawler {
           const currentDepth = this.linksToCrawl.get(currentLink)
           this.linksToCrawl.delete(currentLink)
           this.linksCrawled.set(currentLink)
-          if (this._options.showProgress) {
-            this.progressCli.setTotal(this.linksToCrawl.size + this.linksCrawled.size)
-            this.progressCli.update(this.linksCrawled.size)
-          }
           this.pull(currentLink, currentDepth)
             .then(() => {
               currentCrawlers--
