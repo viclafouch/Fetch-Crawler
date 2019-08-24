@@ -5,7 +5,14 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.isUrl = exports.retryRequest = void 0;
 
-const retryRequest = (request, maxRetry) => (...args) => {
+/**
+ * Retry n times a fetch request
+ *
+ * @param {Fetch} request
+ * @param {number} maxRetry
+ * @return {Promise}
+ */
+const retryRequest = (request, maxRetry = 3) => (...args) => {
   let retries = 0;
   return request(...args).catch(error => {
     if (retries < maxRetry) {

@@ -11,22 +11,17 @@ var _nodeFetch = _interopRequireDefault(require("node-fetch"));
 
 var _cheerio = _interopRequireDefault(require("cheerio"));
 
-var _cliProgress2 = _interopRequireDefault(require("cli-progress"));
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 class Crawler {
-  constructor(options) {
+  constructor(options = {}) {
     this._options = Object.assign({}, {
-      titleProgress: 'Crawl in progress',
-      showProgress: true,
       maxRequest: -1,
       skipStrictDuplicates: true,
       sameOrigin: true,
       maxDepth: 3,
       parallel: 5
     }, options);
-    this._requestedCount = 0;
     this.hostdomain = '';
     this.linksToCrawl = new Map();
     this.linksCrawled = new Map();
@@ -35,10 +30,10 @@ class Crawler {
       onSuccess: this._options.onSuccess || null,
       evaluatePage: this._options.evaluatePage || null
     };
-    this.progressCli = null;
   }
   /**
-   * Init the app. Begin with the first link, and start the pulling
+   * Init the app.
+   * Begin with the first link, and start the pulling
    * @return {!Promise<pending>}
    */
 
@@ -48,57 +43,53 @@ class Crawler {
       if (!(0, _utils.isUrl)(this._options.url)) throw new Error();
       const link = new URL(this._options.url);
       this.hostdomain = link.origin;
+      if (!this.hostdomain) throw new Error();
     } catch (error) {
       throw new Error('URL provided is not valid');
     }
 
-    if (!this.hostdomain) return;
     const sanitizedUrl = await this.shouldRequest(this._options.url);
     if (!sanitizedUrl) return;
     const {
       linksCollected
     } = await this.scrapePage(sanitizedUrl);
-    this.linksCrawled.set(sanitizedUrl);
-    this._requestedCount++;
     if (linksCollected.length === 0) return;
-
-    if (this._options.showProgress) {
-      console.log('');
-      this.progressCli = new _cliProgress2.default.Bar({
-        format: `${this._options.titleProgress} [{bar}] {percentage}% | {value}/{total} | Parallel: ${this._options.parallel} | MaxRequest: ${this._options.maxRequest} | MaxDepth ${this._options.maxDepth}`,
-        barsize: 25
-      }, _cliProgress2.default.Presets.shades_classic);
-    }
-
+    this.linksCrawled.set(sanitizedUrl);
     await this.addToQueue(linksCollected, 1);
-
-    if (this.linksToCrawl.size > 0) {
-      this._options.showProgress && this.progressCli.start(this.linksToCrawl.size, 0);
-      await this.crawl();
-      this._options.showProgress && this.progressCli.stop();
-    }
+    if (this.linksToCrawl.size > 0) await this.crawl();
   }
   /**
-   * Get all links from the page except the actual location
-   * @param {!Page} page
-   * @return {!Promise<Array<string>>}
+   * Get all links from the page.
+   * @param {!Cheerio} $
+   * @param {!String} actualHref
+   * @return {!Promise<Array<string>}
    */
 
 
   collectAnchors($, actualHref) {
-    const {
-      origin,
-      protocol
-    } = new URL(actualHref);
-    const allLinks = $('a').map((i, e) => {
-      const href = $(e).attr('href') || '';
-      if (href.startsWith('//')) return protocol + href;else if (href.startsWith('/')) return origin + href;else return href;
-    }).filter((i, href) => (0, _utils.isUrl)(href)).get();
-    return [...new Set(allLinks)];
+    let linksCollected = [];
+
+    try {
+      const {
+        origin,
+        protocol
+      } = new URL(actualHref);
+      linksCollected = $('a').map((i, e) => {
+        const href = $(e).attr('href') || '';
+        if (href.startsWith('//')) return protocol + href;else if (href.startsWith('/')) return origin + href;else return href;
+      }) // Cheerio map method
+      .filter((i, href) => (0, _utils.isUrl)(href)) // Cheerio filter method
+      .get(); // Cheerio get method to transform as an array
+    } catch (error) {
+      console.error(`Something wrong happened with this url: ${actualHref}`);
+      console.error(error);
+    }
+
+    return [...new Set(linksCollected)]; // Avoid duplication
   }
   /**
-   * Check if link can be crawled (Same origin ? Already collected ? preRequest !false ?)
-   * @param {!string} link
+   * Check if link can be crawled (Same origin ? Already collected ? preRequest !false ?).
+   * @param {!String} link
    * @return {!Promise<Boolean>}
    */
 
@@ -108,12 +99,11 @@ class Crawler {
     if (!allowOrigin) return true;
     if (this._options.skipStrictDuplicates && this.linkAlreadyCollected(link)) return true;
     const shouldRequest = await this.shouldRequest(link);
-    if (!shouldRequest) return true;
-    return false;
+    return !shouldRequest;
   }
   /**
-   * If preRequest is provided by the user, get new link or false
-   * @param {!string} link
+   * If preRequest is provided by the user, get new link or false.
+   * @param {!String} link
    * @return {!Promise<String || Boolean>}
    */
 
@@ -122,22 +112,18 @@ class Crawler {
     if (this._actions.preRequest instanceof Function) {
       try {
         const preRequest = await this._actions.preRequest(link);
-
-        if (typeof preRequest === 'string' || preRequest === false) {
-          return preRequest;
-        }
-
-        throw new Error('preRequest function must return a string or false');
+        if (typeof preRequest === 'string' || preRequest === false) return preRequest;
+        throw new Error('preRequest function must return a String or False');
       } catch (error) {
         console.error('Please try/catch your preRequest function');
-        console.log(error.message);
+        console.error(error.message);
       }
     }
 
     return link;
   }
   /**
-   * Check if link has the same origin as the host link
+   * Check if link has the same origin as the host link.
    * @param {!String} url
    * @return {!Boolean}
    */
@@ -148,8 +134,8 @@ class Crawler {
     return true;
   }
   /**
-   * If evaluatePage is provided by the user, await for it
-   * @param {!Page} page
+   * If evaluatePage is provided by the user, await for it.
+   * @param {!Cheerio} $
    * @return {!Promise<any>}
    */
 
@@ -164,7 +150,7 @@ class Crawler {
     return result;
   }
   /**
-   * Add links collected to queue
+   * Add links collected to queue.
    * @param {!Array<string>} urlCollected
    * @param {!Number} depth
    * @return {!Promise<pending>}
@@ -172,13 +158,18 @@ class Crawler {
 
 
   async addToQueue(urlCollected, depth = 0) {
-    for (let url of urlCollected) {
+    for (const url of urlCollected) {
       if (depth <= this._options.maxDepth && !(await this.skipRequest(url))) {
-        url = await this.shouldRequest(url);
-        this.linksToCrawl.set(url, depth);
+        const linkEdited = await this.shouldRequest(url);
+        this.linksToCrawl.set(linkEdited, depth);
       }
     }
   }
+  /**
+   * Crawl links from 'linksToCrawl' and wait for having 'canceled' to true.
+   * @return {!Promise<pending>}
+   */
+
 
   crawl() {
     return new Promise((resolve, reject) => {
@@ -201,12 +192,9 @@ class Crawler {
           const currentDepth = this.linksToCrawl.get(currentLink);
           this.linksToCrawl.delete(currentLink);
           this.linksCrawled.set(currentLink);
-          this._options.showProgress && this.progressCli.setTotal(this.linksToCrawl.size + this.linksCrawled.size);
-          this._options.showProgress && this.progressCli.update(this.linksCrawled.size);
           this.pull(currentLink, currentDepth).then(() => {
             currentCrawlers--;
-            if (currentCrawlers === 0 && this.linksToCrawl.size === 0) resolve();
-            if (currentCrawlers === 0 && canceled) resolve();else pullQueue();
+            if (currentCrawlers === 0 && (this.linksToCrawl.size === 0 || canceled)) resolve();else pullQueue();
           }).catch(error => {
             canceled = true;
             reject(error);
@@ -217,6 +205,13 @@ class Crawler {
       pullQueue();
     });
   }
+  /**
+   * Pull result and links from a page and add them to the queue.
+   * @param {!String} link
+   * @param {!Number} depth
+   * @return {!Promise<pending>}
+   */
+
 
   async pull(link, depth) {
     try {
@@ -234,7 +229,7 @@ class Crawler {
     }
   }
   /**
-   * Get if a link will be crawled or has already been crawled.
+   * Know if a link will be crawled or has already been crawled.
    * @param {!String} url
    * @return {!Boolean}
    */
@@ -255,7 +250,7 @@ class Crawler {
   }
   /**
    * If onSuccess action's has been provided, await for it.
-   * @param {!Object<{urlScraped: string, result}>}
+   * @param {!Object<{urlScraped: string, result: any}>}
    * @return {!Promise<pending>}
    */
 
@@ -278,7 +273,7 @@ class Crawler {
   /**
    * Scrap a page, evaluate and get new links to visit.
    * @param {!String} url
-   * @return {Promise<{linksCollected: array, result, url: string}>}
+   * @return {!Promise<{linksCollected: array, result: any, url: string}>}
    */
 
 
@@ -309,7 +304,7 @@ class Crawler {
   /**
    * Starting the crawl.
    * @param {!0bject} options
-   * @return {Promise<{startCrawlingAt: date, finishCrawlingAt: date, linksVisited: array}>}
+   * @return {!Promise<{startCrawlingAt: Date, finishCrawlingAt: Date, linksVisited: Number}>}
    */
 
 
