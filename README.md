@@ -8,7 +8,7 @@ Distributed crawler powered by Fetch Crawler
 
 Fetch Crawler is designed to provide a basic, flexible and robust API for crawling websites. 
 
-Powered by Headless Chrome, the crawler provides [simple APIs](#api-reference) to crawl these dynamic websites with the following features:
+The crawler provides [simple APIs](#api-reference) to crawl these static websites with the following features:
 
 * Distributed crawling
 * Configure parallel, retry, max requests, ...
