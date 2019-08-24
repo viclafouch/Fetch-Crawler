@@ -1,10 +1,5 @@
 "use strict";
 
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-
 var _utils = require("./utils");
 
 var _nodeFetch = _interopRequireDefault(require("node-fetch"));
@@ -322,6 +317,5 @@ class Crawler {
 
 }
 
-var _default = Crawler;
-exports.default = _default;
+module.exports = Crawler;
 //# sourceMappingURL=index.js.map

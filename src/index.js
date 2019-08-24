@@ -270,4 +270,4 @@ class Crawler {
   }
 }
 
-export default Crawler
+module.exports = Crawler
