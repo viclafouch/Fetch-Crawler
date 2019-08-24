@@ -43,10 +43,9 @@ class Crawler {
     const sanitizedUrl = await this.shouldRequest(this._options.url)
     if (!sanitizedUrl) return
 
-    const { linksCollected } = await this.scrapePage(sanitizedUrl)
-    if (linksCollected.length === 0) return
     this.linksCrawled.set(sanitizedUrl)
-    await this.addToQueue(linksCollected, 1)
+
+    await this.pull(sanitizedUrl, 1)
     if (this.linksToCrawl.size > 0) await this.crawl()
   }
 

@@ -1,6 +1,6 @@
 {
   "name": "@viclafouch/fetch-crawler",
-  "version": "1.0.3",
+  "version": "1.0.5",
   "description": "A Node.JS Web crawler using the API Fetch",
   "main": "index.js",
   "keywords": [
@@ -28,7 +28,7 @@
   "dependencies": {
     "cheerio": "^1.0.0-rc.3",
     "node-fetch": "^2.6.0",
-    "@viclafouch/fetch-crawler": "^1.0.3"
+    "@viclafouch/fetch-crawler": "^1.0.5"
   },
   "devDependencies": {
     "@babel/core": "^7.5.5",
