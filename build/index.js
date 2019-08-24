@@ -23,7 +23,10 @@ class Crawler {
     this._actions = {
       preRequest: this._options.preRequest || (x => x),
       onSuccess: this._options.onSuccess || null,
-      evaluatePage: this._options.evaluatePage || null
+      evaluatePage: this._options.evaluatePage || null,
+      onRedirection: this._options.onRedirection || (({
+        previousUrl
+      }) => previousUrl)
     };
   }
   /**
@@ -272,8 +275,17 @@ class Crawler {
     const retriedFetch = (0, _utils.retryRequest)(_nodeFetch.default, 2);
 
     try {
-      const textBuffer = await retriedFetch(url);
-      const textResponse = await textBuffer.text();
+      const response = await retriedFetch(url);
+
+      if (response.redirected) {
+        url = await this._options.onRedirection({
+          previousUrl: url,
+          response
+        });
+        if (!url) throw new Error();
+      }
+
+      const textResponse = await response.text();
 
       const $ = _cheerio.default.load(textResponse);
 
@@ -284,7 +296,6 @@ class Crawler {
         url
       };
     } catch (error) {
-      console.error(error);
       return {
         linksCollected: [],
         result: null,
