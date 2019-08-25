@@ -15,7 +15,8 @@ class Crawler {
       skipStrictDuplicates: true,
       sameOrigin: true,
       maxDepth: 3,
-      parallel: 5
+      parallel: 5,
+      debugging: false
     }, options);
     this.hostdomain = '';
     this.linksToCrawl = new Map();
@@ -153,9 +154,13 @@ class Crawler {
 
   async addToQueue(urlCollected, depth = 0) {
     for (const url of urlCollected) {
-      if (depth <= this._options.maxDepth && !(await this.skipRequest(url))) {
-        const linkEdited = await this.shouldRequest(url);
-        this.linksToCrawl.set(linkEdited, depth);
+      if (depth <= this._options.maxDepth) {
+        if (await this.skipRequest(url)) {
+          console.info(`\x1b[33m Ignoring ${url} \x1b[m`);
+        } else {
+          const linkEdited = await this.shouldRequest(url);
+          this.linksToCrawl.set(linkEdited, depth);
+        }
       }
     }
   }
@@ -209,6 +214,7 @@ class Crawler {
 
   async pull(link, depth) {
     try {
+      this._options.debugging && console.info(`\x1b[1;32m [${this.linksCrawled.size}] Crawling ${link}...\x1b[m`);
       const {
         result,
         linksCollected,
