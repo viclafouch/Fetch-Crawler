@@ -197,7 +197,12 @@ class Crawler {
    */
   async pull(link, depth) {
     try {
-      this._options.debugging && console.info(`\x1b[1;32m [${this.linksCrawled.size}] Crawling ${link}...\x1b[m`)
+      this._options.debugging &&
+        console.info(
+          `\x1b[1;32m [${this.linksCrawled.size}${
+            this._options.maxRequest !== -1 ? '/' + this._options.maxRequest : ''
+          }] Crawling ${link}...\x1b[m`
+        )
       const { result, linksCollected, url, isError } = await this.scrapePage(link)
       if (!isError) await this.scrapeSucceed({ urlScraped: url, result })
       await this.addToQueue(linksCollected, depth + 1)

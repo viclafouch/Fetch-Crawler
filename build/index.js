@@ -156,7 +156,7 @@ class Crawler {
     for (const url of urlCollected) {
       if (depth <= this._options.maxDepth) {
         if (await this.skipRequest(url)) {
-          console.info(`\x1b[33m Ignoring ${url} \x1b[m`);
+          this._options.debugging && console.info(`\x1b[33m Ignoring ${url} \x1b[m`);
         } else {
           const linkEdited = await this.shouldRequest(url);
           this.linksToCrawl.set(linkEdited, depth);
@@ -214,7 +214,7 @@ class Crawler {
 
   async pull(link, depth) {
     try {
-      this._options.debugging && console.info(`\x1b[1;32m [${this.linksCrawled.size}] Crawling ${link}...\x1b[m`);
+      this._options.debugging && console.info(`\x1b[1;32m [${this.linksCrawled.size}${this._options.maxRequest !== -1 ? '/' + this._options.maxRequest : ''}] Crawling ${link}...\x1b[m`);
       const {
         result,
         linksCollected,
