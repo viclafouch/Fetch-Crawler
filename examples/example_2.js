@@ -6,9 +6,9 @@ let products = []
 
 // I'm getting an array of each product of the page (name, price, images)
 const collectContent = $ => {
-  const products = []
+  const content = []
   $('.product-index').each(function(i, elem) {
-    products[i] = {
+    content.push({
       name: $(this)
         .find($('.product-info-inner a'))
         .text()
@@ -26,9 +26,9 @@ const collectContent = $ => {
         .map((i, el) => $(el).attr('src'))
         .get()
         .filter(src => src.includes('/products/'))
-    }
+    })
   })
-  return products
+  return content
 }
 
 // Only url including an exact string
