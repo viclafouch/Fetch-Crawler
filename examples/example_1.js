@@ -1,5 +1,4 @@
-import FetchCrawler from '../index'
-// import FetchCrawler from '@viclafouch/fetch-crawler'
+import FetchCrawler from '@viclafouch/fetch-crawler'
 
 // I use Cheerio to get the content of the page
 // See https://cheerio.js.org
