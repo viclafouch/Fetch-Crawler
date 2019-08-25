@@ -4,7 +4,7 @@ import FetchCrawler from '@viclafouch/fetch-crawler'
 // See https://cheerio.js.org
 const collectContent = $ =>
   $('body')
-    .find('h1')
+    .find('h2')
     .text()
     .trim()
 
