@@ -33,7 +33,7 @@ export const isRequestValid = ({ url, lang }) => {
     url.hash = ''
     url.search = ''
     url.searchParams.set('hl', lang)
-    return url.toString()
+    return url.toString() // Avoid n params GET, hash, etc..., just 'hl' param is usefull
   }
 
   return false
@@ -53,6 +53,7 @@ const doSomethingWith = (content, url, resultByLang) => {
 }
 
 // Await for n crawlers (1 by lang)
+// Save all results in a JSON file
 ;(async () => {
   const json = {}
   for (const lang of languages) {
