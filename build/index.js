@@ -92,9 +92,10 @@ class Crawler {
   async skipRequest(link) {
     const allowOrigin = this.checkSameOrigin(link);
     if (!allowOrigin) return true;
-    if (this._options.skipStrictDuplicates && this.linkAlreadyCollected(link)) return true;
-    const shouldRequest = await this.shouldRequest(link);
-    return !shouldRequest;
+    const urlSanitazed = await this.shouldRequest(link);
+    if (!urlSanitazed) return true;
+    if (this._options.skipStrictDuplicates && this.linkAlreadyCollected(urlSanitazed)) return true;
+    return false;
   }
   /**
    * If preRequest is provided by the user, get new link or false.
