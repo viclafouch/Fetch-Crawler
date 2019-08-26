@@ -27,8 +27,7 @@
   "homepage": "https://github.com/viclafouch/fetch-crawler#readme",
   "dependencies": {
     "cheerio": "^1.0.0-rc.3",
-    "node-fetch": "^2.6.0",
-    "@viclafouch/fetch-crawler": "^1.0.10"
+    "node-fetch": "^2.6.0"
   },
   "devDependencies": {
     "@babel/core": "^7.5.5",
