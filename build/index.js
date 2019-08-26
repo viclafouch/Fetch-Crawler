@@ -33,7 +33,7 @@ class Crawler {
   /**
    * Init the app.
    * Begin with the first link, and start the pulling
-   * @return {!Promise<pending>}
+   * @return {Promise<pending>}
    */
 
 
@@ -55,9 +55,9 @@ class Crawler {
   }
   /**
    * Get all links from the page.
-   * @param {!Cheerio} $
-   * @param {!String} actualHref
-   * @return {!Promise<Array<string>}
+   * @param {Cheerio} $
+   * @param {String} actualHref
+   * @return {Promise<Array<String>}
    */
 
 
@@ -84,8 +84,8 @@ class Crawler {
   }
   /**
    * Check if link can be crawled (Same origin ? Already collected ? preRequest !false ?).
-   * @param {!String} link
-   * @return {!Promise<Boolean>}
+   * @param {String} link
+   * @return {Promise<Boolean>}
    */
 
 
@@ -99,8 +99,8 @@ class Crawler {
   }
   /**
    * If preRequest is provided by the user, get new link or false.
-   * @param {!String} link
-   * @return {!Promise<String || Boolean>}
+   * @param {String} link
+   * @return {Promise<String || Boolean>}
    */
 
 
@@ -120,8 +120,8 @@ class Crawler {
   }
   /**
    * Check if link has the same origin as the host link.
-   * @param {!String} url
-   * @return {!Boolean}
+   * @param {String} url
+   * @return {Boolean}
    */
 
 
@@ -131,8 +131,8 @@ class Crawler {
   }
   /**
    * If evaluatePage is provided by the user, await for it.
-   * @param {!Cheerio} $
-   * @return {!Promise<any>}
+   * @param {Cheerio} $
+   * @return {Promise}
    */
 
 
@@ -147,9 +147,9 @@ class Crawler {
   }
   /**
    * Add links collected to queue.
-   * @param {!Array<string>} urlCollected
-   * @param {!Number} depth
-   * @return {!Promise<pending>}
+   * @param {Array<String>} urlCollected
+   * @param {Number} depth
+   * @return {Promise}
    */
 
 
@@ -167,7 +167,7 @@ class Crawler {
   }
   /**
    * Crawl links from 'linksToCrawl' and wait for having 'canceled' to true.
-   * @return {!Promise<pending>}
+   * @return {Promise>}
    */
 
 
@@ -207,9 +207,9 @@ class Crawler {
   }
   /**
    * Pull result and links from a page and add them to the queue.
-   * @param {!String} link
-   * @param {!Number} depth
-   * @return {!Promise<pending>}
+   * @param {String} link
+   * @param {Number} depth
+   * @return {Promise<pending>}
    */
 
 
@@ -233,8 +233,8 @@ class Crawler {
   }
   /**
    * Know if a link will be crawled or has already been crawled.
-   * @param {!String} url
-   * @return {!Boolean}
+   * @param {String} url
+   * @return {Boolean}
    */
 
 
@@ -243,7 +243,7 @@ class Crawler {
   }
   /**
    * Know if we have exceeded the number of request max provided in the options.
-   * @return {!Boolean}
+   * @return {Boolean}
    */
 
 
@@ -253,8 +253,8 @@ class Crawler {
   }
   /**
    * If onSuccess action's has been provided, await for it.
-   * @param {!Object<{urlScraped: string, result: any}>}
-   * @return {!Promise<pending>}
+   * @param {Object<{urlScraped: string, result: any}>}
+   * @return {Promise<pending>}
    */
 
 
@@ -275,8 +275,8 @@ class Crawler {
   }
   /**
    * Scrap a page, evaluate and get new links to visit.
-   * @param {!String} url
-   * @return {!Promise<{linksCollected: array, result: any, url: string}>}
+   * @param {String} url
+   * @return {Promise<{linksCollected: array, result: any, url: string}>}
    */
 
 
@@ -315,8 +315,8 @@ class Crawler {
   }
   /**
    * Starting the crawl.
-   * @param {!0bject} options
-   * @return {!Promise<{startCrawlingAt: Date, finishCrawlingAt: Date, linksVisited: Number}>}
+   * @param {{debugging: Boolean, maxRequest: Number, parallel: Number, maxDepth: Number, sameOrigin: Boolean, skipStrictDuplicates: Boolean }} options Options of the crawler.
+   * @return {Promise<{startCrawlingAt: Date, finishCrawlingAt: Date, linksVisited: Number}>}
    */
 
 

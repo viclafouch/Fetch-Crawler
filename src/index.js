@@ -30,7 +30,7 @@ class Crawler {
   /**
    * Init the app.
    * Begin with the first link, and start the pulling
-   * @return {!Promise<pending>}
+   * @return {Promise<pending>}
    */
   async init() {
     try {
@@ -53,9 +53,9 @@ class Crawler {
 
   /**
    * Get all links from the page.
-   * @param {!Cheerio} $
-   * @param {!String} actualHref
-   * @return {!Promise<Array<string>}
+   * @param {Cheerio} $
+   * @param {String} actualHref
+   * @return {Promise<Array<String>}
    */
   collectAnchors($, actualHref) {
     let linksCollected = []
@@ -80,8 +80,8 @@ class Crawler {
 
   /**
    * Check if link can be crawled (Same origin ? Already collected ? preRequest !false ?).
-   * @param {!String} link
-   * @return {!Promise<Boolean>}
+   * @param {String} link
+   * @return {Promise<Boolean>}
    */
   async skipRequest(link) {
     const allowOrigin = this.checkSameOrigin(link)
@@ -94,8 +94,8 @@ class Crawler {
 
   /**
    * If preRequest is provided by the user, get new link or false.
-   * @param {!String} link
-   * @return {!Promise<String || Boolean>}
+   * @param {String} link
+   * @return {Promise<String || Boolean>}
    */
   async shouldRequest(link) {
     if (this._actions.preRequest instanceof Function) {
@@ -113,8 +113,8 @@ class Crawler {
 
   /**
    * Check if link has the same origin as the host link.
-   * @param {!String} url
-   * @return {!Boolean}
+   * @param {String} url
+   * @return {Boolean}
    */
   checkSameOrigin(url) {
     if (this._options.sameOrigin) return new URL(url).origin === this.hostdomain
@@ -123,8 +123,8 @@ class Crawler {
 
   /**
    * If evaluatePage is provided by the user, await for it.
-   * @param {!Cheerio} $
-   * @return {!Promise<any>}
+   * @param {Cheerio} $
+   * @return {Promise}
    */
   async evaluate($) {
     let result = null
@@ -136,9 +136,9 @@ class Crawler {
 
   /**
    * Add links collected to queue.
-   * @param {!Array<string>} urlCollected
-   * @param {!Number} depth
-   * @return {!Promise<pending>}
+   * @param {Array<String>} urlCollected
+   * @param {Number} depth
+   * @return {Promise}
    */
   async addToQueue(urlCollected, depth = 0) {
     for (const url of urlCollected) {
@@ -155,7 +155,7 @@ class Crawler {
 
   /**
    * Crawl links from 'linksToCrawl' and wait for having 'canceled' to true.
-   * @return {!Promise<pending>}
+   * @return {Promise>}
    */
   crawl() {
     return new Promise((resolve, reject) => {
@@ -192,9 +192,9 @@ class Crawler {
 
   /**
    * Pull result and links from a page and add them to the queue.
-   * @param {!String} link
-   * @param {!Number} depth
-   * @return {!Promise<pending>}
+   * @param {String} link
+   * @param {Number} depth
+   * @return {Promise<pending>}
    */
   async pull(link, depth) {
     try {
@@ -214,8 +214,8 @@ class Crawler {
 
   /**
    * Know if a link will be crawled or has already been crawled.
-   * @param {!String} url
-   * @return {!Boolean}
+   * @param {String} url
+   * @return {Boolean}
    */
   linkAlreadyCollected(url) {
     return this.linksCrawled.has(url) || this.linksToCrawl.has(url)
@@ -223,7 +223,7 @@ class Crawler {
 
   /**
    * Know if we have exceeded the number of request max provided in the options.
-   * @return {!Boolean}
+   * @return {Boolean}
    */
   checkMaxRequest() {
     if (this._options.maxRequest === -1) return true
@@ -232,8 +232,8 @@ class Crawler {
 
   /**
    * If onSuccess action's has been provided, await for it.
-   * @param {!Object<{urlScraped: string, result: any}>}
-   * @return {!Promise<pending>}
+   * @param {Object<{urlScraped: string, result: any}>}
+   * @return {Promise<pending>}
    */
   async scrapeSucceed({ urlScraped, result }) {
     if (this._actions.onSuccess && this._actions.onSuccess instanceof Function) {
@@ -247,8 +247,8 @@ class Crawler {
 
   /**
    * Scrap a page, evaluate and get new links to visit.
-   * @param {!String} url
-   * @return {!Promise<{linksCollected: array, result: any, url: string}>}
+   * @param {String} url
+   * @return {Promise<{linksCollected: array, result: any, url: string}>}
    */
   async scrapePage(url) {
     const retriedFetch = retryRequest(fetch, 2)
@@ -274,8 +274,8 @@ class Crawler {
 
   /**
    * Starting the crawl.
-   * @param {!0bject} options
-   * @return {!Promise<{startCrawlingAt: Date, finishCrawlingAt: Date, linksVisited: Number}>}
+   * @param {{debugging: Boolean, maxRequest: Number, parallel: Number, maxDepth: Number, sameOrigin: Boolean, skipStrictDuplicates: Boolean }} options Options of the crawler.
+   * @return {Promise<{startCrawlingAt: Date, finishCrawlingAt: Date, linksVisited: Number}>}
    */
   static async launch(options) {
     const startCrawlingAt = new Date()
