@@ -130,7 +130,11 @@ class Crawler {
   async evaluate($) {
     let result = null
     if (this._actions.evaluatePage && this._actions.evaluatePage instanceof Function) {
-      result = await this._actions.evaluatePage($)
+      try {
+        result = await this._actions.evaluatePage($)
+      } catch (error) {
+        console.error(error)
+      }
     }
     return result
   }
