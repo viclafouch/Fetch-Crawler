@@ -108,6 +108,7 @@ class Crawler {
     if (this._actions.preRequest instanceof Function) {
       try {
         const preRequest = await this._actions.preRequest(link);
+        if (preRequest === false && this._options.debugging) console.info(`\x1b[33m Ignoring ${link} \x1b[m`);
         if (typeof preRequest === 'string' || preRequest === false) return preRequest;
         throw new Error('preRequest function must return a String or False');
       } catch (error) {
@@ -156,9 +157,7 @@ class Crawler {
   async addToQueue(urlCollected, depth = 0) {
     for (const url of urlCollected) {
       if (depth <= this._options.maxDepth) {
-        if (await this.skipRequest(url)) {
-          this._options.debugging && console.info(`\x1b[33m Ignoring ${url} \x1b[m`);
-        } else {
+        if (!(await this.skipRequest(url))) {
           const linkEdited = await this.shouldRequest(url);
           this.linksToCrawl.set(linkEdited, depth);
         }
