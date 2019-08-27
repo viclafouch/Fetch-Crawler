@@ -1,4 +1,4 @@
-import FetchCrawler from '../index'
+import FetchCrawler from '@viclafouch/fetch-crawler'
 import fs from 'fs'
 
 const urlToCrawl = new URL('https://support.google.com/youtube')
