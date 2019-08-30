@@ -1,12 +1,12 @@
 # Fetch Crawler
 
-###### [API](https://github.com/yujiosaka/headless-chrome-crawler/blob/master/docs/API.md) | [Examples](https://github.com/viclafouch/Fetch-Crawler/tree/master/examples) | [Code of Conduct](https://github.com/yujiosaka/headless-chrome-crawler/blob/master/docs/CODE_OF_CONDUCT.md) | [Contributing](https://github.com/yujiosaka/headless-chrome-crawler/blob/master/docs/CONTRIBUTING.md) | [Changelog](https://github.com/yujiosaka/headless-chrome-crawler/blob/master/docs/CHANGELOG.md)
+###### [API](https://github.com/viclafouch/Fetch-Crawler/blob/master/docs/API.md) | [Examples](https://github.com/viclafouch/Fetch-Crawler/tree/master/examples) | [Code of Conduct](https://github.com/yujiosaka/headless-chrome-crawler/blob/master/docs/CODE_OF_CONDUCT.md) | [Contributing](https://github.com/yujiosaka/headless-chrome-crawler/blob/master/docs/CONTRIBUTING.md) | [Changelog](https://github.com/yujiosaka/headless-chrome-crawler/blob/master/docs/CHANGELOG.md)
 
 Distributed crawler powered by Fetch Crawler
 
 ## Features
 
-Fetch Crawler is designed to provide a basic, flexible and robust API for crawling websites. 
+Fetch Crawler is designed to provide a basic, flexible and robust API for crawling websites.
 
 The crawler provides [simple APIs](#api-reference) to crawl these static websites with the following features:
 
