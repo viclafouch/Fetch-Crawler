@@ -56,8 +56,6 @@ FetchCrawler.launch({
 
 ## FAQ
 
-### How is this different from other crawlers?
-
 ### How is this different from Puppeteer?
 
 This crawler is built on top of [node-fetch](https://www.npmjs.com/package/node-fetch).
