@@ -30,6 +30,8 @@ The crawler provides [simple APIs](#api-reference) to crawl these static website
 ### Usage
 
 ```js
+import FetchCrawler from '@viclafouch/fetch-crawler'
+
 // I use Cheerio to get the content of the page
 // See https://cheerio.js.org
 const collectContent = $ =>
@@ -53,8 +55,6 @@ FetchCrawler.launch({
 ```
 
 ## FAQ
-
-### How is this different from other crawlers?
 
 ### How is this different from Puppeteer?
 
