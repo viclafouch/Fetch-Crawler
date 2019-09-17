@@ -1,4 +1,5 @@
 node_modules/
 build/
-testBuild/
+build-examples/
+build-test/
 cmfile.js
