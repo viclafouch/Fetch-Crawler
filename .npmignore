@@ -1,3 +1,4 @@
 examples/
 build-examples/
+build-test/
 .vscode

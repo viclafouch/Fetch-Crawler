@@ -63,3 +63,5 @@ typings/
 .vscode
 
 build-examples
+
+build-test

@@ -1,0 +1,13 @@
+{
+  "plugins": [
+    "mocha"
+  ],
+  "extends": [
+    "plugin:mocha/recommended"
+  ],
+  "env": {
+    "commonjs": true,
+    "node": true,
+    "mocha": true
+  }
+}
