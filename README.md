@@ -1,4 +1,4 @@
-# Fetch Crawler
+# Fetch Crawler [![Build Status](https://travis-ci.com/viclafouch/Fetch-Crawler.svg?branch=master)](https://travis-ci.com/viclafouch/Fetch-Crawler)
 
 ###### [API](https://github.com/viclafouch/Fetch-Crawler/blob/master/docs/API.md) | [Examples](https://github.com/viclafouch/Fetch-Crawler/tree/master/examples) | [Changelog](https://github.com/viclafouch/Fetch-Crawler/blob/master/docs/CHANGELOG.md)
 
