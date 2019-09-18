@@ -56,7 +56,7 @@ class Crawler {
       this.hostdomain = link.origin
       if (!this.hostdomain) throw new Error()
     } catch (error) {
-      throw new Error('URL provided is not valid')
+      throw new Error('URL provided is not valid', error)
     }
 
     const sanitizedUrl = await this.shouldRequest(this._options.url)
