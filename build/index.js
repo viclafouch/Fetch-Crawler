@@ -16,7 +16,9 @@ class Crawler {
       sameOrigin: true,
       maxDepth: 3,
       parallel: 5,
-      debugging: false
+      debugging: false,
+      retryCount: 2,
+      retryTimeout: 5000
     }, options);
     this.hostdomain = '';
     this.linksToCrawl = new Map();
@@ -29,6 +31,19 @@ class Crawler {
         previousUrl
       }) => previousUrl)
     };
+  }
+
+  fetch(...args) {
+    let retries = 0;
+
+    const _retry = () => Promise.race([(0, _nodeFetch.default)(...args), new Promise((resolve, reject) => setTimeout(() => reject(new Error('TIMEOUT')), this._options.retryTimeout))]).catch(error => {
+      if (retries < this._options.retryCount) {
+        retries++;
+        return _retry(...args);
+      } else return Promise.reject(error);
+    });
+
+    return _retry();
   }
   /**
    * Init the app.
@@ -284,10 +299,8 @@ class Crawler {
 
 
   async scrapePage(url) {
-    const retriedFetch = (0, _utils.retryRequest)(_nodeFetch.default, 2);
-
     try {
-      const response = await retriedFetch(url);
+      const response = await this.fetch(url);
 
       if (response.redirected) {
         url = await this._options.onRedirection({
@@ -318,7 +331,7 @@ class Crawler {
   }
   /**
    * Starting the crawl.
-   * @param {{debugging: Boolean, maxRequest: Number, parallel: Number, maxDepth: Number, sameOrigin: Boolean, skipStrictDuplicates: Boolean }} options Options of the crawler.
+   * @param {{debugging: Boolean, maxRequest: Number, parallel: Number, maxDepth: Number, sameOrigin: Boolean, skipStrictDuplicates: Boolean, retryCount: Number, retryTimeout: Number }} options Options of the crawler.
    * @return {Promise<{startCrawlingAt: Date, finishCrawlingAt: Date, linksVisited: Number}>}
    */
 
