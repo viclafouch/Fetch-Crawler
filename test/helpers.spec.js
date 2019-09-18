@@ -1,5 +1,4 @@
-import fetch from 'node-fetch'
-import { isUrl, retryRequest } from '../build/utils'
+import { isUrl } from '../build/utils'
 const assert = require('assert').strict
 
 describe('Helpers', function() {
@@ -24,10 +23,5 @@ describe('Helpers', function() {
     assert.ok(!urlI)
     const urlJ = isUrl()
     assert.ok(!urlJ)
-  })
-
-  it('retryRequest', async function() {
-    const response = await retryRequest(fetch, 2)('https://stackoverflow.com')
-    assert.equal(response.status, 200)
   })
 })

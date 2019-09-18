@@ -4,6 +4,8 @@ const jetpack = require('fs-jetpack')
 const babel = require('@babel/core')
 const { promisify } = require('util')
 const path = require('path')
+const fs = require('fs');
+
 
 const srcDir = jetpack.cwd('./src/')
 const libDir = jetpack.cwd('./build/')
@@ -117,4 +119,18 @@ cm.task('build-test', ['clean-test'], async options => {
     }
     await testLibDir.writeAsync(file, res.code)
   }
+
+  const fromDir = path.join(__dirname, 'test', 'server', 'pages')
+  const toDir = path.join(__dirname, 'build-test', 'server', 'pages')
+
+  if (!fs.existsSync(toDir)) fs.mkdirSync(toDir);
+
+  fs.readdirSync(fromDir).forEach(element => {
+      if (fs.lstatSync(path.join(fromDir, element)).isFile()) {
+          fs.copyFileSync(path.join(fromDir, element), path.join(toDir, element));
+      } else {
+          copyFolderSync(path.join(fromDir, element), path.join(toDir, element));
+      }
+  });
 })
+

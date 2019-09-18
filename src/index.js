@@ -1,4 +1,4 @@
-import { retryRequest, isUrl } from './utils'
+import { isUrl } from './utils'
 import fetch from 'node-fetch'
 import cheerio from 'cheerio'
 
@@ -12,7 +12,9 @@ class Crawler {
         sameOrigin: true,
         maxDepth: 3,
         parallel: 5,
-        debugging: false
+        debugging: false,
+        retryCount: 2,
+        retryTimeout: 5000
       },
       options
     )
@@ -25,6 +27,21 @@ class Crawler {
       evaluatePage: this._options.evaluatePage || null,
       onRedirection: this._options.onRedirection || (({ previousUrl }) => previousUrl)
     }
+  }
+
+  fetch(...args) {
+    let retries = 0
+    const _retry = () =>
+      Promise.race([
+        fetch(...args),
+        new Promise((resolve, reject) => setTimeout(() => reject(new Error('TIMEOUT')), this._options.retryTimeout))
+      ]).catch(error => {
+        if (retries < this._options.retryCount) {
+          retries++
+          return _retry(...args)
+        } else return Promise.reject(error)
+      })
+    return _retry()
   }
 
   /**
@@ -254,9 +271,8 @@ class Crawler {
    * @return {Promise<{linksCollected: array, result: any, url: string}>}
    */
   async scrapePage(url) {
-    const retriedFetch = retryRequest(fetch, 2)
     try {
-      const response = await retriedFetch(url)
+      const response = await this.fetch(url)
       if (response.redirected) {
         url = await this._options.onRedirection({ previousUrl: url, response })
         if (!url) throw new Error()
@@ -277,7 +293,7 @@ class Crawler {
 
   /**
    * Starting the crawl.
-   * @param {{debugging: Boolean, maxRequest: Number, parallel: Number, maxDepth: Number, sameOrigin: Boolean, skipStrictDuplicates: Boolean }} options Options of the crawler.
+   * @param {{debugging: Boolean, maxRequest: Number, parallel: Number, maxDepth: Number, sameOrigin: Boolean, skipStrictDuplicates: Boolean, retryCount: Number, retryTimeout: Number }} options Options of the crawler.
    * @return {Promise<{startCrawlingAt: Date, finishCrawlingAt: Date, linksVisited: Number}>}
    */
   static async launch(options) {
