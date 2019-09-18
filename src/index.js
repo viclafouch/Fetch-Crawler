@@ -1,3 +1,4 @@
+import { URL } from 'url'
 import { isUrl } from './utils'
 import fetch from 'node-fetch'
 import cheerio from 'cheerio'

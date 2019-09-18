@@ -1,5 +1,7 @@
 "use strict";
 
+var _url = require("url");
+
 var _utils = require("./utils");
 
 var _nodeFetch = _interopRequireDefault(require("node-fetch"));
@@ -55,7 +57,7 @@ class Crawler {
   async init() {
     try {
       if (!(0, _utils.isUrl)(this._options.url)) throw new Error();
-      const link = new URL(this._options.url);
+      const link = new _url.URL(this._options.url);
       this.hostdomain = link.origin;
       if (!this.hostdomain) throw new Error();
     } catch (error) {
@@ -84,7 +86,7 @@ class Crawler {
       const {
         origin,
         protocol
-      } = new URL(actualHref);
+      } = new _url.URL(actualHref);
       linksCollected = $('a').map((i, e) => {
         const href = $(e).attr('href') || '';
         if (href.startsWith('//')) return protocol + href;else if (href.startsWith('/')) return origin + href;else return href;
@@ -143,7 +145,7 @@ class Crawler {
 
 
   checkSameOrigin(url) {
-    if (this._options.sameOrigin) return new URL(url).origin === this.hostdomain;
+    if (this._options.sameOrigin) return new _url.URL(url).origin === this.hostdomain;
     return true;
   }
   /**
