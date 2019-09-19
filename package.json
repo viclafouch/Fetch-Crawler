@@ -14,6 +14,7 @@
     "build:examples": "cm build-examples",
     "test": "mocha --no-timeout --reporter spec build-test/*.spec.js",
     "pretest": "cm build && cm build-test",
+    "start-server-test": "node test/server/start.js",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix"
   },

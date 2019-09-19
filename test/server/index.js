@@ -2,8 +2,10 @@ const express = require('express')
 const path = require('path')
 const port = 3000
 
-export const app = express()
-export const baseUrl = `http://localhost:${port}`
+const app = express()
+
+module.exports.app = app
+module.exports.baseUrl = `http://localhost:${port}`
 
 const dirPages = path.join(__dirname, 'pages')
 
