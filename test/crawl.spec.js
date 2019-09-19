@@ -36,6 +36,13 @@ describe('Crawl', function() {
     assert.equal(imgsLength, 6)
   })
 
+  it('Basic get anchors', async function() {
+    const { linksVisited } = await FetchCrawler.launch({
+      url: baseUrl + '/anchors'
+    })
+    assert.equal(3, linksVisited)
+  })
+
   it('Basic 404', async function() {
     const { linksVisited } = await Promise.race([
       FetchCrawler.launch({

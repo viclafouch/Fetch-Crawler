@@ -15,6 +15,10 @@ app.get('/imgs', function(req, res) {
   res.sendFile(path.join(dirPages, 'imgs.html'))
 })
 
+app.get('/anchors', function(req, res) {
+  res.sendFile(path.join(dirPages, 'anchors.html'))
+})
+
 app.get('/not-found', function(req, res) {
   res.status(404)
 })
