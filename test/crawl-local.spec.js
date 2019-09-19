@@ -2,7 +2,7 @@ import FetchCrawler from '../build'
 import { app, baseUrl } from '../build-test/server'
 const assert = require('assert').strict
 
-describe('Crawl', function() {
+describe('Crawl local', function() {
   let server = null
   before(async function() {
     server = await app.listen(3000)
@@ -44,14 +44,12 @@ describe('Crawl', function() {
   })
 
   it('Basic 404', async function() {
-    const { linksVisited } = await Promise.race([
-      FetchCrawler.launch({
-        url: baseUrl + '/not-found',
-        retryTimeout: 5000,
-        retryCount: 2
-      }),
-      new Promise((resolve, reject) => setTimeout(reject, 3 * 5000 + 1000))
-    ])
+    this.timeout(5000 * 3 + 1000)
+    const { linksVisited } = await FetchCrawler.launch({
+      url: baseUrl + '/not-found',
+      retryTimeout: 5000,
+      retryCount: 2
+    })
     assert.equal(linksVisited, 1)
   })
 })

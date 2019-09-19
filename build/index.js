@@ -20,8 +20,10 @@ class Crawler {
       parallel: 5,
       debugging: false,
       retryCount: 2,
-      retryTimeout: 5000
+      retryTimeout: 5000,
+      timeBetweenRequest: 0
     }, options);
+    if (this._options.timeBetweenRequest > 0) this._options.parallel = 1;
     this.hostdomain = '';
     this.linksToCrawl = new Map();
     this.linksCrawled = new Map();
@@ -85,7 +87,11 @@ class Crawler {
     try {
       linksCollected = $('a').map((i, e) => (0, _utils.relativePath)($(e).attr('href') || '', actualHref)) // Cheerio map method
       .filter((i, href) => (0, _utils.isUrl)(href)) // Cheerio filter method
-      .get(); // Cheerio get method to transform as an array
+      .map((i, href) => {
+        const url = new _url.URL(href);
+        url.hash = '';
+        return url.href;
+      }).get(); // Cheerio get method to transform as an array
     } catch (error) {
       console.error(`Something wrong happened with this url: ${actualHref}`);
       console.error(error);
@@ -229,7 +235,8 @@ class Crawler {
 
   async pull(link, depth) {
     try {
-      this._options.debugging && console.info(`\x1b[1;32m [${this.linksCrawled.size}${this._options.maxRequest !== -1 ? '/' + this._options.maxRequest : ''}] Crawling ${link}...\x1b[m`);
+      if (this._options.timeBetweenRequest) await new Promise(resolve => setTimeout(resolve, this._options.timeBetweenRequest));
+      this._options.debugging && console.info(`\x1b[1;32m [${this.linksCrawled.size}${this._options.maxRequest !== -1 ? '/' + this._options.maxRequest : ''}] Crawling ${link} ...\x1b[m`);
       const {
         result,
         linksCollected,
@@ -327,7 +334,7 @@ class Crawler {
   }
   /**
    * Starting the crawl.
-   * @param {{debugging: Boolean, maxRequest: Number, parallel: Number, maxDepth: Number, sameOrigin: Boolean, skipStrictDuplicates: Boolean, retryCount: Number, retryTimeout: Number }} options Options of the crawler.
+   * @param {{debugging: Boolean, maxRequest: Number, parallel: Number, maxDepth: Number, sameOrigin: Boolean, skipStrictDuplicates: Boolean, retryCount: Number, retryTimeout: Number, timeBetweenRequest: Number }} options Options of the crawler.
    * @return {Promise<{startCrawlingAt: Date, finishCrawlingAt: Date, linksVisited: Number}>}
    */
 
