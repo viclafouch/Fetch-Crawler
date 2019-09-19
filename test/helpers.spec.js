@@ -1,4 +1,4 @@
-import { isUrl } from '../build/utils'
+import { isUrl, relativePath } from '../build/utils'
 const assert = require('assert').strict
 
 describe('Helpers', function() {
@@ -23,5 +23,22 @@ describe('Helpers', function() {
     assert.ok(!urlI)
     const urlJ = isUrl()
     assert.ok(!urlJ)
+  })
+
+  it('relativePath', function() {
+    const urlA = relativePath('/test', 'https://www.website.com')
+    assert.equal('https://www.website.com/test', urlA)
+
+    const urlB = relativePath('//test.com?param=1', 'https://www.website.com')
+    assert.equal('https://test.com/?param=1', urlB)
+
+    const urlC = relativePath('./test/hello', 'https://www.website.com/param1')
+    assert.equal('https://www.website.com/test/hello', urlC)
+
+    const urlD = relativePath('https://www.website.com', 'https://www.website.com')
+    assert.equal('https://www.website.com/', urlD)
+
+    const urlE = relativePath('path', 'notValidUrl')
+    assert.equal(null, urlE)
   })
 })

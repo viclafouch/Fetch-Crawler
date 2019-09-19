@@ -1,5 +1,5 @@
 import { URL } from 'url'
-import { isUrl } from './utils'
+import { isUrl, relativePath } from './utils'
 import fetch from 'node-fetch'
 import cheerio from 'cheerio'
 
@@ -79,21 +79,14 @@ class Crawler {
   collectAnchors($, actualHref) {
     let linksCollected = []
     try {
-      const { origin, protocol } = new URL(actualHref)
       linksCollected = $('a')
-        .map((i, e) => {
-          const href = $(e).attr('href') || ''
-          if (href.startsWith('//')) return protocol + href
-          else if (href.startsWith('/')) return origin + href
-          else return href
-        }) // Cheerio map method
+        .map((i, e) => relativePath($(e).attr('href') || '', actualHref)) // Cheerio map method
         .filter((i, href) => isUrl(href)) // Cheerio filter method
         .get() // Cheerio get method to transform as an array
     } catch (error) {
       console.error(`Something wrong happened with this url: ${actualHref}`)
       console.error(error)
     }
-
     return [...new Set(linksCollected)] // Avoid duplication
   }
 

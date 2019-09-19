@@ -83,14 +83,7 @@ class Crawler {
     let linksCollected = [];
 
     try {
-      const {
-        origin,
-        protocol
-      } = new _url.URL(actualHref);
-      linksCollected = $('a').map((i, e) => {
-        const href = $(e).attr('href') || '';
-        if (href.startsWith('//')) return protocol + href;else if (href.startsWith('/')) return origin + href;else return href;
-      }) // Cheerio map method
+      linksCollected = $('a').map((i, e) => (0, _utils.relativePath)($(e).attr('href') || '', actualHref)) // Cheerio map method
       .filter((i, href) => (0, _utils.isUrl)(href)) // Cheerio filter method
       .get(); // Cheerio get method to transform as an array
     } catch (error) {
