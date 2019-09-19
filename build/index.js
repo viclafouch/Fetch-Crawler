@@ -1,5 +1,7 @@
 "use strict";
 
+var _abortController = _interopRequireDefault(require("abort-controller"));
+
 var _url = require("url");
 
 var _utils = require("./utils");
@@ -30,6 +32,7 @@ class Crawler {
     this._actions = {
       preRequest: this._options.preRequest || (x => x),
       onSuccess: this._options.onSuccess || null,
+      onError: this._options.onError || null,
       evaluatePage: this._options.evaluatePage || null,
       onRedirection: this._options.onRedirection || (({
         previousUrl
@@ -40,12 +43,28 @@ class Crawler {
   fetch(...args) {
     let retries = 0;
 
-    const _retry = () => Promise.race([(0, _nodeFetch.default)(...args), new Promise((resolve, reject) => setTimeout(() => reject(new Error('TIMEOUT')), this._options.retryTimeout))]).catch(error => {
-      if (retries < this._options.retryCount) {
-        retries++;
-        return _retry(...args);
-      } else return Promise.reject(error);
-    });
+    const _retry = () => {
+      const controller = new _abortController.default();
+      const timeout = setTimeout(() => controller.abort(), this._options.retryTimeout);
+      return (0, _nodeFetch.default)(...args, {
+        signal: controller.signal
+      }).then(e => Promise.resolve(e), err => {
+        throw err;
+      }).catch(error => {
+        if (retries < this._options.retryCount) {
+          retries++;
+          return _retry(...args);
+        } else {
+          if (error.name === 'AbortError') {
+            error.message = `Request canceled (timeout = ${this._options.retryTimeout}ms)`;
+          }
+
+          throw error;
+        }
+      }).finally(() => {
+        clearTimeout(timeout);
+      });
+    };
 
     return _retry();
   }
@@ -161,6 +180,7 @@ class Crawler {
       try {
         result = await this._actions.evaluatePage($);
       } catch (error) {
+        console.error('Please try/catch your evaluatePage function');
         console.error(error);
       }
     }
@@ -234,22 +254,27 @@ class Crawler {
 
 
   async pull(link, depth) {
-    try {
-      if (this._options.timeBetweenRequest) await new Promise(resolve => setTimeout(resolve, this._options.timeBetweenRequest));
-      this._options.debugging && console.info(`\x1b[1;32m [${this.linksCrawled.size}${this._options.maxRequest !== -1 ? '/' + this._options.maxRequest : ''}] Crawling ${link} ...\x1b[m`);
-      const {
-        result,
-        linksCollected,
-        url,
-        isError
-      } = await this.scrapePage(link);
-      if (!isError) await this.scrapeSucceed({
+    if (this._options.timeBetweenRequest) await new Promise(resolve => setTimeout(resolve, this._options.timeBetweenRequest));
+    this._options.debugging && console.info(`\x1b[1;32m [${this.linksCrawled.size}${this._options.maxRequest !== -1 ? '/' + this._options.maxRequest : ''}] Crawling ${link} ...\x1b[m`);
+    const {
+      result,
+      linksCollected,
+      url,
+      wrongRedirection,
+      error
+    } = await this.scrapePage(link);
+
+    if (error) {
+      await this.scrapeError({
+        urlScraped: url,
+        error
+      });
+    } else if (!wrongRedirection) {
+      await this.scrapeSucceed({
         urlScraped: url,
         result
       });
       await this.addToQueue(linksCollected, depth + 1);
-    } catch (error) {
-      console.error(error);
     }
   }
   /**
@@ -295,6 +320,28 @@ class Crawler {
     }
   }
   /**
+   * If onError action's has been provided, await for it.
+   * @param {Object<{urlScraped: string, error: Error}>}
+   * @return {Promise<pending>}
+   */
+
+
+  async scrapeError({
+    urlScraped,
+    error
+  }) {
+    if (this._actions.onError && this._actions.onError instanceof Function) {
+      try {
+        await this._actions.onError({
+          error,
+          url: urlScraped
+        });
+      } catch (error) {
+        console.error('Please try/catch your onError function');
+      }
+    }
+  }
+  /**
    * Scrap a page, evaluate and get new links to visit.
    * @param {String} url
    * @return {Promise<{linksCollected: array, result: any, url: string}>}
@@ -310,8 +357,10 @@ class Crawler {
           previousUrl: url,
           response
         });
-        if (!url) throw new Error();
-      }
+        if (!url) return {
+          wrongRedirection: true
+        };
+      } else if (response.status !== 200) throw response;
 
       const textResponse = await response.text();
 
@@ -325,10 +374,8 @@ class Crawler {
       };
     } catch (error) {
       return {
-        linksCollected: [],
-        result: null,
         url,
-        isError: true
+        error
       };
     }
   }

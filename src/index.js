@@ -1,3 +1,4 @@
+import AbortController from 'abort-controller'
 import { URL } from 'url'
 import { isUrl, relativePath } from './utils'
 import fetch from 'node-fetch'
@@ -27,6 +28,7 @@ class Crawler {
     this._actions = {
       preRequest: this._options.preRequest || (x => x),
       onSuccess: this._options.onSuccess || null,
+      onError: this._options.onError || null,
       evaluatePage: this._options.evaluatePage || null,
       onRedirection: this._options.onRedirection || (({ previousUrl }) => previousUrl)
     }
@@ -34,16 +36,31 @@ class Crawler {
 
   fetch(...args) {
     let retries = 0
-    const _retry = () =>
-      Promise.race([
-        fetch(...args),
-        new Promise((resolve, reject) => setTimeout(() => reject(new Error('TIMEOUT')), this._options.retryTimeout))
-      ]).catch(error => {
-        if (retries < this._options.retryCount) {
-          retries++
-          return _retry(...args)
-        } else return Promise.reject(error)
-      })
+    const _retry = () => {
+      const controller = new AbortController()
+      const timeout = setTimeout(() => controller.abort(), this._options.retryTimeout)
+      return fetch(...args, { signal: controller.signal })
+        .then(
+          e => Promise.resolve(e),
+          err => {
+            throw err
+          }
+        )
+        .catch(error => {
+          if (retries < this._options.retryCount) {
+            retries++
+            return _retry(...args)
+          } else {
+            if (error.name === 'AbortError') {
+              error.message = `Request canceled (timeout = ${this._options.retryTimeout}ms)`
+            }
+            throw error
+          }
+        })
+        .finally(() => {
+          clearTimeout(timeout)
+        })
+    }
     return _retry()
   }
 
@@ -152,6 +169,7 @@ class Crawler {
       try {
         result = await this._actions.evaluatePage($)
       } catch (error) {
+        console.error('Please try/catch your evaluatePage function')
         console.error(error)
       }
     }
@@ -219,19 +237,19 @@ class Crawler {
    * @return {Promise<pending>}
    */
   async pull(link, depth) {
-    try {
-      if (this._options.timeBetweenRequest) await new Promise(resolve => setTimeout(resolve, this._options.timeBetweenRequest))
-      this._options.debugging &&
-        console.info(
-          `\x1b[1;32m [${this.linksCrawled.size}${
-            this._options.maxRequest !== -1 ? '/' + this._options.maxRequest : ''
-          }] Crawling ${link} ...\x1b[m`
-        )
-      const { result, linksCollected, url, isError } = await this.scrapePage(link)
-      if (!isError) await this.scrapeSucceed({ urlScraped: url, result })
+    if (this._options.timeBetweenRequest) await new Promise(resolve => setTimeout(resolve, this._options.timeBetweenRequest))
+    this._options.debugging &&
+      console.info(
+        `\x1b[1;32m [${this.linksCrawled.size}${
+          this._options.maxRequest !== -1 ? '/' + this._options.maxRequest : ''
+        }] Crawling ${link} ...\x1b[m`
+      )
+    const { result, linksCollected, url, wrongRedirection, error } = await this.scrapePage(link)
+    if (error) {
+      await this.scrapeError({ urlScraped: url, error })
+    } else if (!wrongRedirection) {
+      await this.scrapeSucceed({ urlScraped: url, result })
       await this.addToQueue(linksCollected, depth + 1)
-    } catch (error) {
-      console.error(error)
     }
   }
 
@@ -269,6 +287,21 @@ class Crawler {
   }
 
   /**
+   * If onError action's has been provided, await for it.
+   * @param {Object<{urlScraped: string, error: Error}>}
+   * @return {Promise<pending>}
+   */
+  async scrapeError({ urlScraped, error }) {
+    if (this._actions.onError && this._actions.onError instanceof Function) {
+      try {
+        await this._actions.onError({ error, url: urlScraped })
+      } catch (error) {
+        console.error('Please try/catch your onError function')
+      }
+    }
+  }
+
+  /**
    * Scrap a page, evaluate and get new links to visit.
    * @param {String} url
    * @return {Promise<{linksCollected: array, result: any, url: string}>}
@@ -278,19 +311,17 @@ class Crawler {
       const response = await this.fetch(url)
       if (response.redirected) {
         url = await this._options.onRedirection({ previousUrl: url, response })
-        if (!url) throw new Error()
-      }
+        if (!url)
+          return {
+            wrongRedirection: true
+          }
+      } else if (response.status !== 200) throw response
       const textResponse = await response.text()
       const $ = cheerio.load(textResponse)
       const [result, linksCollected] = await Promise.all([this.evaluate($), this.collectAnchors($, url)])
       return { linksCollected, result, url }
     } catch (error) {
-      return {
-        linksCollected: [],
-        result: null,
-        url,
-        isError: true
-      }
+      return { url, error }
     }
   }
 

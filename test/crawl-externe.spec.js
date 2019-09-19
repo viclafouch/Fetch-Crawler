@@ -39,7 +39,6 @@ describe('Crawl externe', function() {
     const doSomethingWith = (result, url) => {
       const { pathname } = new URL(url)
       if (pathname.startsWith('/places/default/view/')) countries.push(result)
-      console.log(countries.length)
     }
 
     await FetchCrawler.launch({
@@ -50,9 +49,9 @@ describe('Crawl externe', function() {
       maxDepth: 999,
       timeBetweenRequest: 1000,
       debugging: true,
-      maxRequest: 150
+      maxRequest: 10
     })
 
-    assert.ok(countries.length > 100)
+    assert.ok(countries.length > 5)
   })
 })

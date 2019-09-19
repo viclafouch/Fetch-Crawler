@@ -44,12 +44,19 @@ describe('Crawl local', function() {
   })
 
   it('Basic 404', async function() {
-    this.timeout(5000 * 3 + 1000)
-    const { linksVisited } = await FetchCrawler.launch({
+    this.timeout(2000)
+    let flag = false
+    let err = null
+    await FetchCrawler.launch({
       url: baseUrl + '/not-found',
-      retryTimeout: 5000,
-      retryCount: 2
+      retryTimeout: 1000,
+      retryCount: 0,
+      onError: ({ error }) => {
+        flag = true
+        err = error
+      }
     })
-    assert.equal(linksVisited, 1)
+    assert.ok(flag)
+    assert.equal(err.type, 'aborted')
   })
 })
