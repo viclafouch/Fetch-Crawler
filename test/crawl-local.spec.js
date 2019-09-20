@@ -21,7 +21,10 @@ describe('Crawl local', function() {
           .find('h1')
           .text()
           .trim(),
-      onSuccess: ({ result }) => (title = result)
+      onSuccess: ({ result }) => (title = result),
+      onError: ({ error }) => {
+        console.log('erreur Hello world', error)
+      }
     })
     assert.equal(title, 'Hello World')
   })
@@ -31,7 +34,10 @@ describe('Crawl local', function() {
     await FetchCrawler.launch({
       url: baseUrl + '/imgs',
       evaluatePage: $ => $('#list-img').find($('li')).length,
-      onSuccess: ({ result }) => (imgsLength = result)
+      onSuccess: ({ result }) => (imgsLength = result),
+      onError: ({ error }) => {
+        console.log('erreur basic img', error)
+      }
     })
     assert.equal(imgsLength, 6)
   })
@@ -43,7 +49,7 @@ describe('Crawl local', function() {
     assert.equal(3, linksVisited)
   })
 
-  it('Basic 404', async function() {
+  it('Basic 404 timeout', async function() {
     this.timeout(2000)
     let flag = false
     let err = null

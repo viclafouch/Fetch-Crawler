@@ -1,4 +1,5 @@
 import FetchCrawler from '../build'
+import { URL } from 'url'
 import fetch from 'node-fetch'
 const assert = require('assert').strict
 
