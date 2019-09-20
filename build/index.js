@@ -48,9 +48,14 @@ class Crawler {
       const timeout = setTimeout(() => controller.abort(), this._options.retryTimeout);
       return (0, _nodeFetch.default)(...args, {
         signal: controller.signal
-      }).then(e => Promise.resolve(e), err => {
+      }).then(e => {
+        clearTimeout(timeout);
+        return Promise.resolve(e);
+      }, err => {
         throw err;
       }).catch(error => {
+        clearTimeout(timeout);
+
         if (retries < this._options.retryCount) {
           retries++;
           return _retry(...args);
@@ -61,8 +66,6 @@ class Crawler {
 
           throw error;
         }
-      }).finally(() => {
-        clearTimeout(timeout);
       });
     };
 
