@@ -6,7 +6,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-## [1.0.12] - 2017-08-26
+## [1.0.13] - 2019-09-20
+
+* Add 3 options :
+  - `retryCount` (Number of retry when request fails. Default: `2`).
+  - `retryTimeout` (Limit of time in milliseconds for a request. Default: `5000`).
+  - `timeBetweenRequest` (For some reason, you maybe want to add a delay in milliseconds between each request. If this option is provided, `parallel` option's is set to `1`. Default: `0`).
+
+* Add `onError` action's that takes one parameter: `Object{ error: Error, url: String}`.
+* Before each request, the hash of an url is removed.
+
+## [1.0.12] - 2019-08-26
 
 ### Added
 * Implement first version of the crawler with some bug fixed (since 1.0.0).
