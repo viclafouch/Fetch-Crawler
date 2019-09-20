@@ -28,7 +28,7 @@ const collectContent = $ => ({
 export const isRequestValid = ({ url, lang }) => {
   const { pathname } = new URL(url)
   if (!url.startsWith(urlToCrawl.origin + urlToCrawl.pathname)) return false
-  if (url === urlToCrawl.toString() || pathname.includes('/answer') || pathname.includes('/topic')) {
+  if (pathname.includes('/answer') || pathname.includes('/topic')) {
     url = new URL(url)
     url.hash = ''
     url.search = ''

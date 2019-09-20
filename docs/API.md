@@ -3,6 +3,12 @@
 ## Usage
 
 ```javascript
+/* @return Promise<{
+    startCrawlingAt: Date,
+    finishCrawlingAt: Date,
+    linksVisited: Number
+  }>
+*/
 FetchCrawler.launch({
   // ...
 })
@@ -30,11 +36,11 @@ All configurations are optional except one : the `url` parameter.
 
 | Function | Parameters | Return | Description |
 | ---      | ---        | ---    | ---     |
-| preRequest | url: `String` | `String` or `false` | Function to modify url before each request. You can also return `false` if you want to skip the request (__even for the `url` parameter you provided__). |
+| preRequest | url: `String` | `String` or `false` | Function to modify url before each request. You can also return `false` if you want to skip the request. __The first url is not concerned!__. |
 | evaluatePage | $: `Cheerio Object` | `any` | Function for traversing/manipulating the content of the page. [Cheerio](https://cheerio.js.org/) is provided to parses markup and it provides a robust API to do that. |
 | onSuccess | `Object` `{` result: `any`, url: `String` `}` |  |Function to be called when `evaluatePage()` successes. |
 | onError | `Object` `{` error: `Error`, url: `String` `}` |  |Function to be called when request failed. |
-| onRedirection | `Object` `{` previousUrl: `String`, response: `Response` `}`  | `String` or `false` | Detect if the response has [redirected](https://developer.mozilla.org/fr/docs/Web/API/Response/redirected) as `true`. Do the same as the `preRequest` function. You can return `false` if you want to skip the request (__even for the `url` parameter you provided__). |
+| onRedirection | `Object` `{` previousUrl: `String`, response: `Response` `}`  | `String` or `false` | Detect if the response has [redirected](https://developer.mozilla.org/fr/docs/Web/API/Response/redirected) as `true`. Do the same as the `preRequest` function. You can return `false` if you want to skip the request. |
 
 ```javascript
 FetchCrawler.launch({
@@ -91,7 +97,7 @@ FetchCrawler.launch({
   // Default : (url => url)
   // Function to modify url before each request. You can also return `false` if you want to skip the request.
   preRequest: url => {
-    if (url === 'https://foo.com' || url.includes('/bar/foo/')) return url
+    if (url.includes('/bar/foo/')) return url
     return false
   },
 

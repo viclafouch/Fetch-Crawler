@@ -81,12 +81,8 @@ class Crawler {
       throw new Error('URL provided (' + this._options.url + ') is not valid')
     }
 
-    const sanitizedUrl = await this.shouldRequest(this._options.url)
-    if (!sanitizedUrl) return
-
-    this.linksCrawled.set(sanitizedUrl)
-
-    await this.pull(sanitizedUrl, 1)
+    this.linksCrawled.set(this._options.url)
+    await this.pull(this._options.url, 1)
     if (this.linksToCrawl.size > 0) await this.crawl()
   }
 

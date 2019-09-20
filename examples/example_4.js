@@ -34,7 +34,7 @@ const collectContent = $ => {
 const checkUrl = url => {
   try {
     const link = new URL(url)
-    if (url === urlToCrawl || (link.searchParams.get('type[0]') === 'xbox' && link.searchParams.get('page'))) {
+    if (link.searchParams.get('type[0]') === 'xbox' && link.searchParams.get('page')) {
       return url
     }
     return false

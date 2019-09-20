@@ -15,6 +15,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 * Add `onError` action's that takes one parameter: `Object{ error: Error, url: String}`.
 * Before each request, the hash of an url is removed.
+* The first url provided by the user ignores now the `preRequest` function.
 
 ## [1.0.12] - 2019-08-26
 

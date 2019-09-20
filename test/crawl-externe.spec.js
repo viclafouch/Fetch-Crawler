@@ -29,7 +29,6 @@ describe('Crawl externe', function() {
 
     const isRequestValid = url => {
       const { pathname } = new URL(url)
-      if (url === baseWebsite) return url
       if (pathname.startsWith('/places/default/view/') || pathname.startsWith('/places/default/index/')) {
         return url
       } else {

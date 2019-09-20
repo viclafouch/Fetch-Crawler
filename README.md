@@ -50,7 +50,7 @@ FetchCrawler.launch({
   url: 'https://github.com',
   evaluatePage: $ => collectContent($),
   onSuccess: ({ result, url }) => doSomethingWith(result, url),
-  onError: ({ error, url }) => console.log('Whouaa something wrong happened :('))
+  onError: ({ error, url }) => console.log('Whouaa something wrong happened :('),
   maxRequest: 20
 })
 ```
