@@ -35,11 +35,11 @@
     "node-fetch": "^2.6.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.6.0",
-    "@babel/preset-env": "^7.6.0",
+    "@babel/core": "^7.6.2",
+    "@babel/preset-env": "^7.6.2",
     "centimaitre": "^1.0.3",
-    "eslint": "^6.4.0",
-    "eslint-config-prettier": "^6.3.0",
+    "eslint": "^6.5.1",
+    "eslint-config-prettier": "^6.4.0",
     "eslint-config-standard": "^14.1.0",
     "eslint-plugin-import": "^2.18.2",
     "eslint-plugin-mocha": "^6.1.1",
@@ -48,7 +48,7 @@
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "^4.0.1",
     "fs-jetpack": "^2.2.2",
-    "mocha": "^6.2.0",
+    "mocha": "^6.2.1",
     "prettier": "^1.18.2"
   }
 }
