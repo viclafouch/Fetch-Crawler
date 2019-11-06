@@ -2,7 +2,7 @@
 
 ###### [API](https://github.com/viclafouch/Fetch-Crawler/blob/master/docs/API.md) | [Examples](https://github.com/viclafouch/Fetch-Crawler/tree/master/examples) | [Changelog](https://github.com/viclafouch/Fetch-Crawler/blob/master/docs/CHANGELOG.md)
 
-Distributed crawler powered by Fetch Crawler
+Distributed crawler powered by Fetch Crawler in Node JS.
 
 ## Features
 
