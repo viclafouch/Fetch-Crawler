@@ -1,5 +1,5 @@
-import FetchCrawler from '@viclafouch/fetch-crawler'
-import fs from 'fs'
+const fs = require('fs')
+const FetchCrawler = require('@viclafouch/fetch-crawler')
 
 // Get all games on xbox platform
 const urlToCrawl = 'https://www.instant-gaming.com/en/search/?type%5B0%5D=xbox'

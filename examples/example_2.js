@@ -1,5 +1,5 @@
-import FetchCrawler from '@viclafouch/fetch-crawler'
-import fs from 'fs'
+const fs = require('fs')
+const FetchCrawler = require('@viclafouch/fetch-crawler')
 
 const urlToCrawl = 'https://101apparel.com/collections/premium-t-shirt-series?page=1'
 let products = []

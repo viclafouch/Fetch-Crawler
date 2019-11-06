@@ -1,5 +1,5 @@
-import FetchCrawler from '@viclafouch/fetch-crawler'
-import fs from 'fs'
+const fs = require('fs')
+const FetchCrawler = require('@viclafouch/fetch-crawler')
 
 const urlToCrawl = new URL('https://support.google.com/youtube')
 const languages = ['en', 'fr']

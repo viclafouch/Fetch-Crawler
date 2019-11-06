@@ -1,4 +1,4 @@
-import FetchCrawler from '@viclafouch/fetch-crawler'
+const FetchCrawler = require('@viclafouch/fetch-crawler')
 
 // I use Cheerio to get the content of the page
 // See https://cheerio.js.org

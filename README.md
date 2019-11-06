@@ -30,7 +30,7 @@ The crawler provides [simple APIs](#api-reference) to crawl these static website
 ### Usage
 
 ```js
-import FetchCrawler from '@viclafouch/fetch-crawler'
+const FetchCrawler = require('@viclafouch/fetch-crawler')
 
 // I use Cheerio to get the content of the page
 // See https://cheerio.js.org
