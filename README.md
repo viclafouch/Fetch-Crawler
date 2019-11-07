@@ -11,11 +11,11 @@ Fetch Crawler is designed to provide a basic, flexible and robust API for crawli
 The crawler provides [simple APIs](#api-reference) to crawl these static websites with the following features:
 
 * Distributed crawling
-* Configure parallel, retry, max requests, time between request (to avoid spam) ...
+* Configure parallel, retry, max requests, time between requests (to avoid being blocked by the website) ...
 * Support both [depth-first search](https://en.wikipedia.org/wiki/Depth-first_search) and [breadth-first search](https://en.wikipedia.org/wiki/Breadth-first_search) algorithm
-* Stop at the max request
+* Stop after a maximum amount of of requests have been executed
 * Insert [Cheerio](https://cheerio.js.org/) automatically for scraping
-* [Promise] support
+* [__Promise]__ support
 
 ## Getting Started
 
