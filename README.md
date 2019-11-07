@@ -17,6 +17,8 @@ The crawler provides [simple APIs](#api-reference) to crawl these static website
 * Insert [Cheerio](https://cheerio.js.org/) automatically for scraping
 * [__Promise]__ support
 
+You can find the documentation [here](https://github.com/viclafouch/Fetch-Crawler/blob/master/docs/API.md).
+
 ## Getting Started
 
 ### Installation
@@ -54,6 +56,7 @@ FetchCrawler.launch({
   maxRequest: 20
 })
 ```
+
 
 ## FAQ
 
