@@ -1,5 +1,317 @@
-{
-  "0": {
+[
+  {
+    "name": "COLOR BLOCK ISLAND - BLACK",
+    "price": 35,
+    "images": [
+      "//cdn.shopify.com/s/files/1/0535/0677/products/101_color_block_black_large.jpg?v=1571532091",
+      "//cdn.shopify.com/s/files/1/0535/0677/products/101_color_block_black_grande.jpg?v=1571532091",
+      "//cdn.shopify.com/s/files/1/0535/0677/products/101_color_block_black_compact.jpg?v=1571532091"
+    ]
+  },
+  {
+    "name": "COLOR BLOCK ISLAND - WHITE",
+    "price": 35,
+    "images": [
+      "//cdn.shopify.com/s/files/1/0535/0677/products/101_color_block_white_large.jpg?v=1571532236",
+      "//cdn.shopify.com/s/files/1/0535/0677/products/101_color_block_white_grande.jpg?v=1571532236",
+      "//cdn.shopify.com/s/files/1/0535/0677/products/101_color_block_white_compact.jpg?v=1571532236"
+    ]
+  },
+  {
+    "name": "COLOR BLOCK ISLAND - RUBY",
+    "price": 35,
+    "images": [
+      "//cdn.shopify.com/s/files/1/0535/0677/products/101_color_block_ruby_large.jpg?v=1571532339",
+      "//cdn.shopify.com/s/files/1/0535/0677/products/101_color_block_ruby_grande.jpg?v=1571532339",
+      "//cdn.shopify.com/s/files/1/0535/0677/products/101_color_block_ruby_compact.jpg?v=1571532339"
+    ]
+  },
+  {
+    "name": "BACK IN THE DAY - RED",
+    "price": 35,
+    "images": [
+      "//cdn.shopify.com/s/files/1/0535/0677/products/BACK_IN_THE_DAY_DARK_RED_BACK_large.jpg?v=1571532786",
+      "//cdn.shopify.com/s/files/1/0535/0677/products/BACK_IN_THE_DAY_DARK_RED_FRONT_large.jpg?v=1571532786",
+      "//cdn.shopify.com/s/files/1/0535/0677/products/BACK_IN_THE_DAY_DARK_RED_BACK_grande.jpg?v=1571532786",
+      "//cdn.shopify.com/s/files/1/0535/0677/products/BACK_IN_THE_DAY_DARK_RED_BACK_compact.jpg?v=1571532786",
+      "//cdn.shopify.com/s/files/1/0535/0677/products/BACK_IN_THE_DAY_DARK_RED_FRONT_compact.jpg?v=1571532786"
+    ]
+  },
+  {
+    "name": "BACK IN THE DAY - BLACK",
+    "price": 35,
+    "images": [
+      "//cdn.shopify.com/s/files/1/0535/0677/products/BACK_IN_THE_DAY_BLACK_BACK_large.jpg?v=1571532559",
+      "//cdn.shopify.com/s/files/1/0535/0677/products/BACK_IN_THE_DAY_BLACK_FRONT_large.jpg?v=1571532559",
+      "//cdn.shopify.com/s/files/1/0535/0677/products/BACK_IN_THE_DAY_BLACK_BACK_grande.jpg?v=1571532559",
+      "//cdn.shopify.com/s/files/1/0535/0677/products/BACK_IN_THE_DAY_BLACK_BACK_compact.jpg?v=1571532559",
+      "//cdn.shopify.com/s/files/1/0535/0677/products/BACK_IN_THE_DAY_BLACK_FRONT_compact.jpg?v=1571532559"
+    ]
+  },
+  {
+    "name": "BACK IN THE DAY - WHITE",
+    "price": 35,
+    "images": [
+      "//cdn.shopify.com/s/files/1/0535/0677/products/BACK_IN_THE_DAY_WHITE_BACK_large.jpg?v=1571532677",
+      "//cdn.shopify.com/s/files/1/0535/0677/products/BACK_IN_THE_DAY_WHITE_FRONT_large.jpg?v=1571532677",
+      "//cdn.shopify.com/s/files/1/0535/0677/products/BACK_IN_THE_DAY_WHITE_BACK_grande.jpg?v=1571532677",
+      "//cdn.shopify.com/s/files/1/0535/0677/products/BACK_IN_THE_DAY_WHITE_BACK_compact.jpg?v=1571532677",
+      "//cdn.shopify.com/s/files/1/0535/0677/products/BACK_IN_THE_DAY_WHITE_FRONT_compact.jpg?v=1571532677"
+    ]
+  },
+  {
+    "name": "ISLE OF PALM - BLACK",
+    "price": 35,
+    "images": [
+      "//cdn.shopify.com/s/files/1/0535/0677/products/ISLE_OF_PALM_BLACK_BACK_large.jpg?v=1571713132",
+      "//cdn.shopify.com/s/files/1/0535/0677/products/ISLE_OF_PALM_BLACK_FRONT_large.jpg?v=1571713132",
+      "//cdn.shopify.com/s/files/1/0535/0677/products/ISLE_OF_PALM_BLACK_BACK_grande.jpg?v=1571713132",
+      "//cdn.shopify.com/s/files/1/0535/0677/products/ISLE_OF_PALM_BLACK_BACK_compact.jpg?v=1571713132",
+      "//cdn.shopify.com/s/files/1/0535/0677/products/ISLE_OF_PALM_BLACK_FRONT_compact.jpg?v=1571713132"
+    ]
+  },
+  {
+    "name": "ISLE OF PALM - TEAL",
+    "price": 35,
+    "images": [
+      "//cdn.shopify.com/s/files/1/0535/0677/products/ISLE_OF_PALM_TEAL_BACK_large.jpg?v=1571713414",
+      "//cdn.shopify.com/s/files/1/0535/0677/products/ISLE_OF_PALM_TEAL_FRONT_large.jpg?v=1571713414",
+      "//cdn.shopify.com/s/files/1/0535/0677/products/ISLE_OF_PALM_TEAL_BACK_grande.jpg?v=1571713414",
+      "//cdn.shopify.com/s/files/1/0535/0677/products/ISLE_OF_PALM_TEAL_BACK_compact.jpg?v=1571713414",
+      "//cdn.shopify.com/s/files/1/0535/0677/products/ISLE_OF_PALM_TEAL_FRONT_compact.jpg?v=1571713414"
+    ]
+  },
+  {
+    "name": "ISLE OF PALM - PINK",
+    "price": 35,
+    "images": [
+      "//cdn.shopify.com/s/files/1/0535/0677/products/ISLE_OF_PALM_PINK_BACL_large.jpg?v=1571713461",
+      "//cdn.shopify.com/s/files/1/0535/0677/products/ISLE_OF_PALM_PINK_FRONT_large.jpg?v=1571713461",
+      "//cdn.shopify.com/s/files/1/0535/0677/products/ISLE_OF_PALM_PINK_BACL_grande.jpg?v=1571713461",
+      "//cdn.shopify.com/s/files/1/0535/0677/products/ISLE_OF_PALM_PINK_BACL_compact.jpg?v=1571713461",
+      "//cdn.shopify.com/s/files/1/0535/0677/products/ISLE_OF_PALM_PINK_FRONT_compact.jpg?v=1571713461"
+    ]
+  },
+  {
+    "name": "MACHINE SOUL - WHITE",
+    "price": 35,
+    "images": [
+      "//cdn.shopify.com/s/files/1/0535/0677/products/MACHINE_SOUL_WHITE_BACK_large.jpg?v=1571713639",
+      "//cdn.shopify.com/s/files/1/0535/0677/products/MACHINE_SOUL_WHITE_FRONT_large.jpg?v=1571713639",
+      "//cdn.shopify.com/s/files/1/0535/0677/products/MACHINE_SOUL_WHITE_BACK_grande.jpg?v=1571713639",
+      "//cdn.shopify.com/s/files/1/0535/0677/products/MACHINE_SOUL_WHITE_BACK_compact.jpg?v=1571713639",
+      "//cdn.shopify.com/s/files/1/0535/0677/products/MACHINE_SOUL_WHITE_FRONT_compact.jpg?v=1571713639"
+    ]
+  },
+  {
+    "name": "MACHINE SOUL - BLACK",
+    "price": 35,
+    "images": [
+      "//cdn.shopify.com/s/files/1/0535/0677/products/MACHINE_SOUL_BLACK_BACK_large.jpg?v=1571713507",
+      "//cdn.shopify.com/s/files/1/0535/0677/products/MACHINE_SOUL_BLACK_FRONT_large.jpg?v=1571713507",
+      "//cdn.shopify.com/s/files/1/0535/0677/products/MACHINE_SOUL_BLACK_BACK_grande.jpg?v=1571713507",
+      "//cdn.shopify.com/s/files/1/0535/0677/products/MACHINE_SOUL_BLACK_BACK_compact.jpg?v=1571713507",
+      "//cdn.shopify.com/s/files/1/0535/0677/products/MACHINE_SOUL_BLACK_FRONT_compact.jpg?v=1571713507"
+    ]
+  },
+  {
+    "name": "MACHINE SOUL - ROYAL",
+    "price": 35,
+    "images": [
+      "//cdn.shopify.com/s/files/1/0535/0677/products/MACHINE_SOUL_ROYAL_BACK_large.jpg?v=1571713579",
+      "//cdn.shopify.com/s/files/1/0535/0677/products/MACHINE_SOUL_ROYAL_FRONT_large.jpg?v=1571713579",
+      "//cdn.shopify.com/s/files/1/0535/0677/products/MACHINE_SOUL_ROYAL_BACK_grande.jpg?v=1571713579",
+      "//cdn.shopify.com/s/files/1/0535/0677/products/MACHINE_SOUL_ROYAL_BACK_compact.jpg?v=1571713579",
+      "//cdn.shopify.com/s/files/1/0535/0677/products/MACHINE_SOUL_ROYAL_FRONT_compact.jpg?v=1571713579"
+    ]
+  },
+  {
+    "name": "NEOCROPOLIS - TEAL",
+    "price": 35,
+    "images": [
+      "//cdn.shopify.com/s/files/1/0535/0677/products/NECROPOLIS_TEAL_large.jpg?v=1571713761",
+      "//cdn.shopify.com/s/files/1/0535/0677/products/NECROPOLIS_TEAL_grande.jpg?v=1571713761",
+      "//cdn.shopify.com/s/files/1/0535/0677/products/NECROPOLIS_TEAL_compact.jpg?v=1571713761"
+    ]
+  },
+  {
+    "name": "NEOCROPOLIS - BLACK",
+    "price": 35,
+    "images": [
+      "//cdn.shopify.com/s/files/1/0535/0677/products/NECROPOLIS_BLACK_large.jpg?v=1571713670",
+      "//cdn.shopify.com/s/files/1/0535/0677/products/NECROPOLIS_BLACK_grande.jpg?v=1571713670",
+      "//cdn.shopify.com/s/files/1/0535/0677/products/NECROPOLIS_BLACK_compact.jpg?v=1571713670"
+    ]
+  },
+  {
+    "name": "NEOCROPOLIS - PURPLE",
+    "price": 35,
+    "images": [
+      "//cdn.shopify.com/s/files/1/0535/0677/products/NECROPOLIS_PURPLE_large.jpg?v=1571713809",
+      "//cdn.shopify.com/s/files/1/0535/0677/products/NECROPOLIS_PURPLE_grande.jpg?v=1571713809",
+      "//cdn.shopify.com/s/files/1/0535/0677/products/NECROPOLIS_PURPLE_compact.jpg?v=1571713809"
+    ]
+  },
+  {
+    "name": "REVOLUTIONS - ATLANTIC GREEN",
+    "price": 35,
+    "images": [
+      "//cdn.shopify.com/s/files/1/0535/0677/products/REVOLUTIONS_ATLANTIC_GREEN_BACK_large.jpg?v=1571714378",
+      "//cdn.shopify.com/s/files/1/0535/0677/products/REVOLUTIONS_ATLANTIC_GREEN_FRONT_large.jpg?v=1571714378",
+      "//cdn.shopify.com/s/files/1/0535/0677/products/REVOLUTIONS_ATLANTIC_GREEN_BACK_grande.jpg?v=1571714378",
+      "//cdn.shopify.com/s/files/1/0535/0677/products/REVOLUTIONS_ATLANTIC_GREEN_BACK_compact.jpg?v=1571714378",
+      "//cdn.shopify.com/s/files/1/0535/0677/products/REVOLUTIONS_ATLANTIC_GREEN_FRONT_compact.jpg?v=1571714378"
+    ]
+  },
+  {
+    "name": "REVOLUTIONS - GOLD",
+    "price": 35,
+    "images": [
+      "//cdn.shopify.com/s/files/1/0535/0677/products/REVOLUTIONS_GOLD_BACK_large.jpg?v=1571714598",
+      "//cdn.shopify.com/s/files/1/0535/0677/products/REVOLUTIONS_GOLD_FRONT_large.jpg?v=1571714598",
+      "//cdn.shopify.com/s/files/1/0535/0677/products/REVOLUTIONS_GOLD_BACK_grande.jpg?v=1571714598",
+      "//cdn.shopify.com/s/files/1/0535/0677/products/REVOLUTIONS_GOLD_BACK_compact.jpg?v=1571714598",
+      "//cdn.shopify.com/s/files/1/0535/0677/products/REVOLUTIONS_GOLD_FRONT_compact.jpg?v=1571714598"
+    ]
+  },
+  {
+    "name": "REVOLUTIONS - BLACK",
+    "price": 35,
+    "images": [
+      "//cdn.shopify.com/s/files/1/0535/0677/products/REVOLUTIONS_BLACK_BACK_large.jpg?v=1571714495",
+      "//cdn.shopify.com/s/files/1/0535/0677/products/REVOLUTIONS_BLACK_FRONT_large.jpg?v=1571714495",
+      "//cdn.shopify.com/s/files/1/0535/0677/products/REVOLUTIONS_BLACK_BACK_grande.jpg?v=1571714495",
+      "//cdn.shopify.com/s/files/1/0535/0677/products/REVOLUTIONS_BLACK_BACK_compact.jpg?v=1571714495",
+      "//cdn.shopify.com/s/files/1/0535/0677/products/REVOLUTIONS_BLACK_FRONT_compact.jpg?v=1571714495"
+    ]
+  },
+  {
+    "name": "RAPP - PURPLE",
+    "price": 35,
+    "images": [
+      "//cdn.shopify.com/s/files/1/0535/0677/products/RAPP_PURPLE_large.jpg?v=1571714000",
+      "//cdn.shopify.com/s/files/1/0535/0677/products/RAPP_PURPLE_grande.jpg?v=1571714000",
+      "//cdn.shopify.com/s/files/1/0535/0677/products/RAPP_PURPLE_compact.jpg?v=1571714000"
+    ]
+  },
+  {
+    "name": "RAPP - CLEAR BLUE",
+    "price": 35,
+    "images": [
+      "//cdn.shopify.com/s/files/1/0535/0677/products/RAPP_CLEAR_BLUE_large.jpg?v=1571713865",
+      "//cdn.shopify.com/s/files/1/0535/0677/products/RAPP_CLEAR_BLUE_grande.jpg?v=1571713865",
+      "//cdn.shopify.com/s/files/1/0535/0677/products/RAPP_CLEAR_BLUE_compact.jpg?v=1571713865"
+    ]
+  },
+  {
+    "name": "RAPP - BLACK",
+    "price": 35,
+    "images": [
+      "//cdn.shopify.com/s/files/1/0535/0677/products/RAPP_BLACK_large.jpg?v=1571713951",
+      "//cdn.shopify.com/s/files/1/0535/0677/products/RAPP_BLACK_grande.jpg?v=1571713951",
+      "//cdn.shopify.com/s/files/1/0535/0677/products/RAPP_BLACK_compact.jpg?v=1571713951"
+    ]
+  },
+  {
+    "name": "RENEGADE SOUNDS - BLACK",
+    "price": 35,
+    "images": [
+      "//cdn.shopify.com/s/files/1/0535/0677/products/RENEGADE_OF_SOUNDS_BLACK_BACK_large.jpg?v=1571714049",
+      "//cdn.shopify.com/s/files/1/0535/0677/products/RENEGADE_OF_SOUNDS_BLACK_FRONT_large.jpg?v=1571714049",
+      "//cdn.shopify.com/s/files/1/0535/0677/products/RENEGADE_OF_SOUNDS_BLACK_BACK_grande.jpg?v=1571714049",
+      "//cdn.shopify.com/s/files/1/0535/0677/products/RENEGADE_OF_SOUNDS_BLACK_BACK_compact.jpg?v=1571714049",
+      "//cdn.shopify.com/s/files/1/0535/0677/products/RENEGADE_OF_SOUNDS_BLACK_FRONT_compact.jpg?v=1571714049"
+    ]
+  },
+  {
+    "name": "RENEGADE SOUNDS - RUBY",
+    "price": 35,
+    "images": [
+      "//cdn.shopify.com/s/files/1/0535/0677/products/RENEGADE_OF_SOUNDS_RUBY_BACK_large.jpg?v=1571714274",
+      "//cdn.shopify.com/s/files/1/0535/0677/products/RENEGADE_OF_SOUNDS_RUBY_FRONT_large.jpg?v=1571714274",
+      "//cdn.shopify.com/s/files/1/0535/0677/products/RENEGADE_OF_SOUNDS_RUBY_BACK_grande.jpg?v=1571714274",
+      "//cdn.shopify.com/s/files/1/0535/0677/products/RENEGADE_OF_SOUNDS_RUBY_BACK_compact.jpg?v=1571714274",
+      "//cdn.shopify.com/s/files/1/0535/0677/products/RENEGADE_OF_SOUNDS_RUBY_FRONT_compact.jpg?v=1571714274"
+    ]
+  },
+  {
+    "name": "RENEGADE SOUNDS - WHITE",
+    "price": 35,
+    "images": [
+      "//cdn.shopify.com/s/files/1/0535/0677/products/RENEGADE_OF_SOUNDS_WHITE_BACK_large.jpg?v=1571714329",
+      "//cdn.shopify.com/s/files/1/0535/0677/products/RENEGADE_OF_SOUNDS_BLACK_FRON_large.jpg?v=1571714329",
+      "//cdn.shopify.com/s/files/1/0535/0677/products/RENEGADE_OF_SOUNDS_WHITE_BACK_grande.jpg?v=1571714329",
+      "//cdn.shopify.com/s/files/1/0535/0677/products/RENEGADE_OF_SOUNDS_WHITE_BACK_compact.jpg?v=1571714329",
+      "//cdn.shopify.com/s/files/1/0535/0677/products/RENEGADE_OF_SOUNDS_BLACK_FRON_compact.jpg?v=1571714329"
+    ]
+  },
+  {
+    "name": "TIM MAIA - BURGUNDY",
+    "price": 35,
+    "images": [
+      "//cdn.shopify.com/s/files/1/0535/0677/products/TIMA_MALA_RUBY_BACK_large.jpg?v=1571714794",
+      "//cdn.shopify.com/s/files/1/0535/0677/products/TIMA_MALA_RUBY_FRONT_large.jpg?v=1571714794",
+      "//cdn.shopify.com/s/files/1/0535/0677/products/TIMA_MALA_RUBY_BACK_grande.jpg?v=1571714794",
+      "//cdn.shopify.com/s/files/1/0535/0677/products/TIMA_MALA_RUBY_BACK_compact.jpg?v=1571714794",
+      "//cdn.shopify.com/s/files/1/0535/0677/products/TIMA_MALA_RUBY_FRONT_compact.jpg?v=1571714794"
+    ]
+  },
+  {
+    "name": "TIM MAIA - ROYAL",
+    "price": 35,
+    "images": [
+      "//cdn.shopify.com/s/files/1/0535/0677/products/TIMA_MALA_ROYAL_BACK_large.jpg?v=1571714664",
+      "//cdn.shopify.com/s/files/1/0535/0677/products/TIMA_MALA_ROYAL_FRONT_large.jpg?v=1571714664",
+      "//cdn.shopify.com/s/files/1/0535/0677/products/TIMA_MALA_ROYAL_BACK_grande.jpg?v=1571714664",
+      "//cdn.shopify.com/s/files/1/0535/0677/products/TIMA_MALA_ROYAL_BACK_compact.jpg?v=1571714664",
+      "//cdn.shopify.com/s/files/1/0535/0677/products/TIMA_MALA_ROYAL_FRONT_compact.jpg?v=1571714664"
+    ]
+  },
+  {
+    "name": "TIM MAIA - NAVY",
+    "price": 35,
+    "images": [
+      "//cdn.shopify.com/s/files/1/0535/0677/products/TIMA_MALA_NAVY_BACK_large.jpg?v=1571714887",
+      "//cdn.shopify.com/s/files/1/0535/0677/products/TIMA_MALA_NAVY_FRONT_large.jpg?v=1571714887",
+      "//cdn.shopify.com/s/files/1/0535/0677/products/TIMA_MALA_NAVY_BACK_grande.jpg?v=1571714887",
+      "//cdn.shopify.com/s/files/1/0535/0677/products/TIMA_MALA_NAVY_BACK_compact.jpg?v=1571714887",
+      "//cdn.shopify.com/s/files/1/0535/0677/products/TIMA_MALA_NAVY_FRONT_compact.jpg?v=1571714887"
+    ]
+  },
+  {
+    "name": "FUTURE PRIMITIVE SOUNDS - NAVY",
+    "price": 35,
+    "images": [
+      "//cdn.shopify.com/s/files/1/0535/0677/products/FUTURE_PRIMITIVE_NAVY_BACK_large.jpg?v=1571533014",
+      "//cdn.shopify.com/s/files/1/0535/0677/products/FUTURE_PRIMITIVE_NAVY_FRONT_large.jpg?v=1571533014",
+      "//cdn.shopify.com/s/files/1/0535/0677/products/FUTURE_PRIMITIVE_NAVY_BACK_grande.jpg?v=1571533014",
+      "//cdn.shopify.com/s/files/1/0535/0677/products/FUTURE_PRIMITIVE_NAVY_BACK_compact.jpg?v=1571533014",
+      "//cdn.shopify.com/s/files/1/0535/0677/products/FUTURE_PRIMITIVE_NAVY_FRONT_compact.jpg?v=1571533014"
+    ]
+  },
+  {
+    "name": "FUTURE PRIMITIVE SOUNDS - WHITE",
+    "price": 35,
+    "images": [
+      "//cdn.shopify.com/s/files/1/0535/0677/products/FUTURE_PRIMITIVE_WHITE_BACK_large.jpg?v=1571533203",
+      "//cdn.shopify.com/s/files/1/0535/0677/products/FUTURE_PRIMITIVE_WHITE_FRONT_large.jpg?v=1571533203",
+      "//cdn.shopify.com/s/files/1/0535/0677/products/FUTURE_PRIMITIVE_WHITE_BACK_grande.jpg?v=1571533203",
+      "//cdn.shopify.com/s/files/1/0535/0677/products/FUTURE_PRIMITIVE_WHITE_BACK_compact.jpg?v=1571533203",
+      "//cdn.shopify.com/s/files/1/0535/0677/products/FUTURE_PRIMITIVE_WHITE_FRONT_compact.jpg?v=1571533203"
+    ]
+  },
+  {
+    "name": "FUTURE PRIMITIVE SOUNDS - PURPLE",
+    "price": 35,
+    "images": [
+      "//cdn.shopify.com/s/files/1/0535/0677/products/FUTURE_PRIMITIVE_PURPLE_BACK_large.jpg?v=1571533124",
+      "//cdn.shopify.com/s/files/1/0535/0677/products/FUTURE_PRIMITIVE_PURPLE_FRONT_large.jpg?v=1571533124",
+      "//cdn.shopify.com/s/files/1/0535/0677/products/FUTURE_PRIMITIVE_PURPLE_BACK_grande.jpg?v=1571533124",
+      "//cdn.shopify.com/s/files/1/0535/0677/products/FUTURE_PRIMITIVE_PURPLE_BACK_compact.jpg?v=1571533124",
+      "//cdn.shopify.com/s/files/1/0535/0677/products/FUTURE_PRIMITIVE_PURPLE_FRONT_compact.jpg?v=1571533124"
+    ]
+  },
+  {
     "name": "JAZZ WE'VE GOT - BLACK",
     "price": 35,
     "images": [
@@ -10,7 +322,7 @@
       "//cdn.shopify.com/s/files/1/0535/0677/products/JAZZ_WE_GOT_BLACK_FONT_compact.jpg?v=1545068321"
     ]
   },
-  "1": {
+  {
     "name": "JAZZ WE'VE GOT - ATLANTIC GREEN",
     "price": 35,
     "images": [
@@ -21,7 +333,7 @@
       "//cdn.shopify.com/s/files/1/0535/0677/products/JAZZ_WE_GOT_ATLANTIC_GREEN_FONT_compact.jpg?v=1545068330"
     ]
   },
-  "2": {
+  {
     "name": "JAZZ WE'VE GOT - WHITE",
     "price": 35,
     "images": [
@@ -32,7 +344,7 @@
       "//cdn.shopify.com/s/files/1/0535/0677/products/JAZZ_WE_GOT_WHITE_FRONT_compact.jpg?v=1545068333"
     ]
   },
-  "3": {
+  {
     "name": "101 MODERN CLASSIC VIBES - WHITE",
     "price": 35,
     "images": [
@@ -43,7 +355,7 @@
       "//cdn.shopify.com/s/files/1/0535/0677/products/MODERN_CLASSICS_WHITE_FRONT_compact.JPG?v=1544908010"
     ]
   },
-  "4": {
+  {
     "name": "101 MODERN CLASSIC VIBES - NAVY",
     "price": 35,
     "images": [
@@ -54,7 +366,7 @@
       "//cdn.shopify.com/s/files/1/0535/0677/products/MODERN_CLASSICS_NAVY_FRONT_compact.jpg?v=1544908132"
     ]
   },
-  "5": {
+  {
     "name": "101 MODERN CLASSIC VIBES - BLACK",
     "price": 35,
     "images": [
@@ -65,7 +377,7 @@
       "//cdn.shopify.com/s/files/1/0535/0677/products/MODERN_CLASSICS_BLACK_FRONT_compact.jpg?v=1544908258"
     ]
   },
-  "6": {
+  {
     "name": "TROPICAL SOUND SYSTEM - ATLANTIC GREEN",
     "price": 35,
     "images": [
@@ -76,7 +388,7 @@
       "//cdn.shopify.com/s/files/1/0535/0677/products/TROPICAL_SOUNDSYSTEM_ATLANTIC_GREEN_FRONT_compact.jpg?v=1544908660"
     ]
   },
-  "7": {
+  {
     "name": "TROPICAL SOUND SYSTEM - NAVY",
     "price": 35,
     "images": [
@@ -87,7 +399,7 @@
       "//cdn.shopify.com/s/files/1/0535/0677/products/TROPICAL_SOUNDSYSTEM_NAVY_FRONT_compact.jpg?v=1544908716"
     ]
   },
-  "8": {
+  {
     "name": "TROPICAL SOUND SYSTEM - WHITE",
     "price": 35,
     "images": [
@@ -98,7 +410,7 @@
       "//cdn.shopify.com/s/files/1/0535/0677/products/TROPICAL_SOUNDSYSTEM_WHITE_FRONT_compact.jpg?v=1544908762"
     ]
   },
-  "9": {
+  {
     "name": "WAX VAULT - WHITE",
     "price": 35,
     "images": [
@@ -109,7 +421,7 @@
       "//cdn.shopify.com/s/files/1/0535/0677/products/wax_vault_white_front_compact.jpg?v=1545068346"
     ]
   },
-  "10": {
+  {
     "name": "WAX VAULT - BLACK",
     "price": 35,
     "images": [
@@ -120,7 +432,7 @@
       "//cdn.shopify.com/s/files/1/0535/0677/products/wax_vault_black_front_compact.jpg?v=1545067666"
     ]
   },
-  "11": {
+  {
     "name": "WAX VAULT - NAVY",
     "price": 35,
     "images": [
@@ -131,7 +443,7 @@
       "//cdn.shopify.com/s/files/1/0535/0677/products/wax_vault_navy_front_compact.jpg?v=1545068361"
     ]
   },
-  "12": {
+  {
     "name": "101 BEN - BLACK",
     "price": 35,
     "images": [
@@ -142,7 +454,7 @@
       "//cdn.shopify.com/s/files/1/0535/0677/products/jorge_ben_black_front_compact.jpg?v=1545011609"
     ]
   },
-  "13": {
+  {
     "name": "101 BEN - CLEAR BLUE",
     "price": 35,
     "images": [
@@ -153,7 +465,7 @@
       "//cdn.shopify.com/s/files/1/0535/0677/products/jorge_ben_clear_blue_front_compact.jpg?v=1545011664"
     ]
   },
-  "14": {
+  {
     "name": "101 BEN - ATLANTIC GREEN",
     "price": 35,
     "images": [
@@ -164,7 +476,7 @@
       "//cdn.shopify.com/s/files/1/0535/0677/products/jorge_ben_atlantic_green_front_compact.jpg?v=1545011554"
     ]
   },
-  "15": {
+  {
     "name": "RIDING HIGH 101 - CORAL",
     "price": 35,
     "images": [
@@ -173,7 +485,7 @@
       "//cdn.shopify.com/s/files/1/0535/0677/products/ridding_high_coral_compact.jpg?v=1548713029"
     ]
   },
-  "16": {
+  {
     "name": "RIDING HIGH 101 - WHITE",
     "price": 35,
     "images": [
@@ -182,7 +494,7 @@
       "//cdn.shopify.com/s/files/1/0535/0677/products/ridding_high_white_compact.jpg?v=1548713014"
     ]
   },
-  "17": {
+  {
     "name": "RIDING HIGH 101 - BLACK",
     "price": 35,
     "images": [
@@ -191,7 +503,160 @@
       "//cdn.shopify.com/s/files/1/0535/0677/products/ridding_high_black_compact.jpg?v=1548712997"
     ]
   },
-  "18": {
+  {
+    "name": "DISCO E CULTURA - CORAL",
+    "price": 35,
+    "images": [
+      "//cdn.shopify.com/s/files/1/0535/0677/products/disco_e_cultura_coral_large.jpg?v=1532125908",
+      "//cdn.shopify.com/s/files/1/0535/0677/products/disco_e_cultura_coral_grande.jpg?v=1532125908",
+      "//cdn.shopify.com/s/files/1/0535/0677/products/disco_e_cultura_coral_compact.jpg?v=1532125908"
+    ]
+  },
+  {
+    "name": "DISCO E CULTURA - BLACK",
+    "price": 35,
+    "images": [
+      "//cdn.shopify.com/s/files/1/0535/0677/products/disco_e_black_large.jpg?v=1548288778",
+      "//cdn.shopify.com/s/files/1/0535/0677/products/disco_e_black_grande.jpg?v=1548288778",
+      "//cdn.shopify.com/s/files/1/0535/0677/products/disco_e_black_compact.jpg?v=1548288778"
+    ]
+  },
+  {
+    "name": "DISCO E CULTURA - ATLANTIC GREEN",
+    "price": 35,
+    "images": [
+      "//cdn.shopify.com/s/files/1/0535/0677/products/disco_e_cultura_atlantic_green_large.jpg?v=1532126060",
+      "//cdn.shopify.com/s/files/1/0535/0677/products/disco_e_cultura_atlantic_green_grande.jpg?v=1532126060",
+      "//cdn.shopify.com/s/files/1/0535/0677/products/disco_e_cultura_atlantic_green_compact.jpg?v=1532126060"
+    ]
+  },
+  {
+    "name": "ONE STOP RECORD SHACK - BLACK",
+    "price": 35,
+    "images": [
+      "//cdn.shopify.com/s/files/1/0535/0677/products/record_shack_black_back_81dbe17e-b6e0-48d4-ac32-bae25c82bf13_large.jpg?v=1532126121",
+      "//cdn.shopify.com/s/files/1/0535/0677/products/record_shack_black_front_32cb732c-9ead-4b87-a0d3-7ac799fd3b0d_large.jpg?v=1532126124",
+      "//cdn.shopify.com/s/files/1/0535/0677/products/record_shack_black_back_81dbe17e-b6e0-48d4-ac32-bae25c82bf13_grande.jpg?v=1532126121",
+      "//cdn.shopify.com/s/files/1/0535/0677/products/record_shack_black_back_81dbe17e-b6e0-48d4-ac32-bae25c82bf13_compact.jpg?v=1532126121",
+      "//cdn.shopify.com/s/files/1/0535/0677/products/record_shack_black_front_32cb732c-9ead-4b87-a0d3-7ac799fd3b0d_compact.jpg?v=1532126124"
+    ]
+  },
+  {
+    "name": "ONE STOP RECORD SHACK - ATLANTIC GREEN",
+    "price": 35,
+    "images": [
+      "//cdn.shopify.com/s/files/1/0535/0677/products/record_shack_atlantic_green_back_large.jpg?v=1532126168",
+      "//cdn.shopify.com/s/files/1/0535/0677/products/record_shack_atlantic_green_front_large.jpg?v=1532126171",
+      "//cdn.shopify.com/s/files/1/0535/0677/products/record_shack_atlantic_green_back_grande.jpg?v=1532126168",
+      "//cdn.shopify.com/s/files/1/0535/0677/products/record_shack_atlantic_green_back_compact.jpg?v=1532126168",
+      "//cdn.shopify.com/s/files/1/0535/0677/products/record_shack_atlantic_green_front_compact.jpg?v=1532126171"
+    ]
+  },
+  {
+    "name": "ONE STOP RECORD SHACK - WHITE",
+    "price": 35,
+    "images": [
+      "//cdn.shopify.com/s/files/1/0535/0677/products/record_shack_white_back_large.jpg?v=1532126206",
+      "//cdn.shopify.com/s/files/1/0535/0677/products/record_shack_white_front_large.jpg?v=1532126208",
+      "//cdn.shopify.com/s/files/1/0535/0677/products/record_shack_white_back_grande.jpg?v=1532126206",
+      "//cdn.shopify.com/s/files/1/0535/0677/products/record_shack_white_back_compact.jpg?v=1532126206",
+      "//cdn.shopify.com/s/files/1/0535/0677/products/record_shack_white_front_compact.jpg?v=1532126208"
+    ]
+  },
+  {
+    "name": "DISCO MIX - WHITE",
+    "price": 35,
+    "images": [
+      "//cdn.shopify.com/s/files/1/0535/0677/products/disco_mix_white_back_df2d1007-41cc-43ab-882c-1efef81b4a72_large.jpg?v=1532126262",
+      "//cdn.shopify.com/s/files/1/0535/0677/products/disco_mix_white_front_2f3e2d0d-d2d3-4da3-9989-1da7e4a421d0_large.jpg?v=1532126265",
+      "//cdn.shopify.com/s/files/1/0535/0677/products/disco_mix_white_back_df2d1007-41cc-43ab-882c-1efef81b4a72_grande.jpg?v=1532126262",
+      "//cdn.shopify.com/s/files/1/0535/0677/products/disco_mix_white_back_df2d1007-41cc-43ab-882c-1efef81b4a72_compact.jpg?v=1532126262",
+      "//cdn.shopify.com/s/files/1/0535/0677/products/disco_mix_white_front_2f3e2d0d-d2d3-4da3-9989-1da7e4a421d0_compact.jpg?v=1532126265"
+    ]
+  },
+  {
+    "name": "DISCO MIX - BLACK",
+    "price": 35,
+    "images": [
+      "//cdn.shopify.com/s/files/1/0535/0677/products/disco_mix_black_back_39e957a5-d756-4e3e-840d-019b8772ab17_large.jpg?v=1532126389",
+      "//cdn.shopify.com/s/files/1/0535/0677/products/disco_mix_black_front_62610182-41bd-46c7-bd8e-f9a3a1ee470b_large.jpg?v=1532126391",
+      "//cdn.shopify.com/s/files/1/0535/0677/products/disco_mix_black_back_39e957a5-d756-4e3e-840d-019b8772ab17_grande.jpg?v=1532126389",
+      "//cdn.shopify.com/s/files/1/0535/0677/products/disco_mix_black_back_39e957a5-d756-4e3e-840d-019b8772ab17_compact.jpg?v=1532126389",
+      "//cdn.shopify.com/s/files/1/0535/0677/products/disco_mix_black_front_62610182-41bd-46c7-bd8e-f9a3a1ee470b_compact.jpg?v=1532126391"
+    ]
+  },
+  {
+    "name": "DISCO MIX - CORAL",
+    "price": 35,
+    "images": [
+      "//cdn.shopify.com/s/files/1/0535/0677/products/disco_mix_coral_back_large.jpg?v=1532126314",
+      "//cdn.shopify.com/s/files/1/0535/0677/products/disco_mix_coral_front_large.jpg?v=1532126317",
+      "//cdn.shopify.com/s/files/1/0535/0677/products/disco_mix_coral_back_grande.jpg?v=1532126314",
+      "//cdn.shopify.com/s/files/1/0535/0677/products/disco_mix_coral_back_compact.jpg?v=1532126314",
+      "//cdn.shopify.com/s/files/1/0535/0677/products/disco_mix_coral_front_compact.jpg?v=1532126317"
+    ]
+  },
+  {
+    "name": "SUN RA SATURN - CEMENT",
+    "price": 35,
+    "images": [
+      "//cdn.shopify.com/s/files/1/0535/0677/products/saturn_cemnt_large.jpg?v=1532126720",
+      "//cdn.shopify.com/s/files/1/0535/0677/products/saturn_cemnt_grande.jpg?v=1532126720",
+      "//cdn.shopify.com/s/files/1/0535/0677/products/saturn_cemnt_compact.jpg?v=1532126720"
+    ]
+  },
+  {
+    "name": "SUN RA SATURN - CORAL",
+    "price": 35,
+    "images": [
+      "//cdn.shopify.com/s/files/1/0535/0677/products/saturn_coral_large.jpg?v=1532126757",
+      "//cdn.shopify.com/s/files/1/0535/0677/products/saturn_coral_grande.jpg?v=1532126757",
+      "//cdn.shopify.com/s/files/1/0535/0677/products/saturn_coral_compact.jpg?v=1532126757"
+    ]
+  },
+  {
+    "name": "SUN RA SATURN - WHITE",
+    "price": 35,
+    "images": [
+      "//cdn.shopify.com/s/files/1/0535/0677/products/saturn_white_large.jpg?v=1532126792",
+      "//cdn.shopify.com/s/files/1/0535/0677/products/saturn_white_grande.jpg?v=1532126792",
+      "//cdn.shopify.com/s/files/1/0535/0677/products/saturn_white_compact.jpg?v=1532126792"
+    ]
+  },
+  {
+    "name": "AFRICA 70 LAGOS - CLEAR BLUE",
+    "price": 35,
+    "images": [
+      "//cdn.shopify.com/s/files/1/0535/0677/products/africa_70_clearblue_back_large.jpg?v=1532126894",
+      "//cdn.shopify.com/s/files/1/0535/0677/products/africa_70_clearblue_large.jpg?v=1532126898",
+      "//cdn.shopify.com/s/files/1/0535/0677/products/africa_70_clearblue_back_grande.jpg?v=1532126894",
+      "//cdn.shopify.com/s/files/1/0535/0677/products/africa_70_clearblue_back_compact.jpg?v=1532126894",
+      "//cdn.shopify.com/s/files/1/0535/0677/products/africa_70_clearblue_compact.jpg?v=1532126898"
+    ]
+  },
+  {
+    "name": "KINGSTON - WHITE",
+    "price": 35,
+    "images": [
+      "//cdn.shopify.com/s/files/1/0535/0677/products/kingston_back_large.jpg?v=1532126935",
+      "//cdn.shopify.com/s/files/1/0535/0677/products/kingston_front_large.jpg?v=1532126938",
+      "//cdn.shopify.com/s/files/1/0535/0677/products/kingston_back_grande.jpg?v=1532126935",
+      "//cdn.shopify.com/s/files/1/0535/0677/products/kingston_back_compact.jpg?v=1532126935",
+      "//cdn.shopify.com/s/files/1/0535/0677/products/kingston_front_compact.jpg?v=1532126938"
+    ]
+  },
+  {
+    "name": "RIO - CORAL",
+    "price": 35,
+    "images": [
+      "//cdn.shopify.com/s/files/1/0535/0677/products/rio_coral_back_large.jpg?v=1532127025",
+      "//cdn.shopify.com/s/files/1/0535/0677/products/rio_coral_front_large.jpg?v=1532127029",
+      "//cdn.shopify.com/s/files/1/0535/0677/products/rio_coral_back_grande.jpg?v=1532127025",
+      "//cdn.shopify.com/s/files/1/0535/0677/products/rio_coral_back_compact.jpg?v=1532127025",
+      "//cdn.shopify.com/s/files/1/0535/0677/products/rio_coral_front_compact.jpg?v=1532127029"
+    ]
+  },
+  {
     "name": "STRICTLY RIDDIMS - BLACK",
     "price": 35,
     "images": [
@@ -200,7 +665,7 @@
       "//cdn.shopify.com/s/files/1/0535/0677/products/strictly_riddims_compact.jpg?v=1545010421"
     ]
   },
-  "19": {
+  {
     "name": "STRICTLY RIDDIMS - CEMENT",
     "price": 35,
     "images": [
@@ -209,7 +674,7 @@
       "//cdn.shopify.com/s/files/1/0535/0677/products/sound_traveler_cement_front_compact.jpg?v=1545010606"
     ]
   },
-  "20": {
+  {
     "name": "STRICTLY RIDDIMS - CLEAR BLUE",
     "price": 35,
     "images": [
@@ -218,7 +683,7 @@
       "//cdn.shopify.com/s/files/1/0535/0677/products/strictly_riddims_clear_blue_compact.jpg?v=1545010649"
     ]
   },
-  "21": {
+  {
     "name": "101 PROMO COPY - BLACK",
     "price": 35,
     "images": [
@@ -229,7 +694,7 @@
       "//cdn.shopify.com/s/files/1/0535/0677/products/promo_black_front_compact.jpg?v=1545011131"
     ]
   },
-  "22": {
+  {
     "name": "101 PROMO COPY - CORAL",
     "price": 35,
     "images": [
@@ -240,7 +705,7 @@
       "//cdn.shopify.com/s/files/1/0535/0677/products/promo_coral_front_compact.jpg?v=1545011034"
     ]
   },
-  "23": {
+  {
     "name": "101 PROMO COPY - WHITE",
     "price": 35,
     "images": [
@@ -251,7 +716,7 @@
       "//cdn.shopify.com/s/files/1/0535/0677/products/promo_white_front_compact.jpg?v=1545011149"
     ]
   },
-  "24": {
+  {
     "name": "MUSIC LOVER - BLACK",
     "price": 35,
     "images": [
@@ -260,7 +725,7 @@
       "//cdn.shopify.com/s/files/1/0535/0677/products/music_lover_black_compact.jpg?v=1545011193"
     ]
   },
-  "25": {
+  {
     "name": "MUSIC LOVER - WHITE",
     "price": 35,
     "images": [
@@ -269,7 +734,7 @@
       "//cdn.shopify.com/s/files/1/0535/0677/products/music_lover_white_compact.jpg?v=1545011497"
     ]
   },
-  "26": {
+  {
     "name": "MUSIC LOVER - CLEAR BLUE",
     "price": 35,
     "images": [
@@ -278,7 +743,7 @@
       "//cdn.shopify.com/s/files/1/0535/0677/products/music_lover_clear_blue_compact.jpg?v=1545011401"
     ]
   },
-  "27": {
+  {
     "name": "SOUND TRAVELER - BLACK",
     "price": 35,
     "images": [
@@ -289,7 +754,7 @@
       "//cdn.shopify.com/s/files/1/0535/0677/products/sound_traveler_black_front_compact.jpg?v=1545013448"
     ]
   },
-  "28": {
+  {
     "name": "SOUND TRAVELER - LAPUS BLUE",
     "price": 35,
     "images": [
@@ -300,7 +765,7 @@
       "//cdn.shopify.com/s/files/1/0535/0677/products/sound_traveler_blue_front_compact.jpg?v=1545013308"
     ]
   },
-  "29": {
+  {
     "name": "SOUND TRAVELER - WHITE",
     "price": 35,
     "images": [
@@ -311,7 +776,7 @@
       "//cdn.shopify.com/s/files/1/0535/0677/products/sound_traveler_white_front_compact.jpg?v=1545013268"
     ]
   },
-  "30": {
+  {
     "name": "101 GENRES - BLACK",
     "price": 35,
     "images": [
@@ -320,7 +785,7 @@
       "//cdn.shopify.com/s/files/1/0535/0677/products/101_genres_black_compact.jpg?v=1532019470"
     ]
   },
-  "31": {
+  {
     "name": "101 GENRES - WHITE",
     "price": 35,
     "images": [
@@ -329,7 +794,7 @@
       "//cdn.shopify.com/s/files/1/0535/0677/products/101_genres_white_compact.jpg?v=1532019508"
     ]
   },
-  "32": {
+  {
     "name": "101 GENRES - ATLANTIC GREEN",
     "price": 35,
     "images": [
@@ -338,7 +803,7 @@
       "//cdn.shopify.com/s/files/1/0535/0677/products/101_genres_atlantic_green_compact.jpg?v=1545012244"
     ]
   },
-  "33": {
+  {
     "name": "AWARD TOUR 101 - WHITE",
     "price": 35,
     "images": [
@@ -350,7 +815,7 @@
       "//cdn.shopify.com/s/files/1/0535/0677/products/101SS180_6_compact.JPG?v=1532397298"
     ]
   },
-  "34": {
+  {
     "name": "AWARD TOUR 101 - CORAL",
     "price": 35,
     "images": [
@@ -363,7 +828,7 @@
       "//cdn.shopify.com/s/files/1/0535/0677/products/101SS180_7_compact.JPG?v=1532397337"
     ]
   },
-  "35": {
+  {
     "name": "AWARD TOUR 101 - BLACK",
     "price": 35,
     "images": [
@@ -376,7 +841,7 @@
       "//cdn.shopify.com/s/files/1/0535/0677/products/101SS180_7_5a44622c-f7c4-4db7-8615-d2c7421bbd01_compact.JPG?v=1532397475"
     ]
   },
-  "36": {
+  {
     "name": "BEAT SELECTION - WHITE",
     "price": 35,
     "images": [
@@ -385,7 +850,7 @@
       "//cdn.shopify.com/s/files/1/0535/0677/products/beat_selection_white_compact.jpg?v=1532021006"
     ]
   },
-  "37": {
+  {
     "name": "BEAT SELECTION - BLACK",
     "price": 35,
     "images": [
@@ -394,7 +859,7 @@
       "//cdn.shopify.com/s/files/1/0535/0677/products/beat_selection_black_compact.jpg?v=1532020614"
     ]
   },
-  "38": {
+  {
     "name": "BEAT SELECTION - CEMENT",
     "price": 35,
     "images": [
@@ -403,7 +868,7 @@
       "//cdn.shopify.com/s/files/1/0535/0677/products/beat_selection_cement_compact.jpg?v=1532020654"
     ]
   },
-  "39": {
+  {
     "name": "BREAK BEATS - BLACK",
     "price": 35,
     "images": [
@@ -412,7 +877,7 @@
       "//cdn.shopify.com/s/files/1/0535/0677/products/break_beats_black_compact.jpg?v=1532020719"
     ]
   },
-  "40": {
+  {
     "name": "BREAK BEATS - NAVY",
     "price": 35,
     "images": [
@@ -421,7 +886,7 @@
       "//cdn.shopify.com/s/files/1/0535/0677/products/break_beats_navy_compact.jpg?v=1532020929"
     ]
   },
-  "41": {
+  {
     "name": "BREAK BEATS - WHITE",
     "price": 35,
     "images": [
@@ -430,7 +895,7 @@
       "//cdn.shopify.com/s/files/1/0535/0677/products/break_beats_white_compact.jpg?v=1532020962"
     ]
   },
-  "42": {
+  {
     "name": "DISCO FEVER - BLACK",
     "price": 35,
     "images": [
@@ -442,7 +907,7 @@
       "//cdn.shopify.com/s/files/1/0535/0677/products/101SS180_12_compact.JPG?v=1532397516"
     ]
   },
-  "43": {
+  {
     "name": "DISCO FEVER - ROYAL",
     "price": 35,
     "images": [
@@ -455,7 +920,7 @@
       "//cdn.shopify.com/s/files/1/0535/0677/products/101SS180_13_compact.JPG?v=1532397543"
     ]
   },
-  "44": {
+  {
     "name": "DISCO FEVER - WHITE",
     "price": 35,
     "images": [
@@ -466,7 +931,7 @@
       "//cdn.shopify.com/s/files/1/0535/0677/products/disco_fever_white_compact.jpg?v=1532397622"
     ]
   },
-  "45": {
+  {
     "name": "DISCO THROWDOWN - CLEAR BLUE",
     "price": 35,
     "images": [
@@ -479,7 +944,7 @@
       "//cdn.shopify.com/s/files/1/0535/0677/products/101SS180_11_compact.JPG?v=1532397595"
     ]
   },
-  "46": {
+  {
     "name": "DISCO THROWDOWN - NAVY",
     "price": 35,
     "images": [
@@ -490,7 +955,7 @@
       "//cdn.shopify.com/s/files/1/0535/0677/products/disco_throwdown_navy_blue_front_compact.jpg?v=1532021440"
     ]
   },
-  "47": {
+  {
     "name": "DISCO THROWDOWN - WHITE",
     "price": 35,
     "images": [
@@ -502,7 +967,7 @@
       "//cdn.shopify.com/s/files/1/0535/0677/products/101SS180_11_9a9ddae6-a642-4add-bb0c-c36268654b2a_compact.JPG?v=1532397639"
     ]
   },
-  "48": {
+  {
     "name": "GLOBAL RHYTHMS - ATLANTIC GREEN",
     "price": 35,
     "images": [
@@ -513,7 +978,7 @@
       "//cdn.shopify.com/s/files/1/0535/0677/products/global_rhythms_atlantic_green_front_compact.jpg?v=1532397681"
     ]
   },
-  "49": {
+  {
     "name": "GLOBAL RHYTHMS - BLACK",
     "price": 35,
     "images": [
@@ -524,7 +989,7 @@
       "//cdn.shopify.com/s/files/1/0535/0677/products/global_rhythms_black_front_compact.jpg?v=1532046434"
     ]
   },
-  "50": {
+  {
     "name": "GLOBAL RHYTHMS - WHITE",
     "price": 35,
     "images": [
@@ -536,7 +1001,7 @@
       "//cdn.shopify.com/s/files/1/0535/0677/products/101SS180_14_compact.JPG?v=1532397701"
     ]
   },
-  "51": {
+  {
     "name": "HOUSE SOUNDS OF CHICAGO - BLACK",
     "price": 35,
     "images": [
@@ -547,7 +1012,7 @@
       "//cdn.shopify.com/s/files/1/0535/0677/products/HOUSE_SOUND_BLACK_FRONT_compact.jpg?v=1532046580"
     ]
   },
-  "52": {
+  {
     "name": "HOUSE SOUNDS OF CHICAGO - WHITE",
     "price": 35,
     "images": [
@@ -560,7 +1025,7 @@
       "//cdn.shopify.com/s/files/1/0535/0677/products/101SS180_17_ca3f1b3b-4ef3-41e9-a29a-df25218a05d5_compact.JPG?v=1532397777"
     ]
   },
-  "53": {
+  {
     "name": "HOUSE SOUNDS OF CHICAGO - ATLANTIC GREEN",
     "price": 35,
     "images": [
@@ -573,7 +1038,7 @@
       "//cdn.shopify.com/s/files/1/0535/0677/products/101SS180_17_compact.JPG?v=1532397742"
     ]
   },
-  "54": {
+  {
     "name": "JAZZ 45 - BLACK",
     "price": 35,
     "images": [
@@ -582,7 +1047,7 @@
       "//cdn.shopify.com/s/files/1/0535/0677/products/jazz_45_black_compact.jpg?v=1532109958"
     ]
   },
-  "55": {
+  {
     "name": "JAZZ 45 - NAVY",
     "price": 35,
     "images": [
@@ -591,7 +1056,7 @@
       "//cdn.shopify.com/s/files/1/0535/0677/products/jazz_45_navy_compact.jpg?v=1532110003"
     ]
   },
-  "56": {
+  {
     "name": "JAZZ 45 - WHITE",
     "price": 35,
     "images": [
@@ -600,7 +1065,7 @@
       "//cdn.shopify.com/s/files/1/0535/0677/products/jazz_45_white_compact.jpg?v=1532110083"
     ]
   },
-  "57": {
+  {
     "name": "RIDDIMS - WHITE",
     "price": 35,
     "images": [
@@ -612,7 +1077,7 @@
       "//cdn.shopify.com/s/files/1/0535/0677/products/101SS180_20_compact.JPG?v=1532397810"
     ]
   },
-  "58": {
+  {
     "name": "RIDDIMS - BLACK",
     "price": 35,
     "images": [
@@ -624,7 +1089,7 @@
       "//cdn.shopify.com/s/files/1/0535/0677/products/101SS180_20_50661bd0-654d-4186-bef0-75fe3b58dd18_compact.JPG?v=1532397843"
     ]
   },
-  "59": {
+  {
     "name": "RIDDIMS - ROYAL",
     "price": 35,
     "images": [
@@ -635,7 +1100,7 @@
       "//cdn.shopify.com/s/files/1/0535/0677/products/RIDDIMS_ROYAL_FRONT_compact.jpg?v=1532110273"
     ]
   },
-  "60": {
+  {
     "name": "SUN RA 101 VERSE - ATLANTIC GREEN",
     "price": 35,
     "images": [
@@ -644,7 +1109,7 @@
       "//cdn.shopify.com/s/files/1/0535/0677/products/SUN_RA_ATLANTIC_GREEN_compact.jpg?v=1532110321"
     ]
   },
-  "61": {
+  {
     "name": "SUN RA 101 VERSE - WHITE",
     "price": 35,
     "images": [
@@ -653,7 +1118,7 @@
       "//cdn.shopify.com/s/files/1/0535/0677/products/SUN_RA_WHITE_compact.jpg?v=1532110468"
     ]
   },
-  "62": {
+  {
     "name": "SUN RA 101 VERSE - BLACK",
     "price": 35,
     "images": [
@@ -662,7 +1127,7 @@
       "//cdn.shopify.com/s/files/1/0535/0677/products/SUN_RA_BLACK_compact.jpg?v=1532110373"
     ]
   },
-  "63": {
+  {
     "name": "YOUNG SOUL REBEL - BLACK",
     "price": 35,
     "images": [
@@ -671,7 +1136,7 @@
       "//cdn.shopify.com/s/files/1/0535/0677/products/young_soul_rebel_black_compact.jpg?v=1532110510"
     ]
   },
-  "64": {
+  {
     "name": "YOUNG SOUL REBEL - CORAL",
     "price": 35,
     "images": [
@@ -680,7 +1145,7 @@
       "//cdn.shopify.com/s/files/1/0535/0677/products/young_soul_rebel_coral_compact.jpg?v=1532110558"
     ]
   },
-  "65": {
+  {
     "name": "YOUNG SOUL REBEL - WHITE",
     "price": 35,
     "images": [
@@ -688,158 +1153,5 @@
       "//cdn.shopify.com/s/files/1/0535/0677/products/young_soul_rebel_white_grande.jpg?v=1532110594",
       "//cdn.shopify.com/s/files/1/0535/0677/products/young_soul_rebel_white_compact.jpg?v=1532110594"
     ]
-  },
-  "66": {
-    "name": "DISCO E CULTURA - CORAL",
-    "price": 35,
-    "images": [
-      "//cdn.shopify.com/s/files/1/0535/0677/products/disco_e_cultura_coral_large.jpg?v=1532125908",
-      "//cdn.shopify.com/s/files/1/0535/0677/products/disco_e_cultura_coral_grande.jpg?v=1532125908",
-      "//cdn.shopify.com/s/files/1/0535/0677/products/disco_e_cultura_coral_compact.jpg?v=1532125908"
-    ]
-  },
-  "67": {
-    "name": "DISCO E CULTURA - BLACK",
-    "price": 35,
-    "images": [
-      "//cdn.shopify.com/s/files/1/0535/0677/products/disco_e_black_large.jpg?v=1548288778",
-      "//cdn.shopify.com/s/files/1/0535/0677/products/disco_e_black_grande.jpg?v=1548288778",
-      "//cdn.shopify.com/s/files/1/0535/0677/products/disco_e_black_compact.jpg?v=1548288778"
-    ]
-  },
-  "68": {
-    "name": "DISCO E CULTURA - ATLANTIC GREEN",
-    "price": 35,
-    "images": [
-      "//cdn.shopify.com/s/files/1/0535/0677/products/disco_e_cultura_atlantic_green_large.jpg?v=1532126060",
-      "//cdn.shopify.com/s/files/1/0535/0677/products/disco_e_cultura_atlantic_green_grande.jpg?v=1532126060",
-      "//cdn.shopify.com/s/files/1/0535/0677/products/disco_e_cultura_atlantic_green_compact.jpg?v=1532126060"
-    ]
-  },
-  "69": {
-    "name": "ONE STOP RECORD SHACK - BLACK",
-    "price": 35,
-    "images": [
-      "//cdn.shopify.com/s/files/1/0535/0677/products/record_shack_black_back_81dbe17e-b6e0-48d4-ac32-bae25c82bf13_large.jpg?v=1532126121",
-      "//cdn.shopify.com/s/files/1/0535/0677/products/record_shack_black_front_32cb732c-9ead-4b87-a0d3-7ac799fd3b0d_large.jpg?v=1532126124",
-      "//cdn.shopify.com/s/files/1/0535/0677/products/record_shack_black_back_81dbe17e-b6e0-48d4-ac32-bae25c82bf13_grande.jpg?v=1532126121",
-      "//cdn.shopify.com/s/files/1/0535/0677/products/record_shack_black_back_81dbe17e-b6e0-48d4-ac32-bae25c82bf13_compact.jpg?v=1532126121",
-      "//cdn.shopify.com/s/files/1/0535/0677/products/record_shack_black_front_32cb732c-9ead-4b87-a0d3-7ac799fd3b0d_compact.jpg?v=1532126124"
-    ]
-  },
-  "70": {
-    "name": "ONE STOP RECORD SHACK - ATLANTIC GREEN",
-    "price": 35,
-    "images": [
-      "//cdn.shopify.com/s/files/1/0535/0677/products/record_shack_atlantic_green_back_large.jpg?v=1532126168",
-      "//cdn.shopify.com/s/files/1/0535/0677/products/record_shack_atlantic_green_front_large.jpg?v=1532126171",
-      "//cdn.shopify.com/s/files/1/0535/0677/products/record_shack_atlantic_green_back_grande.jpg?v=1532126168",
-      "//cdn.shopify.com/s/files/1/0535/0677/products/record_shack_atlantic_green_back_compact.jpg?v=1532126168",
-      "//cdn.shopify.com/s/files/1/0535/0677/products/record_shack_atlantic_green_front_compact.jpg?v=1532126171"
-    ]
-  },
-  "71": {
-    "name": "ONE STOP RECORD SHACK - WHITE",
-    "price": 35,
-    "images": [
-      "//cdn.shopify.com/s/files/1/0535/0677/products/record_shack_white_back_large.jpg?v=1532126206",
-      "//cdn.shopify.com/s/files/1/0535/0677/products/record_shack_white_front_large.jpg?v=1532126208",
-      "//cdn.shopify.com/s/files/1/0535/0677/products/record_shack_white_back_grande.jpg?v=1532126206",
-      "//cdn.shopify.com/s/files/1/0535/0677/products/record_shack_white_back_compact.jpg?v=1532126206",
-      "//cdn.shopify.com/s/files/1/0535/0677/products/record_shack_white_front_compact.jpg?v=1532126208"
-    ]
-  },
-  "72": {
-    "name": "DISCO MIX - WHITE",
-    "price": 35,
-    "images": [
-      "//cdn.shopify.com/s/files/1/0535/0677/products/disco_mix_white_back_df2d1007-41cc-43ab-882c-1efef81b4a72_large.jpg?v=1532126262",
-      "//cdn.shopify.com/s/files/1/0535/0677/products/disco_mix_white_front_2f3e2d0d-d2d3-4da3-9989-1da7e4a421d0_large.jpg?v=1532126265",
-      "//cdn.shopify.com/s/files/1/0535/0677/products/disco_mix_white_back_df2d1007-41cc-43ab-882c-1efef81b4a72_grande.jpg?v=1532126262",
-      "//cdn.shopify.com/s/files/1/0535/0677/products/disco_mix_white_back_df2d1007-41cc-43ab-882c-1efef81b4a72_compact.jpg?v=1532126262",
-      "//cdn.shopify.com/s/files/1/0535/0677/products/disco_mix_white_front_2f3e2d0d-d2d3-4da3-9989-1da7e4a421d0_compact.jpg?v=1532126265"
-    ]
-  },
-  "73": {
-    "name": "DISCO MIX - BLACK",
-    "price": 35,
-    "images": [
-      "//cdn.shopify.com/s/files/1/0535/0677/products/disco_mix_black_back_39e957a5-d756-4e3e-840d-019b8772ab17_large.jpg?v=1532126389",
-      "//cdn.shopify.com/s/files/1/0535/0677/products/disco_mix_black_front_62610182-41bd-46c7-bd8e-f9a3a1ee470b_large.jpg?v=1532126391",
-      "//cdn.shopify.com/s/files/1/0535/0677/products/disco_mix_black_back_39e957a5-d756-4e3e-840d-019b8772ab17_grande.jpg?v=1532126389",
-      "//cdn.shopify.com/s/files/1/0535/0677/products/disco_mix_black_back_39e957a5-d756-4e3e-840d-019b8772ab17_compact.jpg?v=1532126389",
-      "//cdn.shopify.com/s/files/1/0535/0677/products/disco_mix_black_front_62610182-41bd-46c7-bd8e-f9a3a1ee470b_compact.jpg?v=1532126391"
-    ]
-  },
-  "74": {
-    "name": "DISCO MIX - CORAL",
-    "price": 35,
-    "images": [
-      "//cdn.shopify.com/s/files/1/0535/0677/products/disco_mix_coral_back_large.jpg?v=1532126314",
-      "//cdn.shopify.com/s/files/1/0535/0677/products/disco_mix_coral_front_large.jpg?v=1532126317",
-      "//cdn.shopify.com/s/files/1/0535/0677/products/disco_mix_coral_back_grande.jpg?v=1532126314",
-      "//cdn.shopify.com/s/files/1/0535/0677/products/disco_mix_coral_back_compact.jpg?v=1532126314",
-      "//cdn.shopify.com/s/files/1/0535/0677/products/disco_mix_coral_front_compact.jpg?v=1532126317"
-    ]
-  },
-  "75": {
-    "name": "SUN RA SATURN - CEMENT",
-    "price": 35,
-    "images": [
-      "//cdn.shopify.com/s/files/1/0535/0677/products/saturn_cemnt_large.jpg?v=1532126720",
-      "//cdn.shopify.com/s/files/1/0535/0677/products/saturn_cemnt_grande.jpg?v=1532126720",
-      "//cdn.shopify.com/s/files/1/0535/0677/products/saturn_cemnt_compact.jpg?v=1532126720"
-    ]
-  },
-  "76": {
-    "name": "SUN RA SATURN - CORAL",
-    "price": 35,
-    "images": [
-      "//cdn.shopify.com/s/files/1/0535/0677/products/saturn_coral_large.jpg?v=1532126757",
-      "//cdn.shopify.com/s/files/1/0535/0677/products/saturn_coral_grande.jpg?v=1532126757",
-      "//cdn.shopify.com/s/files/1/0535/0677/products/saturn_coral_compact.jpg?v=1532126757"
-    ]
-  },
-  "77": {
-    "name": "SUN RA SATURN - WHITE",
-    "price": 35,
-    "images": [
-      "//cdn.shopify.com/s/files/1/0535/0677/products/saturn_white_large.jpg?v=1532126792",
-      "//cdn.shopify.com/s/files/1/0535/0677/products/saturn_white_grande.jpg?v=1532126792",
-      "//cdn.shopify.com/s/files/1/0535/0677/products/saturn_white_compact.jpg?v=1532126792"
-    ]
-  },
-  "78": {
-    "name": "AFRICA 70 LAGOS - CLEAR BLUE",
-    "price": 35,
-    "images": [
-      "//cdn.shopify.com/s/files/1/0535/0677/products/africa_70_clearblue_back_large.jpg?v=1532126894",
-      "//cdn.shopify.com/s/files/1/0535/0677/products/africa_70_clearblue_large.jpg?v=1532126898",
-      "//cdn.shopify.com/s/files/1/0535/0677/products/africa_70_clearblue_back_grande.jpg?v=1532126894",
-      "//cdn.shopify.com/s/files/1/0535/0677/products/africa_70_clearblue_back_compact.jpg?v=1532126894",
-      "//cdn.shopify.com/s/files/1/0535/0677/products/africa_70_clearblue_compact.jpg?v=1532126898"
-    ]
-  },
-  "79": {
-    "name": "KINGSTON - WHITE",
-    "price": 35,
-    "images": [
-      "//cdn.shopify.com/s/files/1/0535/0677/products/kingston_back_large.jpg?v=1532126935",
-      "//cdn.shopify.com/s/files/1/0535/0677/products/kingston_front_large.jpg?v=1532126938",
-      "//cdn.shopify.com/s/files/1/0535/0677/products/kingston_back_grande.jpg?v=1532126935",
-      "//cdn.shopify.com/s/files/1/0535/0677/products/kingston_back_compact.jpg?v=1532126935",
-      "//cdn.shopify.com/s/files/1/0535/0677/products/kingston_front_compact.jpg?v=1532126938"
-    ]
-  },
-  "80": {
-    "name": "RIO - CORAL",
-    "price": 35,
-    "images": [
-      "//cdn.shopify.com/s/files/1/0535/0677/products/rio_coral_back_large.jpg?v=1532127025",
-      "//cdn.shopify.com/s/files/1/0535/0677/products/rio_coral_front_large.jpg?v=1532127029",
-      "//cdn.shopify.com/s/files/1/0535/0677/products/rio_coral_back_grande.jpg?v=1532127025",
-      "//cdn.shopify.com/s/files/1/0535/0677/products/rio_coral_back_compact.jpg?v=1532127025",
-      "//cdn.shopify.com/s/files/1/0535/0677/products/rio_coral_front_compact.jpg?v=1532127029"
-    ]
   }
-}
+]

@@ -48,24 +48,17 @@ const doSomethingWith = content => (games = games.concat(content))
 
 // Await for the crawler, and then save result in a JSON file
 ;(async () => {
-  await FetchCrawler.launch({
-    url: urlToCrawl,
-    evaluatePage: $ => collectContent($),
-    onSuccess: ({ result, url }) => doSomethingWith(result, url),
-    preRequest: url => checkUrl(url),
-    maxDepth: 4,
-    parallel: 6
-  })
-
-  const jsonResult = JSON.stringify({ ...games }, null, 2)
-
   try {
-    await new Promise((resolve, reject) =>
-      fs.writeFile('examples/example_4.json', jsonResult, err => {
-        if (err) reject(err)
-        else resolve()
-      })
-    )
+    await FetchCrawler.launch({
+      url: urlToCrawl,
+      evaluatePage: $ => collectContent($),
+      onSuccess: ({ result, url }) => doSomethingWith(result, url),
+      preRequest: url => checkUrl(url),
+      maxDepth: 4,
+      parallel: 6
+    })
+    const jsonResult = JSON.stringify(games, null, 2)
+    await fs.promises.writeFile('examples/example_4.json', jsonResult)
   } catch (error) {
     console.error(error)
   }

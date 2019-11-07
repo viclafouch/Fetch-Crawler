@@ -25,7 +25,7 @@ const collectContent = $ => ({
 // Only url including some string
 // https://support.google.com/youtube/answer/7072797 => ok
 // https://support.google.com/chrome/283/id/ => !ok
-export const isRequestValid = ({ url, lang }) => {
+const isRequestValid = ({ url, lang }) => {
   const { pathname } = new URL(url)
   if (!url.startsWith(urlToCrawl.origin + urlToCrawl.pathname)) return false
   if (pathname.includes('/answer') || pathname.includes('/topic')) {
@@ -55,32 +55,26 @@ const doSomethingWith = (content, url, resultByLang) => {
 // Await for n crawlers (1 by lang)
 // Save all results in a JSON file
 ;(async () => {
-  const json = {}
-  for (const lang of languages) {
-    const resultByLang = []
-    urlToCrawl.searchParams.set('hl', lang)
-    await FetchCrawler.launch({
-      url: urlToCrawl.toString(),
-      evaluatePage: $ => collectContent($),
-      onSuccess: ({ result, url }) => doSomethingWith(result, url, resultByLang),
-      preRequest: url => isRequestValid({ url, lang }),
-      maxDepth: 6,
-      parallel: 5,
-      maxRequest: 100,
-      debugging: true
-    })
-    json[lang] = resultByLang
-  }
-
-  const result = JSON.stringify(json, null, 2)
-
   try {
-    await new Promise((resolve, reject) =>
-      fs.writeFile('examples/example_3.json', result, err => {
-        if (err) reject(err)
-        else resolve()
+    const json = {}
+    for (const lang of languages) {
+      const resultByLang = []
+      urlToCrawl.searchParams.set('hl', lang)
+      await FetchCrawler.launch({
+        url: urlToCrawl.toString(),
+        evaluatePage: $ => collectContent($),
+        onSuccess: ({ result, url }) => doSomethingWith(result, url, resultByLang),
+        preRequest: url => isRequestValid({ url, lang }),
+        maxDepth: 6,
+        parallel: 5,
+        maxRequest: 100,
+        debugging: true
       })
-    )
+      json[lang] = resultByLang
+    }
+
+    const result = JSON.stringify(json, null, 2)
+    await fs.promises.writeFile('examples/example_3.json', result)
   } catch (error) {
     console.error(error)
   }
