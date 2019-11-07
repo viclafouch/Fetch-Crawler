@@ -1,24 +1,14 @@
 {
   "en": [
     {
+      "meta-title": "Queue videos on your computer - YouTube Help",
+      "meta-description": "You can set up videos to watch next by adding videos to your queue while continuing to watch content in a miniplayer.&nbsp;\nHow to add videos to your queue on your computer",
+      "href": "https://support.google.com/youtube/answer/9546304?hl=en"
+    },
+    {
       "meta-title": "YouTube's Community Guidelines - YouTube Help",
       "meta-description": "When you use YouTube, you join a community of people from all over the world. The guidelines below help keep YouTube fun and enjoyable for everyone.\nIf you see content that you think violates these g",
       "href": "https://support.google.com/youtube/answer/9288567?hl=en"
-    },
-    {
-      "meta-title": "Send feedback - Computer - YouTube Help",
-      "meta-description": "Report a YouTube issue Sign in to youtube.com. Select your profile picture&nbsp;",
-      "href": "https://support.google.com/youtube/answer/4347644?hl=en"
-    },
-    {
-      "meta-title": "Videos in iCloud won’t upload unless saved to device - YouTube Help",
-      "meta-description": "14:20 UTC 22 AUG 2019 &nbsp; You may be experiencing an error message, “Invalid video / Asset not readable,” when you try to upload a video from your iCloud photos. This happens if the video y",
-      "href": "https://support.google.com/youtube/answer/9452861?hl=en"
-    },
-    {
-      "meta-title": "YouTube help & support - YouTube Help",
-      "meta-description": "&nbsp;YouTube Help Center\nYou're already here, the best place for all things troubleshooting. You can find&nbsp;the Help button at the bottom of any YouTube",
-      "href": "https://support.google.com/youtube/answer/9396735?hl=en"
     },
     {
       "meta-title": "Forgot email address - YouTube Help",
@@ -36,19 +26,14 @@
       "href": "https://support.google.com/youtube/answer/2972692?hl=en"
     },
     {
-      "meta-title": "Problems accessing YouTube - YouTube Help",
-      "meta-description": "If you see an error page instead of YouTube when going to youtube.com, it could be for&nbsp;one of the following&nbsp;reasons: It could be an issue with your connection.&nbsp;Make sure you can sti",
-      "href": "https://support.google.com/youtube/answer/6159254?hl=en"
+      "meta-title": "Delete or hide your YouTube channel - YouTube Help",
+      "meta-description": "You can choose to temporarily hide content on your channel or permanently delete your channel.\nNote that hiding or deleting a YouTube channel will permanently delete all Community posts, comments, an",
+      "href": "https://support.google.com/youtube/answer/55759?hl=en"
     },
     {
       "meta-title": "YouTube 'not available' for your domain - YouTube Help",
       "meta-description": "If you've seen the following message, it means that YouTube&nbsp;isn't currently enabled as a service on G Suite:\nThis service is not available YouTube is not available for domain.com. Learn more a",
       "href": "https://support.google.com/youtube/answer/1074205?hl=en"
-    },
-    {
-      "meta-title": "Delete or hide your YouTube channel - YouTube Help",
-      "meta-description": "You can choose to temporarily hide content on your channel or permanently delete your channel.\nNote that hiding or deleting a YouTube channel will permanently delete all Community posts, comments, an",
-      "href": "https://support.google.com/youtube/answer/55759?hl=en"
     },
     {
       "meta-title": "Fix hacked YouTube account - YouTube Help",
@@ -66,13 +51,13 @@
       "href": "https://support.google.com/youtube/answer/3056283?hl=en"
     },
     {
-      "meta-title": "Issues using third-party tools with Brand Accounts - YouTube Help",
-      "meta-description": "Connecting your channels to Brand Accounts&nbsp;lets you to switch between channels on one account. Unfortunately, some third-party and older apps don't support channel switching. They might give you",
-      "href": "https://support.google.com/youtube/answer/3046478?hl=en"
+      "meta-title": "Problems accessing YouTube - YouTube Help",
+      "meta-description": "If you see an error page instead of YouTube when going to youtube.com, it could be for&nbsp;one of the following&nbsp;reasons: It could be an issue with your connection.&nbsp;Make sure you can sti",
+      "href": "https://support.google.com/youtube/answer/6159254?hl=en"
     },
     {
-      "meta-title": "Change your channel details - Computer - YouTube Help",
-      "meta-description": "If you use the name and photo from your Google Account for your YouTube channel, you can update this information at any time. Keep in mind this will change your name and photo across Google services.",
+      "meta-title": "Change your channel name or description - Computer - YouTube Help",
+      "meta-description": "Learn how to update the name and description on your YouTube channel.\nChange your channel name\nYour YouTube channel name is the name on your Google Account. To change your channel name, you’ll",
       "href": "https://support.google.com/youtube/answer/2657964?hl=en"
     },
     {
@@ -81,13 +66,13 @@
       "href": "https://support.google.com/youtube/answer/6388033?hl=en"
     },
     {
-      "meta-title": "Upload failed: Duplicate upload message - YouTube Help",
-      "meta-description": "If you see the \"Upload failed: Duplicate upload\" error message next to one of your videos, this means that the video you've uploaded already exists within our system.",
-      "href": "https://support.google.com/youtube/answer/58139?hl=en"
+      "meta-title": "Issues using third-party tools with Brand Accounts - YouTube Help",
+      "meta-description": "Connecting your channels to Brand Accounts&nbsp;lets you to switch between channels on one account. Unfortunately, some third-party and older apps don't support channel switching. They might give you",
+      "href": "https://support.google.com/youtube/answer/3046478?hl=en"
     },
     {
       "meta-title": "Troubleshoot audio or video issues with uploads - YouTube Help",
-      "meta-description": "If you're having problems with the audio or video of your upload, try these troubleshooting steps to solve the issue. New video can’t be played in higher resolutions (4K, 1080p) Y",
+      "meta-description": "If you're having problems with the audio or video of your upload, try these troubleshooting steps to solve the issue. New video can’t be played in higher resolutions (4K, 1080p) W",
       "href": "https://support.google.com/youtube/answer/58134?hl=en"
     },
     {
@@ -96,9 +81,14 @@
       "href": "https://support.google.com/youtube/answer/71674?hl=en"
     },
     {
-      "meta-title": "Video stuck on “Sending to subscribers’ feeds” - YouTube Help",
-      "meta-description": "If your video is stuck on the \"Sending to subscribers' feeds\" status, it may be&nbsp;because the video hasn’t been completely processed and isn’t available yet in all formats. For example, if you",
-      "href": "https://support.google.com/youtube/answer/2401708?hl=en"
+      "meta-title": "Fix duplicate uploads - YouTube Help",
+      "meta-description": "If you upload the same video twice, the second upload will be a duplicate. The duplicate will have a status of \"Upload failed: Duplicate upload\" or “File is a duplicate of a video you have already u",
+      "href": "https://support.google.com/youtube/answer/58139?hl=en"
+    },
+    {
+      "meta-title": "Video stuck during upload - YouTube Help",
+      "meta-description": "Tips for videos taking a long time to upload or that are stuck during upload.Uploading times vary depending on your file size, internet bandwidth, and upload traffic. Uploading can take anywhere from",
+      "href": "https://support.google.com/youtube/answer/4525858?hl=en"
     },
     {
       "meta-title": "Troubleshoot video takedowns - YouTube Help",
@@ -106,49 +96,24 @@
       "href": "https://support.google.com/youtube/answer/6395024?hl=en"
     },
     {
-      "meta-title": "Video stuck during upload - YouTube Help",
-      "meta-description": "Tips for videos taking a long time to upload or that are stuck during upload.Uploading times vary a lot depending on the format of your video, file size, internet bandwidth, and upload traffic. This c",
-      "href": "https://support.google.com/youtube/answer/4525858?hl=en"
+      "meta-title": "Send feedback - Computer - YouTube Help",
+      "meta-description": "Report a YouTube issue Sign in to youtube.com. Select your profile picture&nbsp;",
+      "href": "https://support.google.com/youtube/answer/4347644?hl=en"
     },
     {
-      "meta-title": "Get support with YouTube paid memberships & purchases - YouTube Help",
-      "meta-description": "Have a question about YouTube or YouTube Music? Need help with a purchase on YouTube?&nbsp; You can contact support anytime for help with: YouTube Premium&nbsp; YouTube Music Premium Super",
-      "href": "https://support.google.com/youtube/answer/7071292?hl=en"
-    },
-    {
-      "meta-title": "Troubleshoot YouTube Premium member benefits - YouTube Help",
-      "meta-description": "If you're a YouTube Premium member having&nbsp;problems with your membership benefits, check out these common issues and troubleshooting steps. You'll find details on how to fix video download issues,",
-      "href": "https://support.google.com/youtube/answer/7435679?hl=en"
-    },
-    {
-      "meta-title": "I can't download videos - Android - YouTube Help",
-      "meta-description": "Tip:&nbsp;You can only download videos&nbsp;in the YouTube mobile apps. This feature&nbsp;doesn't work on a web browser. Review the steps below for help resolving your issue.",
-      "href": "https://support.google.com/youtube/answer/7437518?hl=en"
-    },
-    {
-      "meta-title": "I can't watch the video I downloaded - Android - YouTube Help",
-      "meta-description": "Learn about how to download videos, and&nbsp;review the steps below for help resolving your issue.&nbsp;",
-      "href": "https://support.google.com/youtube/answer/7437823?hl=en"
-    },
-    {
-      "meta-title": "I see ads on YouTube videos - Computer - YouTube Help",
-      "meta-description": "If you're using an incognito browser or watching a video outside of the YouTube app, you may not be signed in to YouTube. If you're not signed in, you may see ads on YouTube videos. Review the step",
-      "href": "https://support.google.com/youtube/answer/7437519?hl=en"
-    },
-    {
-      "meta-title": "I'm getting an error message - Android - YouTube Help",
-      "meta-description": "Select the error message you're seeing below for help resolving the issue. \"Playback pau",
-      "href": "https://support.google.com/youtube/answer/7441275?hl=en"
-    },
-    {
-      "meta-title": "Background play isn't working - Computer - YouTube Help",
-      "meta-description": "Background play only works in the YouTube mobile apps and requires a YouTube Premium membership. Review the steps below for help resolving your issue.",
-      "href": "https://support.google.com/youtube/answer/7437614?hl=en"
+      "meta-title": "YouTube help & support - YouTube Help",
+      "meta-description": "&nbsp;YouTube Help Center\nYou're already here, the best place for all things troubleshooting. You can find&nbsp;the Help button at the bottom of any YouTube",
+      "href": "https://support.google.com/youtube/answer/9396735?hl=en"
     },
     {
       "meta-title": "Request human review of videos marked \"Not suitable for most advertisers\" - YouTube Help",
-      "meta-description": "If the content of a video you uploaded is identified as not suitable for advertisers, you'll see a yellow dollar sign, or",
+      "meta-description": "If the content of a video you uploaded is identified as not suitable for most advertisers, you'll see a yellow dollar sign, or",
       "href": "https://support.google.com/youtube/answer/7083671?hl=en"
+    },
+    {
+      "meta-title": "Contact the YouTube Creator Support team - Computer - YouTube Help",
+      "meta-description": "If you're in the YouTube Partner Program, you can get access to our Creator Support team.&nbsp;\nHow we can help\nWhether you're facing a specific problem or you want to learn how to get the most out",
+      "href": "https://support.google.com/youtube/answer/3545535?hl=en"
     },
     {
       "meta-title": "Get help as a YouTube Creator - YouTube Help",
@@ -161,122 +126,157 @@
       "href": "https://support.google.com/youtube/answer/1153367?hl=en"
     },
     {
-      "meta-title": "Contact the YouTube Creator Support team - Computer - YouTube Help",
-      "meta-description": "If you're in the YouTube Partner Program, you can get access to our Creator Support team.&nbsp;\nHow we can help\nWhether you're facing a specific problem or you want to learn how to get the most out",
-      "href": "https://support.google.com/youtube/answer/3545535?hl=en"
+      "meta-title": "Troubleshoot YouTube Premium member benefits - YouTube Help",
+      "meta-description": "If you're a YouTube Premium member having&nbsp;problems with your membership benefits, check out these common issues and troubleshooting steps. You'll find details on how to fix video download issues,",
+      "href": "https://support.google.com/youtube/answer/7435679?hl=en"
     },
     {
-      "meta-title": "Trending on YouTube - YouTube Help",
-      "meta-description": "Trending helps viewers see what’s happening on YouTube and in the world. Trending aims to surface videos that a wide range of viewers would find interesting. Some trends are predictable, like a new",
-      "href": "https://support.google.com/youtube/answer/7239739?hl=en"
+      "meta-title": "Get support with YouTube paid memberships & purchases - YouTube Help",
+      "meta-description": "Have a question about YouTube or YouTube Music? Need help with a purchase on YouTube?&nbsp; You can get in touch with support anytime for help with: YouTube Premium&nbsp; YouTube Music Premi",
+      "href": "https://support.google.com/youtube/answer/7071292?hl=en"
     },
     {
-      "meta-title": "Manage your recommendations and search results - Computer - YouTube Help",
-      "meta-description": "Your activity on YouTube, Google, and Chrome may influence your YouTube search results, recommendations on the Home page, in-app notifications,&nbsp;and suggested videos among other places.&nbsp;\nThe",
-      "href": "https://support.google.com/youtube/answer/6342839?hl=en"
+      "meta-title": "I see ads on YouTube videos - Computer - YouTube Help",
+      "meta-description": "If you're using an incognito browser or watching a video outside of the YouTube app, you may not be signed in to YouTube. If you're not signed in, you may see ads on YouTube videos. Review the step",
+      "href": "https://support.google.com/youtube/answer/7437519?hl=en"
     },
     {
-      "meta-title": "Search for videos with captions - YouTube Help",
-      "meta-description": "Videos with captions available will have a “CC” icon underneath the video summary in search results. If you’d like search results to only show videos with captions available, enable this search",
-      "href": "https://support.google.com/youtube/answer/3029103?hl=en"
+      "meta-title": "I can't download videos - Android - YouTube Help",
+      "meta-description": "Tip:&nbsp;You can only download videos&nbsp;in the YouTube mobile apps. This feature&nbsp;doesn't work on a web browser. Review the steps below for help resolving your issue.",
+      "href": "https://support.google.com/youtube/answer/7437518?hl=en"
     },
     {
-      "meta-title": "Advanced search (Filters) - YouTube Help",
-      "meta-description": "When you search for videos and other content on YouTube, you can refine your search by using filters. Computer Subscribe to our",
-      "href": "https://support.google.com/youtube/answer/111997?hl=en"
+      "meta-title": "Background play isn't working - Computer - YouTube Help",
+      "meta-description": "Background play only works in the YouTube mobile apps and requires a YouTube Premium membership. Review the steps below for help resolving your issue.",
+      "href": "https://support.google.com/youtube/answer/7437614?hl=en"
     },
     {
-      "meta-title": "Remove recommended content from Home - Android - YouTube Help",
-      "meta-description": "In order to improve your recommendations and see more videos that are relevant to your interests, you can remove recommended content that you are not interested in from your Home.\nNote: This feature",
-      "href": "https://support.google.com/youtube/answer/6125535?hl=en"
+      "meta-title": "I can't watch the video I downloaded - Android - YouTube Help",
+      "meta-description": "Learn about how to download videos, and&nbsp;review the steps below for help resolving your issue.&nbsp;",
+      "href": "https://support.google.com/youtube/answer/7437823?hl=en"
     },
     {
-      "meta-title": "Find music from artists you like - YouTube Help",
-      "meta-description": "You can subscribe to an artist to keep up to date with their new music, videos, and tours. Once you subscribe, any new videos the artists publish will show up in your Subscriptions feed.\nSubscribe to",
-      "href": "https://support.google.com/youtube/answer/7636475?hl=en"
+      "meta-title": "I'm getting an error message - Android - YouTube Help",
+      "meta-description": "Select the error message you're seeing below for help resolving the issue. \"Playback pau",
+      "href": "https://support.google.com/youtube/answer/7441275?hl=en"
     },
     {
-      "meta-title": "Find videos with voice search - Android - YouTube Help",
-      "meta-description": "You can use your voice to search for videos on YouTube.\nStart a voice search Sign into YouTube. Tap the search icon",
-      "href": "https://support.google.com/youtube/answer/9372650?hl=en"
+      "meta-title": "Watch in full screen mode - Android - YouTube Help",
+      "meta-description": "Full screen mode allows you to watch videos that&nbsp;take up your entire screen.&nbsp;\nVideo viewing basics",
+      "href": "https://support.google.com/youtube/answer/72689?hl=en"
     },
     {
-      "meta-title": "Official Cards in Search - YouTube Help",
-      "meta-description": "Official Cards make it easier for viewers to discover content by highlighting official material in YouTube Search. These cards include official videos and posts from top channels, like those of top Yo",
-      "href": "https://support.google.com/youtube/answer/9210330?hl=en"
+      "meta-title": "Watch videos on slow connections (Dial-up) - YouTube Help",
+      "meta-description": "Still rocking&nbsp;the 56k? No problem. Even if you have a slow internet connection, you can still watch YouTube videos. Here's how to get the best possible viewing experience: Choose lower video",
+      "href": "https://support.google.com/youtube/answer/74663?hl=en"
     },
     {
-      "meta-title": "Find your way around YouTube - Android - YouTube Help",
-      "meta-description": "How to browse your subscriptions on mobile\nSigned in? How you navigate YouTube depends on if you are signed in. On a phone or table",
-      "href": "https://support.google.com/youtube/answer/2398242?hl=en"
+      "meta-title": "Change video player size - YouTube Help",
+      "meta-description": "When using YouTube on your computer, the size of your video player will automatically adapt based on the available space in your browser window.\nIf you want to manually change the size of your video",
+      "href": "https://support.google.com/youtube/answer/6052392?hl=en"
     },
     {
-      "meta-title": "Type with a virtual keyboard - YouTube Help",
-      "meta-description": "How to search in other languages using an onscreen keyboard\nIf you use a language that requires special characters (e.g. Arabic, Greek, Thai), enter more precise search terms in YouTube by using the",
-      "href": "https://support.google.com/youtube/answer/1047939?hl=en"
+      "meta-title": "Play a video at different speeds - Android - YouTube Help",
+      "meta-description": "You can play a video at different speeds on any device.\nNote: For performance reasons, you must be on&nbsp;Android version 5.0 or above to play videos at different speeds.&nbsp; Go to a vide",
+      "href": "https://support.google.com/youtube/answer/7509567?hl=en"
     },
     {
-      "meta-title": "YouTube feature experiments and rollouts - YouTube Help",
-      "meta-description": "You may sometimes notice that YouTube features can look different across different accounts. This could be because you haven't updated to the latest version of the app, or because you're seeing an exp",
-      "href": "https://support.google.com/youtube/answer/7367023?hl=en"
+      "meta-title": "Watch videos at high frame rate - Android - YouTube Help",
+      "meta-description": "How to watch at high frame rate\nTo get high frame rate playback, watch a YouTube video at a quality of 720p or 1080p.\nIn the quality menu, high frame rate will be listed next to the resolution (exam",
+      "href": "https://support.google.com/youtube/answer/6124459?hl=en"
     },
     {
-      "meta-title": "Sign in & out of YouTube - Computer - YouTube Help",
-      "meta-description": "Sign in to access your subscriptions, playlists, uploads, purchases, history and more. Learn how to create a Google&nbsp;Account.&nbsp;\nGettin",
-      "href": "https://support.google.com/youtube/answer/3802431?hl=en"
+      "meta-title": "Change the quality of your video - YouTube Help",
+      "meta-description": "To give you the best viewing experience, YouTube adjusts the quality of your video stream based on your viewing conditions. This is why you may notice that the quality of your video changes as you wat",
+      "href": "https://support.google.com/youtube/answer/91449?hl=en"
     },
     {
-      "meta-title": "Manage your Library - YouTube Help",
-      "meta-description": "You can find your History, Watch Later, Playlists, and other channel details on your Library page.\nTo find your Library, go to the menu on the side and select&nbsp;",
-      "href": "https://support.google.com/youtube/answer/9209643?hl=en"
+      "meta-title": "Video progress bar - YouTube Help",
+      "meta-description": "The video&nbsp;progress bar makes it easy to check where you left off the last time you watched a video. When you leave a video without finishing it, a red bar under the video thumbnail shows you wher",
+      "href": "https://support.google.com/youtube/answer/7174115?hl=en"
     },
     {
-      "meta-title": "Test feature experiments at Youtube.com/new - YouTube Help",
-      "meta-description": "You can learn about and opt into experimental YouTube desktop features at Youtube.com/new.&nbsp;\nNot all experiments will end up launching to all users, so if you choose to opt in, please give as muc",
-      "href": "https://support.google.com/youtube/answer/9227818?hl=en"
+      "meta-title": "Manage what types of ads you see on YouTube videos - YouTube Help",
+      "meta-description": "Why am I seeing ads on YouTube videos?\nYou may see different types of ads on YouTube. The ads you see may be based on the content of the video you're viewing,&nbsp;among other factors. Other factors",
+      "href": "https://support.google.com/youtube/answer/7403255?hl=en"
     },
     {
-      "meta-title": "YouTube Kids - YouTube Help",
-      "meta-description": "The official YouTube Kids app is designed for curious little minds. This free app is delightfully simple and packed full of age-appropriate videos, channels, and playlists. YouTube Kids features popul",
-      "href": "https://support.google.com/youtube/answer/6173147?hl=en"
+      "meta-title": "Watch YouTube in Dark theme - Computer - YouTube Help",
+      "meta-description": "Dark theme allows you to tone down your&nbsp;screen’s glare and experience YouTube with a dark background. Select your profile picture&nbsp;",
+      "href": "https://support.google.com/youtube/answer/7385323?hl=en"
     },
     {
-      "meta-title": "Music on YouTube - YouTube Help",
-      "meta-description": "We’ve created a series of new features to help you enjoy the huge collection of music on YouTube. These features make it easy to find high quality music from your favorite musicians and to discover",
-      "href": "https://support.google.com/youtube/answer/6059409?hl=en"
+      "meta-title": "“Up Next” videos - YouTube Help",
+      "meta-description": "“Up Next” videos are displayed next to or below the video a user is watching. They are automatically selected based on several factors, including what is currently being watched. Learn more about",
+      "href": "https://support.google.com/youtube/answer/92651?hl=en"
     },
     {
-      "meta-title": "Watch YouTube Stories - YouTube Help",
-      "meta-description": "Stories is a collection of short videos. You can watch on the mobile YouTube app from either the top of your Subscriptions feed, from the creator's Stories tab, from your homepage, or on some watch pa",
-      "href": "https://support.google.com/youtube/answer/7573166?hl=en"
+      "meta-title": "Desktop Miniplayer - YouTube Help",
+      "meta-description": "The Miniplayer allows you to continue watching videos while you browse YouTube. The player supports Playlists, Livestreams, and any other videos.",
+      "href": "https://support.google.com/youtube/answer/9162927?hl=en"
     },
     {
-      "meta-title": "Sports on YouTube - YouTube Help",
-      "meta-description": "In some cases, you can watch exclusive live sports content on YouTube. You don't need to have a YouTube account to watch, and featured content is available on YouTube on all of your devices.&nbsp;\nIf",
-      "href": "https://support.google.com/youtube/answer/9396645?hl=en"
+      "meta-title": "Use picture-in-picture on certain devices - Android - YouTube Help",
+      "meta-description": "Picture-in-picture (PiP) allows you to watch YouTube videos while using other apps on your mobile device.\nWatch YouTube while using other apps",
+      "href": "https://support.google.com/youtube/answer/7552722?hl=en"
     },
     {
-      "meta-title": "Browse gaming content on YouTube - YouTube Help",
-      "meta-description": "The redesigned Gaming homepage is a great place to look for new gaming content on YouTube. At the very top of the page you’ll see personalized gaming content based on what you like to watch. You’l",
-      "href": "https://support.google.com/youtube/answer/9134402?hl=en"
+      "meta-title": "Use Autoplay on Home on certain devices - Android - YouTube Help",
+      "meta-description": "You can preview and watch videos while you browse the Home tab in the YouTube app. As you scroll through your Home feed, videos will begin to play on mute with",
+      "href": "https://support.google.com/youtube/answer/7640367?hl=en"
     },
     {
-      "meta-title": "Connect your account to earn rewards - YouTube Help",
-      "meta-description": "You can become eligible for rewards by connecting your Google Account to one of our rewards partner accounts and then watching eligible content on YouTube.\nConnect your accounts Sign in to YouTub",
-      "href": "https://support.google.com/youtube/answer/9024948?hl=en"
+      "meta-title": "Use YouTube with a screen reader - YouTube Help",
+      "meta-description": "Get the best YouTube experience with a computer screen reader using the tips on this page. Keyboard shortcuts are automatically turned on when you use YouTube.\nSearch&nbsp;YouTube and Search results",
+      "href": "https://support.google.com/youtube/answer/189278?hl=en"
     },
     {
-      "meta-title": "Understand upcoming changes to YouTube Gaming - YouTube Help",
-      "meta-description": "We want to continue to build a stronger home for the gaming community that thrives on YouTube, not just the YouTube Gaming app. After May&nbsp;2019, we’ll retire the YouTube Gaming app and focus our",
-      "href": "https://support.google.com/youtube/answer/9135119?hl=en"
+      "meta-title": "Use RSS with YouTube - YouTube Help",
+      "meta-description": "Get RSS updates for a single channel\nTo get an RSS feed of a single channel’s uploads, paste the channel URL into your RSS reader.\nGet RSS updates for all subscriptions\nTo import all your YouTube",
+      "href": "https://support.google.com/youtube/answer/6224202?hl=en"
     },
     {
-      "meta-title": "Information panel providing topical context - YouTube Help",
-      "meta-description": "Note: This feature is currently available only in the United States and South Korea.\nUsers may see information from third parties, including Encyclopedia Britannica and Wikipedia, alongside video",
-      "href": "https://support.google.com/youtube/answer/9004474?hl=en"
+      "meta-title": "Keyboard shortcuts for YouTube - YouTube Help",
+      "meta-description": "Save time navigating YouTube on a computer with keyboard shortcuts.\nTo access the list of Keyboard shortcuts, go to your profile picture",
+      "href": "https://support.google.com/youtube/answer/7631406?hl=en"
+    },
+    {
+      "meta-title": "Change font size - Android - YouTube Help",
+      "meta-description": "Make YouTube's font size&nbsp;smaller or larger on your screen by changing the font settings for your browser or device. Learn more about changing the font size of video captions.",
+      "href": "https://support.google.com/youtube/answer/7364677?hl=en"
+    },
+    {
+      "meta-title": "Time watched profile - Android - YouTube Help",
+      "meta-description": "Check how much time you spend watching YouTube Stats are based on your watch history across YouTube (exc",
+      "href": "https://support.google.com/youtube/answer/9052667?hl=en"
+    },
+    {
+      "meta-title": "Take a break reminder - Android - YouTube Help",
+      "meta-description": "The take a break reminder lets you set a reminder to take a break while watching videos. The reminder will pause your video until you dismiss it or resume playing the video. This feature is available",
+      "href": "https://support.google.com/youtube/answer/9012523?hl=en"
+    },
+    {
+      "meta-title": "Navigating between videos - Android - YouTube Help",
+      "meta-description": "While watching a YouTube video, there are a couple of ways to navigate between videos.&nbsp; &nbsp; &nbsp; &nbsp; Player Controls When a",
+      "href": "https://support.google.com/youtube/answer/9047376?hl=en"
+    },
+    {
+      "meta-title": "Change language or location settings - Computer - YouTube Help",
+      "meta-description": "You have the option to select your language and location on YouTube on your computer and mobile web, and the option to select your location on the YouTube mobile app. Language settings change the text",
+      "href": "https://support.google.com/youtube/answer/87604?hl=en"
+    },
+    {
+      "meta-title": "Beta test the YouTube App on Android - YouTube Help",
+      "meta-description": "The Android Beta Program is open to all Android app developers or any user with an Android device. As a YouTube beta tester, you'll be able to use the YouTube app normally. This will help us improve a",
+      "href": "https://support.google.com/youtube/answer/9156467?hl=en"
     }
   ],
   "fr": [
+    {
+      "meta-title": "Ajouter des vidéos à une file d'attente sur ordinateur - Aide YouTube",
+      "meta-description": "Lorsque vous visionnez des contenus dans le lecteur réduit, vous pouvez ajouter les prochaines vidéos que souhaitez regarder à la file d’attente.&nbsp;\nHow to add videos to y",
+      "href": "https://support.google.com/youtube/answer/9546304?hl=fr"
+    },
     {
       "meta-title": "Règlement de la communauté YouTube - Aide YouTube",
       "meta-description": "Utiliser YouTube, c'est rejoindre une communauté de personnes venant du monde entier. Nous vous demandons de respecter les consignes ci-dessous pour que YouTube reste un site divertissant et agréabl",
@@ -288,24 +288,24 @@
       "href": "https://support.google.com/youtube/answer/3037019?hl=fr"
     },
     {
-      "meta-title": "Résoudre les problèmes liés aux messages d'erreur sur YouTube - Ordinateur - Aide YouTube",
-      "meta-description": "Si YouTube n'arrive pas à effectuer l'action que vous avez entreprise, un message d'erreur s'affiche sur votre appareil. Les causes des messages d'erreur sont nombreuses et souvent indépendantes de",
-      "href": "https://support.google.com/youtube/answer/7168344?hl=fr"
-    },
-    {
       "meta-title": "Écran vert sur le lecteur vidéo - Aide YouTube",
       "meta-description": "Vous entendez le son d'une vidéo YouTube sur votre ordinateur, mais le lecteur vidéo affiche un écran vert ? Essayez d'utiliser un autre navigateur pour regarder la vidéo. Si le problème persist",
       "href": "https://support.google.com/youtube/answer/1230977?hl=fr"
     },
     {
-      "meta-title": "Bouton du volume désactivé sur YouTube - Aide YouTube",
-      "meta-description": "Si vous remarquez que le bouton du volume est désactivé sur vos vidéos YouTube, essayez de résoudre le problème en procédant comme suit : Assurez-vous que le son/volume est activé dans vot",
-      "href": "https://support.google.com/youtube/answer/6397026?hl=fr"
+      "meta-title": "Résoudre les problèmes liés aux messages d'erreur sur YouTube - Ordinateur - Aide YouTube",
+      "meta-description": "Si YouTube n'arrive pas à effectuer l'action que vous avez entreprise, un message d'erreur s'affiche sur votre appareil. Les causes des messages d'erreur sont nombreuses et souvent indépendantes de",
+      "href": "https://support.google.com/youtube/answer/7168344?hl=fr"
     },
     {
       "meta-title": "Titre, description ou miniature d'une vidéo incorrects sur Facebook et Twitter - Aide YouTube",
       "meta-description": "Lorsque l'URL d'une vidéo YouTube est saisie sur Facebook ou Twitter, les informations renseignées automatiquement telles que le titre, la description ou la miniature de la vidéo sont parfois vides",
       "href": "https://support.google.com/youtube/answer/6062620?hl=fr"
+    },
+    {
+      "meta-title": "Bouton du volume désactivé sur YouTube - Aide YouTube",
+      "meta-description": "Si vous remarquez que le bouton du volume est désactivé sur vos vidéos YouTube, essayez de résoudre le problème en procédant comme suit : Assurez-vous que le son/volume est activé dans vot",
+      "href": "https://support.google.com/youtube/answer/6397026?hl=fr"
     },
     {
       "meta-title": "Envoyer des informations de débogage à YouTube - Ordinateur - Aide YouTube",
@@ -318,14 +318,14 @@
       "href": "https://support.google.com/youtube/answer/32050?hl=fr"
     },
     {
-      "meta-title": "Vidéo indisponible dans mon pays - Aide YouTube",
-      "meta-description": "Certaines vidéos YouTube peuvent ne pas être disponibles dans votre pays pour les raisons suivantes : Les propriétaires des vidéos ont limité l'accès à leur contenu à certains pays (géné",
-      "href": "https://support.google.com/youtube/answer/92571?hl=fr"
-    },
-    {
       "meta-title": "Google – Rapport sur la qualité vidéo - Aide YouTube",
       "meta-description": "Le Rapport sur la qualité vidéo indique le type de performances généralement fourni par votre fournisseur d'accès à Internet (FAI), le classement des différents fournisseurs dans votre région,",
       "href": "https://support.google.com/youtube/answer/6013340?hl=fr"
+    },
+    {
+      "meta-title": "Vidéo indisponible dans mon pays - Aide YouTube",
+      "meta-description": "Certaines vidéos YouTube peuvent ne pas être disponibles dans votre pays pour les raisons suivantes : Les propriétaires des vidéos ont limité l'accès à leur contenu à certains pays (géné",
+      "href": "https://support.google.com/youtube/answer/92571?hl=fr"
     },
     {
       "meta-title": "Impossibilité de regarder des vidéos privées - Aide YouTube",
@@ -338,19 +338,24 @@
       "href": "https://support.google.com/youtube/answer/6322658?hl=fr"
     },
     {
-      "meta-title": "Vidéos disponibles uniquement pour les abonnés YouTube Music Premium - Aide YouTube",
-      "meta-description": "Lorsque vous essayez d'afficher certaines vidéos, vous voyez peut-être apparaître l'un des messages d'erreur suivants : \"Cette vidéo n'est disponible que pour les abonnés YouTube Music Prem",
-      "href": "https://support.google.com/youtube/answer/9177241?hl=fr"
-    },
-    {
       "meta-title": "Configuration système requise - Aide YouTube",
       "meta-description": "Pour regarder des vidéos YouTube, assurez-vous que votre navigateur et votre système d'exploitation sont à jour, et que vous disposez d'une connexion Internet de bonne qualité : Dernière ver",
       "href": "https://support.google.com/youtube/answer/78358?hl=fr"
     },
     {
+      "meta-title": "Vidéos disponibles uniquement pour les abonnés YouTube Music Premium - Aide YouTube",
+      "meta-description": "Lorsque vous essayez d'afficher certaines vidéos, vous voyez peut-être apparaître l'un des messages d'erreur suivants : \"Cette vidéo n'est disponible que pour les abonnés YouTube Music Prem",
+      "href": "https://support.google.com/youtube/answer/9177241?hl=fr"
+    },
+    {
       "meta-title": "Adresse e-mail oubliée - Aide YouTube",
       "meta-description": " \nPour identifier le nom d'utilisateur de votre compte Google, procédez comme suit : Suivez les étapes affichées pour identifier votre compte. Vous devez connaîtr",
       "href": "https://support.google.com/youtube/answer/3309286?hl=fr"
+    },
+    {
+      "meta-title": "Envoyer des commentaires - Ordinateur - Aide YouTube",
+      "meta-description": "Signaler un problème rencontré avec YouTube Connectez-vous à youtube.com. Sélectionnez votre",
+      "href": "https://support.google.com/youtube/answer/4347644?hl=fr"
     },
     {
       "meta-title": "Connexion impossible avec un nom d'utilisateur YouTube - Aide YouTube",
@@ -363,19 +368,14 @@
       "href": "https://support.google.com/youtube/answer/2972692?hl=fr"
     },
     {
-      "meta-title": "Problèmes d'accès à YouTube - Aide YouTube",
-      "meta-description": "Si une page d'erreur s'affiche lorsque vous accédez à youtube.com, cela peut être dû à l'une des raisons suivantes : Il peut s'agir d'un problème de connexion. Vérifiez que vous pouvez to",
-      "href": "https://support.google.com/youtube/answer/6159254?hl=fr"
-    },
-    {
       "meta-title": "Le service YouTube \"n'est pas disponible\" pour votre domaine - Aide YouTube",
       "meta-description": "Si le message suivant s'affiche, cela signifie que YouTube n'est actuellement pas activé en tant que service sur G Suite :\nCe service n'est pas disponible YouTube n'est pas disponible pour domai",
       "href": "https://support.google.com/youtube/answer/1074205?hl=fr"
     },
     {
-      "meta-title": "Résoudre un problème de compte YouTube piraté - Aide YouTube",
-      "meta-description": "Si vous rencontrez l'un des problèmes suivants, il est possible que votre compte Google ait été piraté : Des modifications que vous n'avez pas effectuées apparaissent sur votre compte : vot",
-      "href": "https://support.google.com/youtube/answer/76187?hl=fr"
+      "meta-title": "Problèmes d'accès à YouTube - Aide YouTube",
+      "meta-description": "Si une page d'erreur s'affiche lorsque vous accédez à youtube.com, cela peut être dû à l'une des raisons suivantes : Il peut s'agir d'un problème de connexion. Vérifiez que vous pouvez to",
+      "href": "https://support.google.com/youtube/answer/6159254?hl=fr"
     },
     {
       "meta-title": "Masquer ou supprimer votre chaîne YouTube - Aide YouTube",
@@ -388,6 +388,21 @@
       "href": "https://support.google.com/youtube/answer/6094466?hl=fr"
     },
     {
+      "meta-title": "Résoudre un problème de compte YouTube piraté - Aide YouTube",
+      "meta-description": "Si vous rencontrez l'un des problèmes suivants, il est possible que votre compte Google ait été piraté : Des modifications que vous n'avez pas effectuées apparaissent sur votre compte : vot",
+      "href": "https://support.google.com/youtube/answer/76187?hl=fr"
+    },
+    {
+      "meta-title": "Problèmes liés à l'utilisation d'outils tiers avec des comptes de marque - Aide YouTube",
+      "meta-description": "En associant vos chaînes à des comptes de marque, vous pouvez accéder à plusieurs chaînes à partir d'un seul compte. Malheureusement, certaines applications tierces ou anciennes ne sont pas comp",
+      "href": "https://support.google.com/youtube/answer/3046478?hl=fr"
+    },
+    {
+      "meta-title": "Problèmes d'authentification d'applications tierces - Aide YouTube",
+      "meta-description": "YouTube a mis à jour YouTube Data API service v2 vers YouTube Data API service v3. Il s'agit d'une technologie plus récente qui permet d'intégrer des applications tierces à YouTube. Les dévelo",
+      "href": "https://support.google.com/youtube/answer/6388033?hl=fr"
+    },
+    {
       "meta-title": "Transférer une chaîne YouTube vers un compte de marque - Aide YouTube",
       "meta-description": "Lorsqu'une chaîne est associée à un compte de marque, plusieurs utilisateurs peuvent la gérer via leur compte Google. Si vous possédez déjà une chaîne YouTube, vous pouvez l'associer à un c",
       "href": "https://support.google.com/youtube/answer/3056283?hl=fr"
@@ -396,51 +411,6 @@
       "meta-title": "Modifier les informations de votre chaîne - Ordinateur - Aide YouTube",
       "meta-description": "Si vous utilisez le nom et la photo de votre compte Google pour votre chaîne YouTube, vous pouvez mettre à jour ces informations à tout moment. Votre nom et votre photo seront alors modifiés sur t",
       "href": "https://support.google.com/youtube/answer/2657964?hl=fr"
-    },
-    {
-      "meta-title": "Problèmes d'authentification d'applications tierces - Aide YouTube",
-      "meta-description": "YouTube a mis à jour YouTube Data API service v2 vers YouTube Data API service v3. Il s'agit d'une technologie plus récente qui permet d'intégrer des applications tierces à YouTube. Les dévelo",
-      "href": "https://support.google.com/youtube/answer/6388033?hl=fr"
-    },
-    {
-      "meta-title": "Problèmes liés à l'utilisation d'outils tiers avec des comptes de marque - Aide YouTube",
-      "meta-description": "En associant vos chaînes à des comptes de marque, vous pouvez accéder à plusieurs chaînes à partir d'un seul compte. Malheureusement, certaines applications tierces ou anciennes ne sont pas comp",
-      "href": "https://support.google.com/youtube/answer/3046478?hl=fr"
-    },
-    {
-      "meta-title": "Résoudre les problèmes audio ou vidéo de vos mises en ligne - Aide YouTube",
-      "meta-description": "Si vous rencontrez des problèmes avec le son ou l'image d'une vidéo que vous avez mise en ligne, suivez les instructions de dépannage ci-dessous. Impossible de lire une nouvelle vidéo en réso",
-      "href": "https://support.google.com/youtube/answer/58134?hl=fr"
-    },
-    {
-      "meta-title": "Envoyer des commentaires - Ordinateur - Aide YouTube",
-      "meta-description": "Signaler un problème rencontré avec YouTube Connectez-vous à youtube.com. Sélectionnez votre",
-      "href": "https://support.google.com/youtube/answer/4347644?hl=fr"
-    },
-    {
-      "meta-title": "Message \"Échec de la mise en ligne : vidéo déjà en ligne\" - Aide YouTube",
-      "meta-description": "Si le message d'erreur \"Échec de la mise en ligne : vidéo déjà en ligne\" s'affiche à côté de l'une de vos vidéos, cela signifie que le contenu que vous avez mis en ligne existe déjà dans",
-      "href": "https://support.google.com/youtube/answer/58139?hl=fr"
-    },
-    {
-      "meta-title": "Faible qualité vidéo après la mise en ligne - Aide YouTube",
-      "meta-description": "Lorsque vous mettez en ligne une vidéo, elle est d'abord traitée en basse résolution. Cela permet d'accélérer son importation. Une fois la mise en ligne terminée, votre vidéo est disponible en",
-      "href": "https://support.google.com/youtube/answer/71674?hl=fr"
-    },
-    {
-      "meta-title": "Vidéo bloquée sur \"Envoi vers le flux des abonnés\" - Aide YouTube",
-      "meta-description": "Si votre vidéo est bloquée sur l'état \"Envoi vers le flux des abonnés\", c'est peut-être que son traitement n'est pas terminé et qu'elle n'est pas encore disponible dans tous les formats. Par exe",
-      "href": "https://support.google.com/youtube/answer/2401708?hl=fr"
-    },
-    {
-      "meta-title": "Vidéo bloquée pendant la mise en ligne - Aide YouTube",
-      "meta-description": "Conseils pour les vidéos dont la mise en ligne prend du temps ou qui sont bloquées pendant celle-ciLa durée d'importation varie beaucoup selon le format de votre vidéo, la taille du fichier, la ba",
-      "href": "https://support.google.com/youtube/answer/4525858?hl=fr"
-    },
-    {
-      "meta-title": "Résoudre les problèmes relatifs au retrait de vidéos - Aide YouTube",
-      "meta-description": "Cet article contient des informations sur les vidéos supprimées de YouTube. Si vous avez besoin d'aide pour retirer une vidéo, découvrez comment supprimer vos vidéos ou signaler du contenu inapp",
-      "href": "https://support.google.com/youtube/answer/6395024?hl=fr"
     },
     {
       "meta-title": "Obtenir de l'aide concernant les achats et abonnements payants YouTube - Aide YouTube",
@@ -453,19 +423,14 @@
       "href": "https://support.google.com/youtube/answer/7435679?hl=fr"
     },
     {
-      "meta-title": "Je ne peux pas regarder la vidéo que j'ai téléchargée - Android - Aide YouTube",
-      "meta-description": "Découvrez comment télécharger des vidéos, et consultez la procédure décrite ci-dessous pour obtenir de l'aide concernant votre problème. ",
-      "href": "https://support.google.com/youtube/answer/7437823?hl=fr"
-    },
-    {
       "meta-title": "Je ne peux pas télécharger de vidéo - Android - Aide YouTube",
       "meta-description": "Astuce : Vous ne pouvez télécharger des vidéos que dans les applications mobiles YouTube. Cette option ne fonctionne pas sur les navigateurs Web. Consultez la procédure décrite ci-dessous pou",
       "href": "https://support.google.com/youtube/answer/7437518?hl=fr"
     },
     {
-      "meta-title": "La lecture en arrière-plan ne fonctionne pas - Ordinateur - Aide YouTube",
-      "meta-description": "La lecture en arrière-plan ne fonctionne que dans les applications mobiles YouTube et nécessite un abonnement YouTube Premium. Consultez la procédure décrite ci-dessous pour obtenir de l'a",
-      "href": "https://support.google.com/youtube/answer/7437614?hl=fr"
+      "meta-title": "Je ne peux pas regarder la vidéo que j'ai téléchargée - Android - Aide YouTube",
+      "meta-description": "Découvrez comment télécharger des vidéos, et consultez la procédure décrite ci-dessous pour obtenir de l'aide concernant votre problème. ",
+      "href": "https://support.google.com/youtube/answer/7437823?hl=fr"
     },
     {
       "meta-title": "Des annonces s'affichent sur les vidéos YouTube - Ordinateur - Aide YouTube",
@@ -473,9 +438,9 @@
       "href": "https://support.google.com/youtube/answer/7437519?hl=fr"
     },
     {
-      "meta-title": "Demander un examen manuel des vidéos identifiées comme non adaptées à la majorité des annonceurs - Aide YouTube",
-      "meta-description": "Si le contenu d'une vidéo que vous avez mise en ligne est identifié comme n'étant pas adapté aux annonceurs, une icône jaune représentant un dollar ( ou",
-      "href": "https://support.google.com/youtube/answer/7083671?hl=fr"
+      "meta-title": "Résoudre les problèmes audio ou vidéo de vos mises en ligne - Aide YouTube",
+      "meta-description": "Si vous rencontrez des problèmes avec le son ou l'image d'une vidéo que vous avez mise en ligne, suivez les instructions de dépannage ci-dessous. Impossible de lire une nouvelle vidéo en réso",
+      "href": "https://support.google.com/youtube/answer/58134?hl=fr"
     },
     {
       "meta-title": "Un message d'erreur s'affiche - Android - Aide YouTube",
@@ -483,13 +448,38 @@
       "href": "https://support.google.com/youtube/answer/7441275?hl=fr"
     },
     {
-      "meta-title": "Faire appel d'une limite d'âge appliquée à votre vidéo - Aide YouTube",
-      "meta-description": "Le Règlement de la communauté décrit les contenus autorisés et interdits sur YouTube. Ce sont des règles auxquelles toutes les vidéos doivent adhérer. Nous supprimons les vidéos ne respectant",
-      "href": "https://support.google.com/youtube/answer/1153367?hl=fr"
+      "meta-title": "Corriger les importations en double - Aide YouTube",
+      "meta-description": "Si vous importez deux fois la même vidéo, la seconde importation créera un doublon. Ce fichier en double affichera le statut \"Échec de la mise en ligne&nbsp;: vidéo déjà en ligne\" ou \"Ce fichie",
+      "href": "https://support.google.com/youtube/answer/58139?hl=fr"
+    },
+    {
+      "meta-title": "Faible qualité vidéo après la mise en ligne - Aide YouTube",
+      "meta-description": "Lorsque vous mettez en ligne une vidéo, elle est d'abord traitée en basse résolution. Cela permet d'accélérer son importation. Une fois la mise en ligne terminée, votre vidéo est disponible en",
+      "href": "https://support.google.com/youtube/answer/71674?hl=fr"
+    },
+    {
+      "meta-title": "Vidéo bloquée pendant la mise en ligne - Aide YouTube",
+      "meta-description": "Conseils pour les vidéos dont la mise en ligne prend du temps ou qui sont bloquées pendant celle-ciLe temps nécessaire à la mise en ligne varie selon la taille de votre fichier, la bande passante",
+      "href": "https://support.google.com/youtube/answer/4525858?hl=fr"
+    },
+    {
+      "meta-title": "La lecture en arrière-plan ne fonctionne pas - Ordinateur - Aide YouTube",
+      "meta-description": "La lecture en arrière-plan ne fonctionne que dans les applications mobiles YouTube et nécessite un abonnement YouTube Premium. Consultez la procédure décrite ci-dessous pour obtenir de l'a",
+      "href": "https://support.google.com/youtube/answer/7437614?hl=fr"
+    },
+    {
+      "meta-title": "Demander un examen manuel des vidéos identifiées comme non adaptées à la majorité des annonceurs - Aide YouTube",
+      "meta-description": "Si le contenu d'une vidéo que vous avez mise en ligne est identifié comme n'étant pas adapté à la majorité des annonceurs, une icône jaune en forme de dollar (",
+      "href": "https://support.google.com/youtube/answer/7083671?hl=fr"
+    },
+    {
+      "meta-title": "Résoudre les problèmes relatifs au retrait de vidéos - Aide YouTube",
+      "meta-description": "Cet article contient des informations sur les vidéos supprimées de YouTube. Si vous avez besoin d'aide pour retirer une vidéo, découvrez comment supprimer vos vidéos ou signaler du contenu inapp",
+      "href": "https://support.google.com/youtube/answer/6395024?hl=fr"
     },
     {
       "meta-title": "Ressources destinées aux créateurs YouTube - Aide YouTube",
-      "meta-description": "Contacter l'équipe d'assistance destinée aux créateurs Vous pouvez contacter l'équipe d'assistance YouTube destinée aux créateurs par e-mail pour obtenir de l'aide si vous participez au Progr",
+      "meta-description": "Contacter l'équipe d'assistance destinée aux créateurs Vous pouvez contacter l'équipe d'assistance YouTube destinée aux créateurs par e-mail pour obtenir de l'aide si vous participez au Prog",
       "href": "https://support.google.com/youtube/answer/6249136?hl=fr"
     },
     {
@@ -503,9 +493,19 @@
       "href": "https://support.google.com/youtube/answer/7239739?hl=fr"
     },
     {
+      "meta-title": "Faire appel d'une limite d'âge appliquée à votre vidéo - Aide YouTube",
+      "meta-description": "Le Règlement de la communauté décrit les contenus autorisés et interdits sur YouTube. Ce sont des règles auxquelles toutes les vidéos doivent adhérer. Nous supprimons les vidéos ne respectant",
+      "href": "https://support.google.com/youtube/answer/1153367?hl=fr"
+    },
+    {
       "meta-title": "Gérer les recommandations et les résultats de recherche - Ordinateur - Aide YouTube",
       "meta-description": "Votre activité sur YouTube, Google et Chrome peut influencer vos résultats de recherche YouTube, ainsi que les recommandations qui s'affichent notamment sur votre page d'accueil, vos notifications d",
       "href": "https://support.google.com/youtube/answer/6342839?hl=fr"
+    },
+    {
+      "meta-title": "Recherche avancée (filtres) - Aide YouTube",
+      "meta-description": "Lorsque vous recherchez des vidéos et d'autres contenus sur YouTube, vous pouvez affiner votre recherche à l'aide de filtres. Sur un ordinateur Abonnez-vous à la chaîne",
+      "href": "https://support.google.com/youtube/answer/111997?hl=fr"
     },
     {
       "meta-title": "Rechercher des vidéos avec des sous-titres - Aide YouTube",
@@ -516,11 +516,6 @@
       "meta-title": "Supprimer des contenus recommandés de votre page d'accueil - Android - Aide YouTube",
       "meta-description": "Pour améliorer la pertinence de vos recommandations et découvrir plus de vidéos correspondant à vos centres d'intérêt, vous pouvez supprimer de votre page d'accueil les contenus recommandés qui",
       "href": "https://support.google.com/youtube/answer/6125535?hl=fr"
-    },
-    {
-      "meta-title": "Recherche avancée (filtres) - Aide YouTube",
-      "meta-description": "Lorsque vous recherchez des vidéos et d'autres contenus sur YouTube, vous pouvez affiner votre recherche à l'aide de filtres. Sur un ordinateur Abonnez-vous à la chaîne",
-      "href": "https://support.google.com/youtube/answer/111997?hl=fr"
     },
     {
       "meta-title": "Rechercher les titres des artistes que vous aimez - Aide YouTube",
@@ -538,11 +533,6 @@
       "href": "https://support.google.com/youtube/answer/2398242?hl=fr"
     },
     {
-      "meta-title": "Tests et déploiements des fonctionnalités YouTube - Aide YouTube",
-      "meta-description": "Vous avez peut-être remarqué que l'affichage des fonctionnalités YouTube diffère parfois selon le compte utilisé. Cette situation peut venir du fait que vous n'avez pas mis à jour l'application",
-      "href": "https://support.google.com/youtube/answer/7367023?hl=fr"
-    },
-    {
       "meta-title": "Saisie avec un clavier virtuel - Aide YouTube",
       "meta-description": "Comment effectuer une recherche dans d'autres langues à l'aide du clavier intégréSi la langue utilisée comporte des caractères spéciaux (par exemple, l'arabe, le grec ou le thaï), vous pouvez s",
       "href": "https://support.google.com/youtube/answer/1047939?hl=fr"
@@ -553,14 +543,14 @@
       "href": "https://support.google.com/youtube/answer/3802431?hl=fr"
     },
     {
+      "meta-title": "Tests et déploiements des fonctionnalités YouTube - Aide YouTube",
+      "meta-description": "Vous avez peut-être remarqué que l'affichage des fonctionnalités YouTube diffère parfois selon le compte utilisé. Cette situation peut venir du fait que vous n'avez pas mis à jour l'application",
+      "href": "https://support.google.com/youtube/answer/7367023?hl=fr"
+    },
+    {
       "meta-title": "Gérer votre bibliothèque - Aide YouTube",
       "meta-description": "Rendez-vous sur la page \"Bibliothèque\" pour accéder à votre historique et à vos playlists (\"À regarder plus tard\", par exemple).\nPour trouver votre bibliothèque, accédez au menu sur le côté",
       "href": "https://support.google.com/youtube/answer/9209643?hl=fr"
-    },
-    {
-      "meta-title": "Tester des fonctionnalités expérimentales sur YouTube.com/new - Aide YouTube",
-      "meta-description": "Vous avez la possibilité de découvrir et tester des fonctionnalités expérimentales de YouTube sur ordinateur à l'adresse YouTube.com/new. \nNous pouvons décider d'abandonner ces fonctionnalité",
-      "href": "https://support.google.com/youtube/answer/9227818?hl=fr"
     }
   ]
 }
