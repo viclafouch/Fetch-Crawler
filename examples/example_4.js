@@ -8,23 +8,12 @@ let games = []
 // I'm getting an array of each game on the page (name, price, cover, discount)
 const collectContent = $ => {
   const content = []
-  $('.item.mainshadow').each(function(i, elem) {
+  $('.item.mainshadow').each(function (i, elem) {
     content.push({
-      name: $(this)
-        .find($('.name'))
-        .text()
-        .trim(),
-      price: $(this)
-        .find($('.price'))
-        .text()
-        .trim(),
-      discount: $(this)
-        .find($('.discount'))
-        .text()
-        .trim(),
-      cover: $(this)
-        .find($('.picture'))
-        .attr('src')
+      name: $(this).find($('.name')).text().trim(),
+      price: $(this).find($('.price')).text().trim(),
+      discount: $(this).find($('.discount')).text().trim(),
+      cover: $(this).find($('.picture')).attr('src')
     })
   })
   return content

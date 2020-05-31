@@ -7,7 +7,7 @@ let products = []
 // I'm getting an array of each product of the page (name, price, images)
 const collectContent = $ => {
   const content = []
-  $('.product-index').each(function(i, elem) {
+  $('.product-index').each(function (i, elem) {
     content.push({
       name: $(this)
         .find($('.product-info-inner a'))

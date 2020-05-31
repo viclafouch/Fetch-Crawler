@@ -5,8 +5,8 @@ const assert = require('assert').strict
 
 const baseWebsite = 'http://example.webscraping.com'
 
-describe('Crawl externe', function() {
-  it('Crawl get all flags informations', async function() {
+describe('Crawl externe', function () {
+  it('Crawl get all flags informations', async function () {
     try {
       const response = await fetch(baseWebsite)
       if (response.status !== 200) throw new Error(response)
@@ -19,10 +19,7 @@ describe('Crawl externe', function() {
     const collectContent = $ => {
       try {
         return {
-          name: $('#places_country__row')
-            .children('.w2p_fw')
-            .text()
-            .trim()
+          name: $('#places_country__row').children('.w2p_fw').text().trim()
         }
       } catch (error) {}
     }

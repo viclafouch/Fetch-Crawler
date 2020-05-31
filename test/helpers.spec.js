@@ -1,8 +1,8 @@
 import { isUrl, relativePath } from '../build/utils'
 const assert = require('assert').strict
 
-describe('Helpers', function() {
-  it('isUrl', function() {
+describe('Helpers', function () {
+  it('isUrl', function () {
     const urlA = isUrl('https://stackoverflow.com')
     assert.ok(urlA)
     const urlB = isUrl('/accounts/?hl=en')
@@ -25,7 +25,7 @@ describe('Helpers', function() {
     assert.ok(!urlJ)
   })
 
-  it('relativePath', function() {
+  it('relativePath', function () {
     const urlA = relativePath('/test', 'https://www.website.com')
     assert.equal('https://www.website.com/test', urlA)
 

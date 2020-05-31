@@ -1,6 +1,6 @@
 {
   "name": "@viclafouch/fetch-crawler",
-  "version": "1.0.13",
+  "version": "1.0.14",
   "description": "A Node.JS Web crawler using the API Fetch",
   "main": "index.js",
   "keywords": [
@@ -9,6 +9,9 @@
     "node",
     "crawler"
   ],
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "scripts": {
     "build": "cm build",
     "test": "mocha --no-timeout --reporter spec build-test/*.spec.js",
@@ -34,20 +37,20 @@
     "node-fetch": "^2.6.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.7.0",
-    "@babel/preset-env": "^7.7.1",
-    "centimaitre": "^1.0.3",
-    "eslint": "^6.6.0",
-    "eslint-config-prettier": "^6.5.0",
-    "eslint-config-standard": "^14.1.0",
-    "eslint-plugin-import": "^2.18.2",
-    "eslint-plugin-mocha": "^6.2.1",
-    "eslint-plugin-node": "^10.0.0",
-    "eslint-plugin-prettier": "^3.1.1",
+    "@babel/core": "^7.10.2",
+    "@babel/preset-env": "^7.10.2",
+    "centimaitre": "^1.0.4",
+    "eslint": "^7.1.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-mocha": "^7.0.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^3.1.3",
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "^4.0.1",
-    "fs-jetpack": "^2.2.3",
-    "mocha": "^6.2.2",
-    "prettier": "^1.18.2"
+    "fs-jetpack": "^2.4.0",
+    "mocha": "^7.2.0",
+    "prettier": "^2.0.5"
   }
 }

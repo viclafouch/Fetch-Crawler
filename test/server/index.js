@@ -9,18 +9,18 @@ module.exports.baseUrl = `http://localhost:${port}`
 
 const dirPages = path.join(__dirname, 'pages')
 
-app.get('/', function(req, res) {
+app.get('/', function (req, res) {
   res.sendFile(path.join(dirPages, 'index.html'))
 })
 
-app.get('/imgs', function(req, res) {
+app.get('/imgs', function (req, res) {
   res.sendFile(path.join(dirPages, 'imgs.html'))
 })
 
-app.get('/anchors', function(req, res) {
+app.get('/anchors', function (req, res) {
   res.sendFile(path.join(dirPages, 'anchors.html'))
 })
 
-app.get('/not-found', function(req, res) {
+app.get('/not-found', function (req, res) {
   res.status(404)
 })

@@ -2,11 +2,7 @@ const FetchCrawler = require('@viclafouch/fetch-crawler')
 
 // I use Cheerio to get the content of the page
 // See https://cheerio.js.org
-const collectContent = $ =>
-  $('body')
-    .find('h2')
-    .text()
-    .trim()
+const collectContent = $ => $('body').find('h2').text().trim()
 
 // After getting content of the page, do what you want :)
 // Accept async function
