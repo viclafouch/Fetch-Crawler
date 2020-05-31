@@ -72,7 +72,7 @@ Fetch Crawler is currently supported by the Node Foundation.
 
 Currently supported versions:
 
-- 8.x
+- ~~8.x~~
 - 10.x
 - 12.x
 
