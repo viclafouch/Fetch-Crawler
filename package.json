@@ -1,6 +1,6 @@
 {
   "name": "@viclafouch/fetch-crawler",
-  "version": "1.0.14",
+  "version": "1.0.15",
   "description": "A Node.JS Web crawler using the API Fetch",
   "main": "index.js",
   "keywords": [
