@@ -27,7 +27,7 @@ You can find the documentation [here](https://github.com/viclafouch/Fetch-Crawle
 # npm i @viclafouch/fetch-crawler
 ```
 
-> **Note**: Fetch Crawler does not contain [Puppeteer](https://github.com/GoogleChrome/puppeteer). It using the [fetch-node](https://www.npmjs.com/package/node-fetch) module.
+> **Note**: Fetch Crawler does not contain [Puppeteer](https://github.com/GoogleChrome/puppeteer). It's using the [fetch-node](https://www.npmjs.com/package/node-fetch) module.
 
 ### Usage
 
